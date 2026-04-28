@@ -12,7 +12,7 @@ The project's goals are as follows:
 - Cover as many things as the player might want to do in any given situation
 - Generally, the player character should be explicit (bad: "I don't like this."; good: "I will not tolerate your lies!")
 
-Limitations:
+New dialogue choice requirements:
 
 - No more than 6 dialogue options for any given state
 - Avoid too many choices for trivial matters
