@@ -1,0 +1,18 @@
+// 000  000
+// |    |
+// npc  string 
+
+// dca_BDDELANC.d
+@0 = ~Fine. I'll be off.~
+@1 = ~...Very well. What else have you learned?~
+@2 = ~An ugly task, but I will see it done.~
+@3 = ~I want no part in victory purchased with needless suffering.~
+@4 = ~I kill when it suits me, but I will not play poisoner for you. Press me no further.~
+@5 = ~Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?~ [EDDEL01]
+@6 = ~What is going on here?~
+@7 = ~I appreciate the distinction, but my answer is no.~
+
+// dca_BDNEDERL.d
+@1000 = ~The information sounds promising, but was there truly no other means to obtain it?~
+@1001 = ~I trust this is not your first recourse.~
+@1002 = ~Even so, I would hear the rest. What else have you learned?~

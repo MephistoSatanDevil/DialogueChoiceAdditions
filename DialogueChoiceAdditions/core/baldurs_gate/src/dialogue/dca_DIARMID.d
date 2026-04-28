@@ -1,0 +1,9 @@
+/* Diarmid
+
+----
+
+~It's about time you got out here, Prat! It is Prat, isn't it? I don't need to tell you that we must not keep the Sarevok waiting! I trust you didn't have any trouble in there? He said that the monks fell for the ruse and that <CHARNAME> was locked up, so he took the surface route out of the keep instead of meeting you in the crypts. We really must get moving if we are to catch up with him!~ */
+
+EXTEND_TOP ~DIARMID~ 0
+    IF ~~ THEN REPLY @3000 /* ~No. I am not Prat. I am <CHARNAME>.~ */ GOTO 1
+END

@@ -1,0 +1,10 @@
+//component names
+@0 = ~Dialogue Choice Additions: Core~
+@1 = ~Dialogue Choice Additions: VVE Compatibility Patch~
+
+@90000 = ~Dialogue Choice Additions: VVE Compatibility Patch requires Voices Voices Extravaganza to be installed.~
+@90001 = ~Installing voiceover files for Baldur's Gate content ...~
+@90002 = ~Installing voiceover files for Siege of Dragonspear content ...~
+@90003 = ~Compiling dialogue files for Baldur's Gate content ...~
+@90004 = ~Compiling dialogue files for Siege of Dragonspear content ...~
+@90005 = ~Unsupported game.~
