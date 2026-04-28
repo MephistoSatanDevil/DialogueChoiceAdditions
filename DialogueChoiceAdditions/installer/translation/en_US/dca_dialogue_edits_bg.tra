@@ -8,11 +8,11 @@
 @2 = ~Hmph. We'll see about that. Good bye.~
 @3 = ~That's all I need to know. Good bye.~
 @4 = ~I shall. Good bye.~
-@5 = ~I'm just going to stay here and catch my breath.~ [EDVOL01]
+@5 = ~I'm just going to stay here and catch my breath.~ [DCVOL01]
 @6 = ~Could you guide me through this maze?~
 @7 = ~Rest ye well.~
 @8 = ~I should get going.~
-@9 = ~Just you be sure to give that Sarevok a shank o' steel.~ [EDVOL02]
+@9 = ~Just you be sure to give that Sarevok a shank o' steel.~ [DCVOL02]
 @10 = ~Um, is there any chance you would be able to see me through the maze?~
 @11 = ~Are you able to guide me through the maze?~
 
@@ -21,7 +21,7 @@
 
 // dca_PROST4.d
 @2000 = ~No, thank you.~
-@2001 = ~No matter. More of me for someone else...~ [EDPRO01]
+@2001 = ~No matter. More of me for someone else...~ [DCPRO01]
 
 // dca_DIARMID.d
 @3000 = ~No. I am not Prat. I am <CHARNAME>.~
@@ -33,7 +33,7 @@
 @5000 = ~You call it safekeeping, yet your tone is threatening. I think it best if I leave.~
 @5001 = ~Don't you dare insult me again.~
 @5002 = ~I was strolling about. I'll take my leave.~
-@5003 = ~You've got till I get my muscle to be gone. After that, you'll hit the bricks a touch harder.~ [EDSIL01]
+@5003 = ~You've got till I get my muscle to be gone. After that, you'll hit the bricks a touch harder.~ [DCSIL01]
 @5004 = ~I don't feel like paying.~
 
 // dca_DOPPSM.d
