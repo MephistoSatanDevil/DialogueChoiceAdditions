@@ -51,3 +51,9 @@ It should be installed before EET_end.
 The version number will change to 1.0.0 once support Baldur's Gate: Enhanced Edition and Baldur's Gate II: Enhanced Edition (without EET) is added.
 
 The mod should be published to major modding websites eventually.
+
+## Attribution
+
+Voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang).
+
+Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000), and Throne of Bhaal (2001) are ©BioWare. Dungeons & Dragons material is ©Wizards of the Coast.
