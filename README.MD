@@ -57,3 +57,26 @@ The mod should be published to major modding websites eventually.
 Voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang).
 
 Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000), and Throne of Bhaal (2001) are ©BioWare. Dungeons & Dragons material is ©Wizards of the Coast.
+
+## Changes
+
+The mod currently makes changes to dialogues with the following NPCs:
+
+**Baldur's Gate**
+
+- Diarmid
+- Merchant that approaches you in Seven Suns
+- Courtesan in Undercellar
+- Ragefast
+- Rahvin
+- Silence
+- Voleta
+
+New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/DialogueChoiceAdditions/installer/translation/en_US/dca_dialogue_edits_bg.tra)
+
+**Siege of Dragonspear**
+
+- De Lancie
+- Nederlok
+
+New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/DialogueChoiceAdditions/installer/translation/en_US/dca_dialogue_edits_sod.tra)
