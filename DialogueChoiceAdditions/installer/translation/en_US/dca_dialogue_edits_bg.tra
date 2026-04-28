@@ -1,6 +1,6 @@
 // 000  000
 // |    |
-// npc  string 
+// npc  string
 
 // dca_VOLETA.d
 @0 = ~Who did this to you?~
@@ -38,3 +38,10 @@
 
 // dca_DOPPSM.d
 @6000 = ~We're here to speak with Jhasso.~
+
+// dca_JHASSO.d
+@7000 = ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me.~ [DCJHA01]
+@7001 = ~What are you talking about?~
+@7002 = ~Are you being held captive here?~
+@7003 = ~Maybe another day, then.~
+@7004 = ~Scar wants answers, and so do we. Who are you?~

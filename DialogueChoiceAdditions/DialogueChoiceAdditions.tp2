@@ -12,6 +12,7 @@ OUTER_SET stringref_no_words = 37478
 OUTER_SET stringref_where_does_this_maze_lead = 11727
 OUTER_SET stringref_where_does_it_lead = 10843
 OUTER_SET stringref_blast_you_all = 10833
+OUTER_SET stringref_were_not_here_to_torture = 1020
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -19,6 +20,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_where_does_this_maze_lead = stringref_where_does_this_maze_lead + EET_OFFSET
     OUTER_SET stringref_where_does_it_lead = stringref_where_does_it_lead + EET_OFFSET
     OUTER_SET stringref_blast_you_all = stringref_blast_you_all + EET_OFFSET
+    OUTER_SET stringref_were_not_here_to_torture = stringref_were_not_here_to_torture + EET_OFFSET
     OUTER_SPRINT bdnederl ~BDNEDERL~
     OUTER_SPRINT bddelanc ~BDDELANC~
 END ELSE BEGIN
@@ -27,20 +29,22 @@ END
 /* Dialogue */
 // Baldur's Gate (base game)
 ACTION_IF GAME_IS ~eet~ BEGIN
-    PRINT @90003 /* ~Compiling dialogue files for Baldur's Gate content ...~ */
+    PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_bg.tra~ BEGIN
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPPSM.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_JHASSO.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_PROST4.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAGEFA.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAHVIN.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SCAR.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SILENC.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_VOLETA.d~
     END
 END
 // Baldur's Gate: Siege of Dragonspear
-ACTION_IF GAME_IS ~eet~ BEGIN // Fix later
-    PRINT @90004 /* ~Compiling dialogue files for Siege of Dragonspear content ...~ */
+ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
+    PRINT @90004  /* ~Compiling dialogue files for Siege of Dragonspear content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_sod.tra~ BEGIN
         // They get their own line in vanilla, and our line is for everyone else
         OUTER_SPRINT compromise_dialogue_changes ~~~~~
@@ -72,23 +76,22 @@ END
 
 BEGIN @1  // VVE Compatibility Patch
 LABEL ~DialogueChoiceAdditions-VVECompatibilityPatch~
-
 // VVE is not technically required, but we add this line to prevent users from accidentally installing this component but not Voices Voices Extravaganza as that would be undesirable to any sane person
 ACTION_IF (NOT MOD_IS_INSTALLED ~vveBG.tp2~ ~0~) AND (NOT MOD_IS_INSTALLED ~vveSOD.tp2~ ~0~) BEGIN
     FAIL @90000
 END
-
 // Baldur's Gate (base game)
 ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
     ACTION_IF GAME_IS ~eet~ BEGIN
-        PRINT @90001 /* ~Installing voiceover files for Baldur's Gate content ...~ */
+        PRINT @90001  /* ~Installing voiceover files for Baldur's Gate content ...~ */
         COPY ~%MOD_FOLDER%/compatibility_patch_vve/baldurs_gate/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
     END
 END
 // Baldur's Gate: Siege of Dragonspear
 ACTION_IF MOD_IS_INSTALLED ~vveSOD.tp2~ ~0~ BEGIN
-    ACTION_IF GAME_IS ~eet~ BEGIN // Fix later
-    PRINT @90002 /* ~Installing voiceover files for Siege of Dragonspear content ...~ */
-    COPY ~%MOD_FOLDER%/compatibility_patch_vve/siege_of_dragonspear/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
+    ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
+        PRINT @90002  /* ~Installing voiceover files for Siege of Dragonspear content ...~ */
+        COPY
+            ~%MOD_FOLDER%/compatibility_patch_vve/siege_of_dragonspear/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
     END
 END
