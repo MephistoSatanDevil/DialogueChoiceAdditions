@@ -1,6 +1,6 @@
 # Dialogue Choice Additions
 
-**Dialogue Choice Additions** (DCA) is a work-in-progress mod for Baldur's Gate that adds dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game.
+**Dialogue Choice Additions** (DCA) is a work-in-progress mod for Baldur's Gate that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game.
 
 The project's goals are as follows:
 
