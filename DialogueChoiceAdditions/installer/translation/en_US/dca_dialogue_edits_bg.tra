@@ -45,3 +45,6 @@
 @7002 = ~Are you being held captive here?~
 @7003 = ~Maybe another day, then.~
 @7004 = ~Scar wants answers, and so do we. Who are you?~
+
+// dca_DOPMER.d
+@8000 = ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02]

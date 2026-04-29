@@ -32,6 +32,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_bg.tra~ BEGIN
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPMER.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPPSM.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_JHASSO.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_PROST4.d~
