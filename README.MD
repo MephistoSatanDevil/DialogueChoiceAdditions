@@ -86,3 +86,12 @@ New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/Dialogu
 - Nederlok
 
 New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/DialogueChoiceAdditions/installer/translation/en_US/dca_dialogue_edits_sod.tra)
+
+## Tools used
+
+- [NearInfinity](https://github.com/NearInfinityBrowser/NearInfinity/wiki)
+- [WeiDU](https://weidu.org/)
+- [ElevenCreative](https://elevenlabs.io/creative)
+- [Adobe Audition](https://www.adobe.com/products/audition.html)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [BGForge MLS](https://marketplace.visualstudio.com/publishers/BGforge)
