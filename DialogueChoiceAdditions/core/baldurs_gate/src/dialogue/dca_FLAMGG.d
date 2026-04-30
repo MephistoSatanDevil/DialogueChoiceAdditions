@@ -5,6 +5,7 @@
 ~The entrance tax is 6 gold pieces for each party of travelers. Please announce your point of origin~ */
 
 EXTEND_BOTTOM ~FLAMGG~ 0
+    // Maybe it's okay to have 7 choices here, given that most of them are very short; fatigue unlikely
     IF ~~ THEN REPLY @11000 /* ~My point of origin is my own affair.~ */ GOTO IfYouWontCooperate
     IF ~~ THEN REPLY @11001 /* ~I will not be questioned like a common criminal.~ */ GOTO IfYouWontCooperate
 END
