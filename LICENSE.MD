@@ -29,3 +29,25 @@ The author of *Dialogue Choice Additions* is VioletSister.
 Most of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang). Voices Voices Extravaganza is also licensed under CC BY-NC-SA 4.0.
 
 Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000), and Throne of Bhaal (2001) are ©BioWare. Dungeons & Dragons material is ©Wizards of the Coast.
+
+### AI voiceover adapted from Voices Voices Extravaganza
+
+**Baldur's Gate**
+
+- DCFLG01
+- DCJHA01
+- DCPRO01
+- DCSCA03
+- DCSIL01
+- DCVOL01
+- DCVOL02
+
+**Siege of Dragonspear**
+
+- DCDEL01
+
+### AI voiceover from Violet
+
+- DCDPM01 (voice cloned from VVE)
+- DCSCA01
+- DCSCA02
