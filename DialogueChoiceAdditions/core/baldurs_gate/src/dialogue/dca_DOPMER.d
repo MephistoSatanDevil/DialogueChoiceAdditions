@@ -82,9 +82,14 @@ REPLACE_STATE_TRIGGER ~DOPMER~ 10 ~Global("Phase","LOCALS",2) !Global("Dopplegan
 
 /* Fallback */
 
+// Adding this because for some reason, it will not display the "has nothing to say to you" message for me (in EET)
+// From the DOPMER.CRC soundset
+// TODO: Generate a voiceover line that matches the VVE voice for merchants
+// Could also recycle "Still you pester us! Do you have no shame?!"
+// from "Still you pester us! Do you have no shame?! Explain yourself!"
 APPEND ~DOPMER~
     IF WEIGHT #100 ~!Global("Doppleganger","GLOBAL",1)~ THEN BEGIN Fallback
-        SAY @8000
+        SAY @8000 /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
         IF ~~ THEN EXIT
     END
 END
