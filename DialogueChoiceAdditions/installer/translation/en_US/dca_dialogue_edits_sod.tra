@@ -20,3 +20,6 @@
 // dca_BDMURS.d
 @2000 = ~Hold your clubs! Yes, we ARE from the crusade, but we are here to help you.~
 @2001 = ~I thought there might be something here worth stealing.~
+
+// dca_BDARBING.d
+@2002 = ~I know good counsel when I hear it. Goodbye.~

@@ -82,6 +82,7 @@ New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/Dialogu
 
 **Siege of Dragonspear**
 
+- Arbinge
 - De Lancie
 - Murs
 - Nederlok

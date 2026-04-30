@@ -787,3 +787,25 @@ LLM
   - To learn whether you were worth speaking to.
   - Curiosity. A mistake, perhaps.
 
+## Arbinge
+
+### Leave before smash
+
+"Not your fight, <PRO_RACE>. Leave before Arbinge smash you to blood 'n bits!"
+
+- Well said, actually. Goodbye.
+  - Well said, actually. Goodbye and good luck sorting this out.
+  - Well said, actually. Goodbye.
+  - Well said, actually. I will leave.
+- You're right. Not my fight. I'll leave.
+
+LLM:
+
+- ⭐⭐ A compelling argument. I'll trouble you no further.
+  - No need to smash me. I'm leaving.
+    - HUMAN: That won't be necessary. I will leave.
+    - ⭐ HUMAN: No need to smash. I will leave.
+    - HUMAN: Smashing won't be necessary. I will leave.
+  - No smashing needed. I go.
+  - Fine, fine. I go.
+  - I leave before smash.

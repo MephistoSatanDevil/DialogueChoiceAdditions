@@ -82,6 +82,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility/siege_of_dragonspear/src/dialogue/dca_jt_BDNEDERL.d~
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility/siege_of_dragonspear/src/dialogue/dca_jt_BDDELANC.d~
         END
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDARBING.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDELANC.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
