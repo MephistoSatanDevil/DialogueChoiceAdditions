@@ -49,7 +49,7 @@ END
 
 /* ~Back so soon! How did your battle fare?~ */
 
-// Keep track of whether Jhasso has been freed
+// Keep track of whether Jhasso is free
 ALTER_TRANS ~SCAR~
     BEGIN 14 END // State 14
     BEGIN 2 END // third answer
@@ -60,7 +60,7 @@ ALTER_TRANS ~SCAR~
 
 /* ~Did you come across Jhasso? Is he alive?~ */
 
-// Keep track of whether Jhasso has been freed
+// Keep track of whether Jhasso is free
 ALTER_TRANS ~SCAR~
     BEGIN 43 END // State 43
     BEGIN 1 END // second answer
@@ -69,7 +69,7 @@ ALTER_TRANS ~SCAR~
         "ACTION" ~SetGlobal("JhassoIsFree","GLOBAL",1)~
     END
 
-// Keep track of whether Jhasso has been freed
+// Keep track of whether Jhasso is free
 ALTER_TRANS ~SCAR~
     BEGIN 43 END // State 43
     BEGIN 2 END // third answer
