@@ -59,3 +59,7 @@
 @9005 = ~I will leave you to your work.~
 @9006 = ~If you ever have any trouble, you can find me right here.~ [DCSCA02]
 @9007 = ~My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne.~ [DCSCA03]
+
+// dca_TELANO.d
+@10000 = ~All right. What is it that you want?~
+@10001 = ~Enough talk. Face me if you dare!~
