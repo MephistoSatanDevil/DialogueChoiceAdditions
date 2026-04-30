@@ -23,3 +23,7 @@
 
 // dca_BDARBING.d
 @3000 = ~I know good counsel when I hear it. Goodbye.~
+
+// dca_DYINGM.d
+@3000 = ~I can't understand you. Are you all right?~
+@3001 = ~I think we should leave.~

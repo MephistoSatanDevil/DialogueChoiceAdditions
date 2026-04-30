@@ -809,3 +809,74 @@ LLM:
   - No smashing needed. I go.
   - Fine, fine. I go.
   - I leave before smash.
+
+## Dying Myconid
+
+### Belch
+
+"(The mushroom creature shudders. Its body emits a prolonged belch from an orifice you cannot see.)"
+
+- ~~I can't understand you. Are you all right? What is that horrible smell?~~
+- ⭐⭐⭐ I can't understand you. Are you all right?
+- ⭐ Is it trying to communicate? What is that horrible smell?
+- ⭐⭐⭐ I think we should leave.
+
+LLM:
+
+- ⭐ I wish I could understand you. Do you need help?
+  - ⭐ HUMAN: I wish I could understand you. Are you all right?
+  - You seem distressed. Is there any way I can aid you?
+- I have no idea what you want, but gods, that smell is answer enough.
+  - Whatever you are saying, it is being drowned out by the reek.
+  - Is this your way of talking, or merely of offending the nose?
+  - I cannot understand you. I can smell you, though, and that is bad enough.
+  - You had best speak plainly, if you can. That odor is doing you no favors.
+  - I do not know what you are saying, but I know what you are smelling.
+  - Are you ill, or do all your kind smell like a compost heap?
+- Are you unwell, or is that smell normal for you?
+  - Are you dying, or is that horrible smell normal?
+  - Are you ill? What is that awful stench?
+  - Is something wrong with you? What is that horrible odor?
+    - ⭐ HUMAN: Is something wrong with you? What is that horrible smell?
+  - Are you supposed to smell like that?
+  - ⭐ Are you unwell, or is that horrible smell just part of you?
+    - ⭐ HUMAN: Are you unwell, or is that horrible smell normal for you?
+  - Are you in pain, or merely producing that horrible smell?
+  - ⭐ Are you all right? Because that horrible smell suggests otherwise.
+  - ⭐ HUMAN: Are you all right? Because that awful smell suggests otherwise.
+  - ⭐⭐ HUMAN: Are you all right? Because that putrid smell suggests otherwise.
+- Is that normal for you?
+  - Are you dying, or is this just how your kind behaves?
+  - Should you be leaking like that?
+  - Is something wrong with you, or is this usual?
+  - Is this a sickness, or some mushroom trick?
+  - Are you falling apart?
+  - Do you need help, or distance?
+  - Is that supposed to happen?
+
+Original:
+
+1. I can't understand you. Are you all right? What is that horrible smell?
+2. Gods! It smells worse here than the outhouse did after Winthrop was done with it.
+3. What is this foul miasma? Are you responsible?
+
+Problems: no non-insulting option; no exit option
+
+New:
+
+1. ~~I wish I could understand you. Do you need help?~~
+2. Are you all right? Because that putrid smell suggests otherwise.
+3. Gods! It smells worse here than the outhouse did after Winthrop was done with it.
+4. What is this foul miasma? Are you responsible?
+5. I think we should leave.
+
+Too cluttered for an inconsequential encounter.
+
+New:
+
+1. I can't understand you. Are you all right?
+2. Gods! It smells worse here than the outhouse did after Winthrop was done with it.
+3. What is this foul miasma? Are you responsible?
+4. I think we should leave.
+
+Sorry, Beamdog.

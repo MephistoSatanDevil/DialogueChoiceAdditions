@@ -26,6 +26,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SPRINT bddelanc ~BDDELANC~
     OUTER_SPRINT bdmurs ~BDMURS~
     OUTER_SPRINT bdarbing ~BDARBING~
+    OUTER_SPRINT bddyingm ~BDDYINGM~
 END ELSE BEGIN
     FAIL @90005
 END
@@ -84,6 +85,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
         END
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDARBING.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDELANC.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDYINGM.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
     END
