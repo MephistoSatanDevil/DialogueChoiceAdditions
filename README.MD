@@ -64,12 +64,18 @@ The mod currently makes changes to dialogues with the following NPCs:
 
 **Baldur's Gate**
 
-- Diarmid
-- Merchant that approaches you in Seven Suns
 - Courtesan in Undercellar
+- Diarmid
+- Flaming Fist Mercenary at Wyrm's Crossing
+- Jhasso
+- Merchant that approaches you in Seven Suns
+- Merchants in Seven Suns (the sneery ones)
 - Ragefast
 - Rahvin
+- Rieltar
+- Scar
 - Silence
+- Tel-anon
 - Voleta
 
 New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/DialogueChoiceAdditions/installer/translation/en_US/dca_dialogue_edits_bg.tra)
