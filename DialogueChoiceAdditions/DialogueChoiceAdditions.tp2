@@ -21,8 +21,11 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_where_does_it_lead = stringref_where_does_it_lead + EET_OFFSET
     OUTER_SET stringref_blast_you_all = stringref_blast_you_all + EET_OFFSET
     OUTER_SET stringref_were_not_here_to_torture = stringref_were_not_here_to_torture + EET_OFFSET
+    /* Creature names */
     OUTER_SPRINT bdnederl ~BDNEDERL~
     OUTER_SPRINT bddelanc ~BDDELANC~
+    OUTER_SPRINT bdmurs ~BDMURS~
+    OUTER_SPRINT bdarbing ~BDARBING~
 END ELSE BEGIN
     FAIL @90005
 END
@@ -79,8 +82,9 @@ ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility/siege_of_dragonspear/src/dialogue/dca_jt_BDNEDERL.d~
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility/siege_of_dragonspear/src/dialogue/dca_jt_BDDELANC.d~
         END
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDELANC.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
     END
 END
 

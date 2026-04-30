@@ -297,11 +297,11 @@ Jastey's Tweaks:
 
 AI:
 
-Here are alternatives that push back on De Lancie’s logic without duplicating the other three options:
+Here are alternatives that push back on De Lancie's logic without duplicating the other three options:
 
 - And if the answer wrung from him is false? You may have damned yourself for naught.
-- A soldier’s life is not saved by any means that happen to present themselves. Bad counsel kills as surely as any blade.
-- You speak as though cruelty becomes wisdom when dressed in a commander’s cloak. It does not.
+- A soldier's life is not saved by any means that happen to present themselves. Bad counsel kills as surely as any blade.
+- You speak as though cruelty becomes wisdom when dressed in a commander's cloak. It does not.
 - ⭐ If the man lied to end his pain, then your noble purpose has bought us nothing.
   - And if the man lied to end his pain? Then you have bought nothing but shame.
   - If the man lied to end his pain, then all your sacrifice has bought us nothing.
@@ -321,7 +321,7 @@ Here are alternatives that push back on De Lancie’s logic without duplicating 
 - You would damn yourself for a rumor, and call that command?
 - So this is command, then? Trading honor for whatever words pain can purchase?
 - If this is what passes for duty, I fear the Coast has already lost more than soldiers.
-- You dress barbarity in a soldier’s colors, but it remains barbarity.
+- You dress barbarity in a soldier's colors, but it remains barbarity.
 - A man will say anything under torment. You have bought shame, not certainty.
 - You speak of saving lives while making corpses of your own principles.
 - ⭐ So you would stain your honor for words screamed under duress? A poor bargain, and a foolish one.
@@ -545,11 +545,11 @@ LLM:
   - If this gives us an edge, then I will use it.
   - If it gives us the advantage, I will use it.
 - ⭐ So be it. I will do what must be done.
-  - If this is what’s required, I will see it done.
+  - If this is what's required, I will see it done.
   - If this is what must be done, then so be it.
   - If this is the cost of victory, I will pay it.
   - Very well. I will see it done.
-  - So be it. I’ll see it through.
+  - So be it. I'll see it through.
 - ⭐ If it serves our end, I will use it.
 - ⭐⭐ An ugly task, but I will see it done.
   - I do not like it, but I will do what is needed.
@@ -725,10 +725,10 @@ New:
 LLM:
 
 - ⭐⭐ Well met. Things seem uneasy in Baldur's Gate.
-- I’m looking to earn some coin.
-  - I’m in need of work. Got anything for me?
-  - I’m seeking employment, if you have any.
-  - If there is work to be done in Baldur’s Gate, I would hear of it.
+- I'm looking to earn some coin.
+  - I'm in need of work. Got anything for me?
+  - I'm seeking employment, if you have any.
+  - If there is work to be done in Baldur's Gate, I would hear of it.
 - I suspect we could be of mutual assistance.
   - You and I may both be seeking answers in this city.
   - It seems to me we might profit by working together.
@@ -743,3 +743,47 @@ LLM:
 - I only wished to offer my greetings. Farewell.
   - Human: I simply wished to offer my greetings. Farewell.
   - I meant only to introduce myself. Good day.
+
+## Murs
+
+"You not shiners? Why you here?"
+
+- To kill you.
+- To talk.
+  - To make conversation.
+  - To learn.
+- To make friends.
+- To rally against the crusade.
+- A mistake. I'll head back.
+
+LLM
+
+- To see what the Shiners left behind. Maybe take some for myself.
+- Same reason anyone comes here: to see what can be taken.
+- If the crusade found something useful here, I want it first.
+- I heard ogres were going missing. I wondered what they were worth.
+- I came looking for profit, and ogres seldom guard anything worthless.
+- To find out what all the fuss was about. Perhaps sell the answer.
+- ⭐⭐ I thought there might be something here worth stealing.
+- The Shiners take ogres. I was hoping they left treasure.
+- I came to pick over whatever the crusade missed.
+- Not to help you, if that is what you hoped.
+- ⭐ I came to see whether you were as stupid as everyone says.
+- I thought perhaps the Shiners had softened you up for us.
+- If your kin are gone, perhaps you no longer need their belongings.
+- I go where there is fear, confusion, and something to gain.
+- To learn. No blades.
+  - To find answers.
+  - To listen, not fight.
+  - To hear what happened.
+  - HUMAN: To learn what happened.
+  - To find out who is taking your people.
+  - I only came to talk.
+  - To ask questions, nothing more.
+  - Just looking for answers.
+  - No Shiners. No trouble. Just talk.
+  - To see what all the noise was about.
+  - To talk. Though I see that may have been optimistic.
+  - To learn whether you were worth speaking to.
+  - Curiosity. A mistake, perhaps.
+

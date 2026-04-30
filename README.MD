@@ -83,6 +83,7 @@ New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/Dialogu
 **Siege of Dragonspear**
 
 - De Lancie
+- Murs
 - Nederlok
 
 New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/DialogueChoiceAdditions/installer/translation/en_US/dca_dialogue_edits_sod.tra)

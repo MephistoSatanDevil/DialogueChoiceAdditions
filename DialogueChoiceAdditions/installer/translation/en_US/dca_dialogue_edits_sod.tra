@@ -16,3 +16,7 @@
 @1000 = ~The information sounds promising, but was there truly no other means to obtain it?~
 @1001 = ~I trust this is not your first recourse.~
 @1002 = ~Even so, I would hear the rest. What else have you learned?~
+
+// dca_BDMURS.d
+@2000 = ~Hold your clubs! Yes, we ARE from the crusade, but we are here to help you.~
+@2001 = ~I thought there might be something here worth stealing.~
