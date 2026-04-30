@@ -48,3 +48,13 @@
 
 // dca_DOPMER.d
 @8000 = ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02]
+
+// dca_SCAR.d
+@9000 = ~Greetings. I am Scar, second-in-command of the Flaming Fist.~ [DCSCA01]
+@9001 = ~I am the one involved in the clearing of the Nashkel mines.~
+@9002 = ~Do you need help with anything?~
+@9003 = ~I am looking for a job.~
+@9004 = ~Well met. Things seem uneasy in Baldur's Gate.~
+@9005 = ~I will leave you to your work.~
+@9006 = ~If you ever have any trouble, you can find me right here.~ [DCSCA02]
+@9007 = ~My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne.~ [DCSCA03]

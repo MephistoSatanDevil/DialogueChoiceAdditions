@@ -677,3 +677,70 @@ New:
 3. I appreciate the distinction, but my answer is no. (not paladin or cleric)
 4. I still don't like it, but I've done a lot of things I don't like in this life. I'll be able to live with this one.
 5. A lesser sin is a sin still. Do not speak to me of this again. (good paladins and clerics)
+
+## SCAR
+
+### Greetings
+
+- ⭐⭐ I am indeed the one involved in the clearing of the Nashkel mines.
+- Is there anything I can help with?
+  - Can I help with anything?
+- ⭐⭐ I am looking for a job.
+- We should work together.
+  - We should join common cause.
+  - We should join forces.
+  - I would like to work together.
+  - I would like us to work together.
+  - Are you open for collaboration?
+  - mutual benefit
+- Do you need help with anything?
+  - Can I be of assistance in any way?
+  - Do you need assistance with anything?
+  - Do you need any assistance?
+  - Can I help you with anything?
+  - Do you have need of assistance?
+- Never mind.
+  - Good bye.
+  - An honor to meet you. Good bye.
+- I wish I had the time to stay and chat.
+  - Unfortunately, I cannot delay.
+  - Unfortunately, I cannot stay and talk.
+  - I must go, unfortunately.
+- I just wanted to say hello. Good bye.
+  - Good to meet you. Unfortunately, I must go. Good bye. 
+  - I only wished to greet you. Good bye.
+  - I only wished to greet you. Good bye for now.
+  - I only wanted to say hello. Good bye for now.
+  - I only wanted to say hello. Good bye for now.
+  - Nice to see you, Scar. I have pressing matters at hand, so I will leave you to your work.
+  - Nice to see you again. I have pressing matters at hand, so I will leave you to your work.
+  - I simply wanted to greet you, but now I must leave.
+  - I simply wanted to greet you, and now I must leave.
+  - I only wanted to say hello as I was passing by. Good bye.
+  - Good to meet you. Unfortunately, I have some pressing matters at hand.
+  - Good to meet you. Unfortunately, I have some pressing matters at hand.
+  - I only wanted to say hello for now.
+  - I'm in a hurry, but we should talk some time.
+  - And you, Scar.
+
+LLM:
+
+- ⭐⭐ Well met. Things seem uneasy in Baldur's Gate.
+- I’m looking to earn some coin.
+  - I’m in need of work. Got anything for me?
+  - I’m seeking employment, if you have any.
+  - If there is work to be done in Baldur’s Gate, I would hear of it.
+- I suspect we could be of mutual assistance.
+  - You and I may both be seeking answers in this city.
+  - It seems to me we might profit by working together.
+  - I believe we may be of use to one another.
+  - I think we might profit by working together.
+  - I have reason to think our goals may coincide.
+  - I suspect we may be able to help each other.
+  - You are a man of authority, and I am not without ability. Perhaps we should speak further.
+  - I have seen enough trouble in this city to know that capable allies are worth having.
+  - I suspect you and I may be concerned with the same troubles.
+- Perhaps I could be of some use to you, Scar.
+- I only wished to offer my greetings. Farewell.
+  - Human: I simply wished to offer my greetings. Farewell.
+  - I meant only to introduce myself. Good day.
