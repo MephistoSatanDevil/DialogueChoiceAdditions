@@ -5,9 +5,9 @@
 // dca_VOLETA.d
 @0 = ~Who did this to you?~
 @1 = ~I am not with the one who harmed you. Have you seen Sarevok?~
-@2 = ~Hmph. We'll see about that. Good bye.~
-@3 = ~That's all I need to know. Good bye.~
-@4 = ~I shall. Good bye.~
+@2 = ~Hmph. We'll see about that. Goodbye.~
+@3 = ~That's all I need to know. Goodbye.~
+@4 = ~I shall. Goodbye.~
 @5 = ~I'm just going to stay here and catch my breath.~ [DCVOL01]
 @6 = ~Could you guide me through this maze?~
 @7 = ~Rest ye well.~

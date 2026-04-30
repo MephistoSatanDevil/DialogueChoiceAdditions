@@ -699,23 +699,23 @@ New:
   - Can I help you with anything?
   - Do you have need of assistance?
 - Never mind.
-  - Good bye.
-  - An honor to meet you. Good bye.
+  - Goodbye.
+  - An honor to meet you. Goodbye.
 - I wish I had the time to stay and chat.
   - Unfortunately, I cannot delay.
   - Unfortunately, I cannot stay and talk.
   - I must go, unfortunately.
-- I just wanted to say hello. Good bye.
-  - Good to meet you. Unfortunately, I must go. Good bye. 
-  - I only wished to greet you. Good bye.
-  - I only wished to greet you. Good bye for now.
-  - I only wanted to say hello. Good bye for now.
-  - I only wanted to say hello. Good bye for now.
+- I just wanted to say hello. Goodbye.
+  - Good to meet you. Unfortunately, I must go. Goodbye. 
+  - I only wished to greet you. Goodbye.
+  - I only wished to greet you. Goodbye for now.
+  - I only wanted to say hello. Goodbye for now.
+  - I only wanted to say hello. Goodbye for now.
   - Nice to see you, Scar. I have pressing matters at hand, so I will leave you to your work.
   - Nice to see you again. I have pressing matters at hand, so I will leave you to your work.
   - I simply wanted to greet you, but now I must leave.
   - I simply wanted to greet you, and now I must leave.
-  - I only wanted to say hello as I was passing by. Good bye.
+  - I only wanted to say hello as I was passing by. Goodbye.
   - Good to meet you. Unfortunately, I have some pressing matters at hand.
   - Good to meet you. Unfortunately, I have some pressing matters at hand.
   - I only wanted to say hello for now.
