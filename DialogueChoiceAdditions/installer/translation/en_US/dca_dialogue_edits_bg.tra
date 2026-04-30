@@ -48,6 +48,7 @@
 
 // dca_DOPMER.d
 @8000 = ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02]
+@8001 = ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01]
 
 // dca_SCAR.d
 @9000 = ~Greetings. I am Scar, second-in-command of the Flaming Fist.~ [DCSCA01]

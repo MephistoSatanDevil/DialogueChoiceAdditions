@@ -26,11 +26,17 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 END ELSE BEGIN
     FAIL @90005
 END
+
 /* Dialogue */
+
 // Baldur's Gate (base game)
 ACTION_IF GAME_IS ~eet~ BEGIN
     PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_bg.tra~ BEGIN
+        OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~ /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
+        ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
+            OUTER_SPRINT doppelganger_merchant_busy_response ~@8001~ /* ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01] */
+        END
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPMER.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPPSM.d~

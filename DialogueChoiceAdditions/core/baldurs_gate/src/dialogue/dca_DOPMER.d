@@ -89,7 +89,7 @@ REPLACE_STATE_TRIGGER ~DOPMER~ 10 ~Global("Phase","LOCALS",2) !Global("Dopplegan
 // from "Still you pester us! Do you have no shame?! Explain yourself!"
 APPEND ~DOPMER~
     IF WEIGHT #100 ~!Global("Doppleganger","GLOBAL",1)~ THEN BEGIN Fallback
-        SAY @8000 /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
+        SAY %doppelganger_merchant_busy_response%
         IF ~~ THEN EXIT
     END
 END
