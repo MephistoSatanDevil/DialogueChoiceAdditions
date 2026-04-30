@@ -45,6 +45,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_PROST4.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAGEFA.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAHVIN.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RIELTA.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SCAR.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SILENC.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_TELANO.d~

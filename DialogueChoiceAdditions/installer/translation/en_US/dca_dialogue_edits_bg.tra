@@ -68,3 +68,9 @@
 @11000 = ~My point of origin is my own affair.~
 @11001 = ~I will not be questioned like a common criminal.~
 @11002 = ~If you won't cooperate, then I'll just bring you to talk with my commander.~ [DCFLG01]
+
+// dca_RIELTA.d
+@12000 = ~Sorry. We'll head back out.~
+@12001 = ~No one told me this room was off limits.~
+@12002 = ~I believe I have a place in this discussion.~ 
+@12003 = ~I'll leave when I'm finished.~

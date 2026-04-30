@@ -4,14 +4,13 @@ This document comprises rough development notes and brainstorm data; not polishe
 
 ## Candidates for expansion
 
-- [ ] Reiltar
-- [ ] Iron Throne building
 - [ ] End dialogues early in Candlekeep return
 - [ ] Iron Throne NPCs
 - [ ] Character rejoin dialogue
 - ~~[ ] Final BG1 battle~~
 - ~~[ ] Koveras~~
 - ~~[ ] Centeol~~
+- [x] Rieltar
 - [x] Merchant (Seven Suns, human)
 
 ## BDNEDERL
