@@ -1,6 +1,6 @@
 # Dialogue Choice Additions
 
-**Dialogue Choice Additions** (DCA) is a work-in-progress mod for Baldur's Gate that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game.
+**Dialogue Choice Additions** (DCA) is a work-in-progress mod for Baldur's Gate that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game. It does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)). It also improves [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her.
 
 The project's goals are as follows:
 
@@ -26,13 +26,27 @@ In accordance with these goals and requirements, vanilla dialogue choices someti
 
 ## Compatibility
 
-A requirement for any changes this mod makes is that it be seamlessly compatible with the [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) (VVE) mod. This generally means that no changes to NPC dialogue is made. There are however a few instances where new dialogue is added, shortened from vanilla lines, in order to add more dialogue choices. In these cases, AI voiceover is added to these lines (edited from VVE voiceover files).
+### Voices Voices Extravaganza
 
-*Dialogue Choice Additions* currently only supports [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET). Though it will probably work for other versions of the games as well if you make some simple changes to the tp2 file (especially the Baldur's Gate 1 content). If you want to try this, change every instance (or just where it changes Baldur's Gate 1 content) of `ACTION_IF GAME_IS ~eet~ BEGIN` to `GAME_IS ~bgee tutu tutu_totsc eet bgt bg2ee soa tob iwd-in-bg2 ca iwdee~`.
+A requirement for any changes this mod makes is that it be seamlessly compatible with the [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) (VVE) mod. This generally means that no changes to NPC dialogue is made. There are however a few instances where new dialogue is added, shortened from vanilla lines, in order to add more dialogue choices. In these cases, AI voiceover is added to these lines (either generated or edited from VVE voiceover files). An example of this is where the mod adds a new dialogue choice that is critical/skeptical toward [De Lancie](https://baldursgate.fandom.com/wiki/Torsin_de_Lancie)'s poisoning suggestion, but not on the basis of honor like in vanilla. The new option leads to a new state where the following line from De Lancie is recycled:
 
-The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" component of the mod [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/). In some cases, this mod hides dialogue choices from Jastey's SoD Tweak Pack in accordance with this project's goals, where the two mods change the same dialogue states.
+> Given a choice between victory and honor, I know which I'll choose. I can see you'll not be persuaded entirely by reason—given your reputation, I can't say I'm surprised. Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?
+
+For the new state, it's shortened to the following:
+
+> Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?
+
+To be clear, the old line is not removed. It will still be triggered if the player picks the vanilla dialogue option that leads to it (in this case, "Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?")
+
+### Enhanced Edition Trilogy
+
+*Dialogue Choice Additions* currently only supports [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET). Though the Baldur's Gate I content will probably work for other versions of the games as well if you make some simple changes to the tp2 file. If you want to try this, change every instance of `ACTION_IF GAME_IS ~eet~ BEGIN`, where it changes Baldur's Gate I content (rather than Siege of Dragonspear content), to `GAME_IS ~bgee tutu tutu_totsc eet bgt bg2ee soa tob iwd-in-bg2 ca iwdee~`.
 
 It should be installed before EET_end.
+
+### Jastey's SoD Tweak Pack
+
+The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" component of the mod [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/). In some cases, this mod hides dialogue choices from Jastey's SoD Tweak Pack in accordance with this project's goals, where the two mods change the same dialogue states.
 
 ## Installation
 
