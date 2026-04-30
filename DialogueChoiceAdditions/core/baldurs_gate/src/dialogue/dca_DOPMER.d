@@ -34,14 +34,14 @@ ALTER_TRANS ~DOPMER~
 
 /* ~Ah, I have dreamed of loners such as yourself and each time woken with a groaning belly.~ */
 
-// Hide the all options if not talked to Scar by the Flaming Fist; the story makes more sense if no merchants have
+// Hide all options if not talked to Scar by the Flaming Fist; the story makes more sense if no merchants have
 // transformed yet
 ADD_TRANS_TRIGGER ~DOPMER~ 5 ~Global("TalkedToScar","GLOBAL",1)~ DO 0
 /* ~I have no wish to hear you whine about your sicknesses and ailments. This discussion grows tiresome.~ */
 ADD_TRANS_TRIGGER ~DOPMER~ 5 ~Global("TalkedToScar","GLOBAL",1)~ DO 1
-/* ~I have no wish to hear you whine about your sicknesses and ailments. This discussion grows tiresome.~ */
+/* ~I had no idea you found me that attractive. Alas, there are ones in this world who love me dearly and would miss me sorely should I leave with you.~ */
 ADD_TRANS_TRIGGER ~DOPMER~ 5 ~Global("TalkedToScar","GLOBAL",1)~ DO 2
-/* ~I have no wish to hear you whine about your sicknesses and ailments. This discussion grows tiresome.~ */
+/* ~Pray tell me what about my lowly person could make a merchant and his many purses dream?~ */
 EXTEND_BOTTOM ~DOPMER~ 5
     IF ~~ THEN EXIT
 END
@@ -56,6 +56,7 @@ ALTER_TRANS ~DOPMER~
     BEGIN 0 END // first answer
     /* ~If you be merchants as you say you are, would you not then be eager to sell your wares?~ */
     BEGIN
+        // We cannot rely on NumTimesTalkedTo anymore
         "ACTION" ~SetGlobal("Phase","LOCALS",2)~
     END
 
@@ -64,6 +65,7 @@ ALTER_TRANS ~DOPMER~
     BEGIN 1 END // second answer
     /* ~To be called shameless by a merchant! Tell me, how does that differ from the sarcasm of a bard who compliments her drunken patron on the quality of his voice?~ */
     BEGIN
+        // We cannot rely on NumTimesTalkedTo anymore
         "ACTION" ~SetGlobal("Phase","LOCALS",2)~
     END
 
@@ -72,6 +74,7 @@ ALTER_TRANS ~DOPMER~
     BEGIN 2 END // third answer
     /* ~I did not object to the sound of your voice, merely the words you sought to form with it. Come, now, and provide me with information more to my liking.~ */
     BEGIN
+        // We cannot rely on NumTimesTalkedTo anymore
         "ACTION" ~SetGlobal("Phase","LOCALS",2)~
     END
 
@@ -82,11 +85,6 @@ REPLACE_STATE_TRIGGER ~DOPMER~ 10 ~Global("Phase","LOCALS",2) !Global("Dopplegan
 
 /* Fallback */
 
-// Adding this because for some reason, it will not display the "has nothing to say to you" message for me (in EET)
-// From the DOPMER.CRC soundset
-// TODO: Generate a voiceover line that matches the VVE voice for merchants
-// Could also recycle "Still you pester us! Do you have no shame?!"
-// from "Still you pester us! Do you have no shame?! Explain yourself!"
 APPEND ~DOPMER~
     IF WEIGHT #100 ~!Global("Doppleganger","GLOBAL",1)~ THEN BEGIN Fallback
         SAY %doppelganger_merchant_busy_response%
