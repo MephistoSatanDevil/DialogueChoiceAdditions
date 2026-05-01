@@ -6,6 +6,13 @@ LANGUAGE ~English~ ~en_US~ ~DialogueChoiceAdditions/installer/translation/en_US/
 
 BEGIN @0  // Dialogue Choice Additions: Core
 LABEL ~DialogueChoiceAdditions-Core~
+/* Creature names */
+OUTER_SPRINT bdnederl ~BDNEDERL~
+OUTER_SPRINT bddelanc ~BDDELANC~
+OUTER_SPRINT bdmurs ~BDMURS~
+OUTER_SPRINT bdarbing ~BDARBING~
+OUTER_SPRINT bddyingm ~BDDYINGM~
+OUTER_SPRINT bdbellow ~BDBELLOW~
 /* StringRefs */
 OUTER_SET stringref_fitting_last_words = 10844
 OUTER_SET stringref_no_words = 37478
@@ -27,26 +34,15 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_who_are_you_master_gnome = stringref_who_are_you_master_gnome + EET_OFFSET
     OUTER_SET stringref_this_isnt_the_surface = stringref_this_isnt_the_surface + EET_OFFSET
     OUTER_SET stringref_you_have_thirty_seconds = stringref_you_have_thirty_seconds + EET_OFFSET
-    /* Creature names */
-    OUTER_SPRINT bdnederl ~BDNEDERL~
-    OUTER_SPRINT bddelanc ~BDDELANC~
-    OUTER_SPRINT bdmurs ~BDMURS~
-    OUTER_SPRINT bdarbing ~BDARBING~
-    OUTER_SPRINT bddyingm ~BDDYINGM~
-    OUTER_SPRINT bdbellow ~BDBELLOW~
-END ELSE BEGIN
-    FAIL @90005
 END
-
 /* Dialogue */
-
-// Baldur's Gate (base game)
-ACTION_IF GAME_IS ~eet~ BEGIN
+// Baldur's Gate (base game) content
+ACTION_IF GAME_IS ~eet bgee~ BEGIN
     PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_bg.tra~ BEGIN
-        OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~ /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
+        OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~  /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
         ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
-            OUTER_SPRINT doppelganger_merchant_busy_response ~@8001~ /* ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01] */
+            OUTER_SPRINT doppelganger_merchant_busy_response ~@8001~  /* ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01] */
         END
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPMER.d~
@@ -63,8 +59,8 @@ ACTION_IF GAME_IS ~eet~ BEGIN
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_VOLETA.d~
     END
 END
-// Baldur's Gate: Siege of Dragonspear
-ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
+// Baldur's Gate: Siege of Dragonspear content
+ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
     PRINT @90004  /* ~Compiling dialogue files for Siege of Dragonspear content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_sod.tra~ BEGIN
         // They get their own line in vanilla, and our line is for everyone else
@@ -97,7 +93,6 @@ ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
     END
-
     PRINT @90006  /* ~Installing voiceover files for Siege of Dragonspear content ...~ */
     COPY ~%MOD_FOLDER%/core/siege_of_dragonspear/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
 END
@@ -108,16 +103,16 @@ LABEL ~DialogueChoiceAdditions-VVECompatibilityPatch~
 ACTION_IF (NOT MOD_IS_INSTALLED ~vveBG.tp2~ ~0~) AND (NOT MOD_IS_INSTALLED ~vveSOD.tp2~ ~0~) BEGIN
     FAIL @90000
 END
-// Baldur's Gate (base game)
+// Baldur's Gate (base game) content
 ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
-    ACTION_IF GAME_IS ~eet~ BEGIN
+    ACTION_IF GAME_IS ~eet bgee~ BEGIN
         PRINT @90001  /* ~Installing voiceover files for Baldur's Gate content for use with VVE ...~ */
         COPY ~%MOD_FOLDER%/compatibility_patch_vve/baldurs_gate/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
     END
 END
-// Baldur's Gate: Siege of Dragonspear
+// Baldur's Gate: Siege of Dragonspear content
 ACTION_IF MOD_IS_INSTALLED ~vveSOD.tp2~ ~0~ BEGIN
-    ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
+    ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
         PRINT @90002  /* ~Installing voiceover files for Siege of Dragonspear content for use with VVE ...~ */
         COPY
             ~%MOD_FOLDER%/compatibility_patch_vve/siege_of_dragonspear/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~

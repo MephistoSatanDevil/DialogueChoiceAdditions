@@ -1,6 +1,6 @@
 # Dialogue Choice Additions
 
-**Dialogue Choice Additions** (DCA) is a work-in-progress mod for Baldur's Gate that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game. It does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)). It also improves [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her.
+**Dialogue Choice Additions** (DCA) is a work-in-progress mod for *Baldur's Gate* (*Enhanced Edition* or *[Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/)*) that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game. It does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)). It also improves [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her.
 
 The project's goals are as follows:
 
@@ -12,7 +12,7 @@ The project's goals are as follows:
 - Cover as many things as the player might want to do in any given situation
 - Generally, the player character should be explicit (bad: "I don't like this."; good: "I will not tolerate your lies!")
 
-New dialogue choice requirements:
+Dialogue choice requirements:
 
 - No more than 6 dialogue options for any given state
 - Avoid too many choices for trivial matters
@@ -28,7 +28,7 @@ In accordance with these goals and requirements, vanilla dialogue choices someti
 
 ### Voices Voices Extravaganza
 
-A requirement for any changes this mod makes is that it be seamlessly compatible with the [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) (VVE) mod. This generally means that no changes to NPC dialogue is made. There are however a few instances where new dialogue is added, shortened from vanilla lines, in order to add more dialogue choices. If you install the VVE compatibility patch component, AI voiceover is added to these lines—either generated or edited from VVE voiceover files. An example of this is where the mod adds a new dialogue choice that is critical/skeptical toward [De Lancie](https://baldursgate.fandom.com/wiki/Torsin_de_Lancie)'s poisoning suggestion, but not on the basis of honor like in vanilla. The new option leads to a new state where the following line from De Lancie is recycled:
+A requirement for any changes this mod makes is that it be seamlessly compatible with the [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) (VVE) mod. This generally means that no changes to NPC dialogue is made. However, for the purpose of enabling more dialogue choices, there are a some instances where new dialogue is added, shortened from vanilla lines. If you install the VVE compatibility patch component, AI voiceover is added to these lines—either generated or edited from VVE voiceover files. An example of this is where the mod adds a new dialogue choice that is critical/skeptical toward [De Lancie](https://baldursgate.fandom.com/wiki/Torsin_de_Lancie)'s poisoning suggestion, but not on the basis of honor like in vanilla. The new option leads to a new state where the following line from De Lancie is recycled:
 
 > Given a choice between victory and honor, I know which I'll choose. I can see you'll not be persuaded entirely by reason—given your reputation, I can't say I'm surprised. Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?
 
@@ -44,7 +44,7 @@ If the NPC dialogue is voiced in vanilla, "new" dialogue is only added if it can
 
 ### Enhanced Edition Trilogy
 
-*Dialogue Choice Additions* currently only supports [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET). Though the Baldur's Gate I content will probably work for other versions of the games as well if you make some simple changes to the tp2 file. If you want to try this, change every instance of `ACTION_IF GAME_IS ~eet~ BEGIN`, where it changes Baldur's Gate I content (rather than Siege of Dragonspear content), to `GAME_IS ~bgee tutu tutu_totsc eet bgt bg2ee soa tob iwd-in-bg2 ca iwdee~`.
+*Dialogue Choice Additions* has currently only been tested with [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET), but it should work on *Baldur's Gate: Enhanced Edition* as well. Whether it works on old *Baldur's Gate*, or *Baldur's Gate Trilogy* (BGT) I do not know. DCA currently only makes changes to Baldur's Gate and Siege of Dragonspear content. You should not need to have *Siege of Dragonspear* installed, if you're not using EET.
 
 It should be installed before EET_end.
 
@@ -70,7 +70,7 @@ The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" compo
 
 ## Roadmap
 
-The version number will change to 1.0.0 once support Baldur's Gate: Enhanced Edition and Baldur's Gate II: Enhanced Edition (without EET) is added.
+The version number will change to 1.0.0 once support for *Baldur's Gate: Enhanced Edition* (without EET) has been confirmed.
 
 The mod should be published to major modding websites eventually.
 
