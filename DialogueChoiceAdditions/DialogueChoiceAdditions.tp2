@@ -7,7 +7,7 @@ LANGUAGE ~English~ ~en_US~ ~DialogueChoiceAdditions/installer/translation/en_US/
 BEGIN @0  // Dialogue Choice Additions: Core
 LABEL ~DialogueChoiceAdditions-Core~
 /* StringRefs */
-OUTER_SET stringref_fitting_last_words = 844
+OUTER_SET stringref_fitting_last_words = 10844
 OUTER_SET stringref_no_words = 37478
 OUTER_SET stringref_where_does_this_maze_lead = 11727
 OUTER_SET stringref_where_does_it_lead = 10843
