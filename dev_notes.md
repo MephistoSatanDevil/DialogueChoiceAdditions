@@ -7,6 +7,7 @@ This document comprises rough development notes and brainstorm data; not polishe
 - [ ] End dialogues early in Candlekeep return
 - [ ] Iron Throne NPCs
 - [ ] Character rejoin dialogue
+- [ ] Caelar
 - ~~[ ] Final BG1 battle~~
 - ~~[ ] Koveras~~
 - ~~[ ] Centeol~~
@@ -904,3 +905,40 @@ LLM:
   - Another trapped soul, another strange tale. I must move on.
   - The road has given me enough riddles for one day.
   - I'll leave before this grows any more foolish.
+
+## BDSHAPUR
+
+## No business
+
+State 9:
+
+"That's no business of yours, surface-dweller."
+
+- If you do not care about survival, then do not let me interfere.
+- 
+LLM:
+  - Then settle this in blood, if you must. I want no part in it.
+  - ⭐ Then I withdraw. Let your choices claim you.
+  - HUMAN: Then I withdraw. Settle it in blood, then, if you must.
+  - Then I want no part in this. Kill each other, if that is all you understand.
+  - Then I leave you to it. Settle your grievance in blood, if you must.
+  - Then I’ll not stand between you. Let whoever wants blood take it.
+  - Then I withdraw. If neither side will yield, finish it by the blade.
+
+### Begone
+
+State 10:
+
+"I'll not bargain with a surface-dweller. Begone!"
+
+- ⭐ If you are so set on dying, then so be it.
+- ⭐⭐ If you are so intent on dying, then so be it.
+
+
+State 3 (BDTHERLI):
+
+"You heard <PRO_HIMHER>! Cut the black-skinned bastards to pieces!"
+
+State 30:
+
+"Attack! Kill the rivvin, all of them!"

@@ -33,3 +33,9 @@
 @4001 = ~If you gotta mosey off, I understand.~ [DCBLW01]
 @4002 = ~Sure is good to see the surface again.~ [DCBLW02]
 @4003 = ~I'll leave you to enjoy the fresh cave air, then.~
+
+// dca_BDSHAPUR.d
+@5000 = ~I came here by mistake. I will leave at once.~
+@5001 = ~I have no part in this strife. Finish it without me.~
+@5002 = ~Then I withdraw. Let your choices claim you.~
+@5003 = ~If you are so intent on dying, then so be it.~
