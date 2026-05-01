@@ -27,3 +27,9 @@
 // dca_DYINGM.d
 @3000 = ~I can't understand you. Are you all right?~
 @3001 = ~I think we should leave.~
+
+// dca_BDBELLOW.d
+@4000 = ~A touching reunion with the surface, no doubt. Farewell.~
+@4001 = ~If you gotta mosey off, I understand.~ [DCBLW01]
+@4002 = ~Sure is good to see the surface again.~ [DCBLW02]
+@4003 = ~I'll leave you to enjoy the fresh cave air, then.~

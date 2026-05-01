@@ -13,6 +13,9 @@ OUTER_SET stringref_where_does_this_maze_lead = 11727
 OUTER_SET stringref_where_does_it_lead = 10843
 OUTER_SET stringref_blast_you_all = 10833
 OUTER_SET stringref_were_not_here_to_torture = 1020
+OUTER_SET stringref_who_are_you_master_gnome = 51767
+OUTER_SET stringref_this_isnt_the_surface = 51768
+OUTER_SET stringref_you_have_thirty_seconds = 51769
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -21,12 +24,16 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_where_does_it_lead = stringref_where_does_it_lead + EET_OFFSET
     OUTER_SET stringref_blast_you_all = stringref_blast_you_all + EET_OFFSET
     OUTER_SET stringref_were_not_here_to_torture = stringref_were_not_here_to_torture + EET_OFFSET
+    OUTER_SET stringref_who_are_you_master_gnome = stringref_who_are_you_master_gnome + EET_OFFSET
+    OUTER_SET stringref_this_isnt_the_surface = stringref_this_isnt_the_surface + EET_OFFSET
+    OUTER_SET stringref_you_have_thirty_seconds = stringref_you_have_thirty_seconds + EET_OFFSET
     /* Creature names */
     OUTER_SPRINT bdnederl ~BDNEDERL~
     OUTER_SPRINT bddelanc ~BDDELANC~
     OUTER_SPRINT bdmurs ~BDMURS~
     OUTER_SPRINT bdarbing ~BDARBING~
     OUTER_SPRINT bddyingm ~BDDYINGM~
+    OUTER_SPRINT bdbellow ~BDBELLOW~
 END ELSE BEGIN
     FAIL @90005
 END
@@ -84,11 +91,15 @@ ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility/siege_of_dragonspear/src/dialogue/dca_jt_BDDELANC.d~
         END
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDARBING.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDBELLOW.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDELANC.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDYINGM.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
     END
+
+    PRINT @90006  /* ~Installing voiceover files for Siege of Dragonspear content ...~ */
+    COPY ~%MOD_FOLDER%/core/siege_of_dragonspear/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
 END
 
 BEGIN @1  // VVE Compatibility Patch
@@ -100,14 +111,14 @@ END
 // Baldur's Gate (base game)
 ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
     ACTION_IF GAME_IS ~eet~ BEGIN
-        PRINT @90001  /* ~Installing voiceover files for Baldur's Gate content ...~ */
+        PRINT @90001  /* ~Installing voiceover files for Baldur's Gate content for use with VVE ...~ */
         COPY ~%MOD_FOLDER%/compatibility_patch_vve/baldurs_gate/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
     END
 END
 // Baldur's Gate: Siege of Dragonspear
 ACTION_IF MOD_IS_INSTALLED ~vveSOD.tp2~ ~0~ BEGIN
     ACTION_IF GAME_IS ~eet~ BEGIN  // Fix later
-        PRINT @90002  /* ~Installing voiceover files for Siege of Dragonspear content ...~ */
+        PRINT @90002  /* ~Installing voiceover files for Siege of Dragonspear content for use with VVE ...~ */
         COPY
             ~%MOD_FOLDER%/compatibility_patch_vve/siege_of_dragonspear/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
     END

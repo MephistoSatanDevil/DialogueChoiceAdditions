@@ -28,7 +28,7 @@ In accordance with these goals and requirements, vanilla dialogue choices someti
 
 ### Voices Voices Extravaganza
 
-A requirement for any changes this mod makes is that it be seamlessly compatible with the [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) (VVE) mod. This generally means that no changes to NPC dialogue is made. There are however a few instances where new dialogue is added, shortened from vanilla lines, in order to add more dialogue choices. In these cases, AI voiceover is added to these lines (either generated or edited from VVE voiceover files). An example of this is where the mod adds a new dialogue choice that is critical/skeptical toward [De Lancie](https://baldursgate.fandom.com/wiki/Torsin_de_Lancie)'s poisoning suggestion, but not on the basis of honor like in vanilla. The new option leads to a new state where the following line from De Lancie is recycled:
+A requirement for any changes this mod makes is that it be seamlessly compatible with the [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) (VVE) mod. This generally means that no changes to NPC dialogue is made. There are however a few instances where new dialogue is added, shortened from vanilla lines, in order to add more dialogue choices. If you install the VVE compatibility patch, AI voiceover is added to these lines—either generated or edited from VVE voiceover files. An example of this is where the mod adds a new dialogue choice that is critical/skeptical toward [De Lancie](https://baldursgate.fandom.com/wiki/Torsin_de_Lancie)'s poisoning suggestion, but not on the basis of honor like in vanilla. The new option leads to a new state where the following line from De Lancie is recycled:
 
 > Given a choice between victory and honor, I know which I'll choose. I can see you'll not be persuaded entirely by reason—given your reputation, I can't say I'm surprised. Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?
 
@@ -37,6 +37,10 @@ For the new state, it's shortened to the following:
 > Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?
 
 To be clear, the old line is not removed. It will still be triggered if the player picks the vanilla dialogue option that leads to it (in this case, "Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?")
+
+In the case where a line cannot be cleanly extracted from VVE audio, a new voiceover file is generated with AI.
+
+If the NPC dialogue is voiced in vanilla, "new" dialogue is only added if it can be flawlessly be extracted from vanilla voiceover.
 
 ### Enhanced Edition Trilogy
 

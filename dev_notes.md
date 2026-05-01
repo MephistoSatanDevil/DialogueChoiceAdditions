@@ -880,3 +880,27 @@ New:
 4. I think we should leave.
 
 Sorry, Beamdog.
+
+## BDBELLOW
+
+### Surface again
+
+- No time to talk.
+
+LLM:
+
+- ⭐ I have no time for this. Farewell.
+  - No time for riddles. Farewell.
+  - ⭐ I've no time to hear your story, strange as it may be.
+  - This sounds like a story best left untold. Farewell.
+  - If this is the surface, I'd hate to see the cellar.
+  - ⭐⭐ I'll leave you to enjoy the fresh cave air, then.
+  - ⭐⭐ A touching reunion with the surface, no doubt. Farewell.
+    - I’ll not spoil your reunion with the surface. Farewell.
+    - A fine surface you’ve found. May it keep you company.
+    - A touching reunion, no doubt. Farewell.
+  - I know not what game you play, gnome, but I'll have no part in it.
+  - I'll not be waylaid by every oddity in the dark.
+  - Another trapped soul, another strange tale. I must move on.
+  - The road has given me enough riddles for one day.
+  - I'll leave before this grows any more foolish.

@@ -51,3 +51,8 @@ Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000)
 - DCDPM01 (voice cloned from VVE)
 - DCSCA01
 - DCSCA02
+
+### Voiceover adapted from vanilla voiceover
+
+- DCBLW01
+- DCBLW02
