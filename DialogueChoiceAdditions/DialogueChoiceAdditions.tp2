@@ -23,6 +23,7 @@ OUTER_SET stringref_were_not_here_to_torture = 1020
 OUTER_SET stringref_who_are_you_master_gnome = 51767
 OUTER_SET stringref_this_isnt_the_surface = 51768
 OUTER_SET stringref_you_have_thirty_seconds = 51769
+OUTER_SET stringref_farewell_know_that_you_have_a_friend = 41416
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -34,6 +35,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_who_are_you_master_gnome = stringref_who_are_you_master_gnome + EET_OFFSET
     OUTER_SET stringref_this_isnt_the_surface = stringref_this_isnt_the_surface + EET_OFFSET
     OUTER_SET stringref_you_have_thirty_seconds = stringref_you_have_thirty_seconds + EET_OFFSET
+    OUTER_SET stringref_farewell_know_that_you_have_a_friend = stringref_farewell_know_that_you_have_a_friend + EET_OFFSET
 END
 /* Dialogue */
 // Baldur's Gate (base game) content
@@ -92,6 +94,7 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDYINGM.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDPWATER.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDSHAPUR.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDTHERLI.d~
     END

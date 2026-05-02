@@ -42,3 +42,7 @@
 
 // dca_BDTHERLI.d
 @5004 = ~I merely hoped talking might spare a great deal of bleeding.~
+
+// dca_BDPWATER.d
+@6000 = ~A wizard tried to bind them to his will. He will trouble you no more.~  // From vanilla "A wizard tried to bind them to his will. I put an end to his evil."
+@6001 = ~Keep it. I only did what the moment required.~
