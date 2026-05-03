@@ -44,19 +44,19 @@
 @5004 = ~I merely hoped talking might spare a great deal of bleeding.~
 
 // dca_BDPWATER.d
-@6000 = ~A wizard tried to bind them to his will. He will trouble you no more.~  // From vanilla "A wizard tried to bind them to his will. I put an end to his evil."
+@6000 = ~A wizard tried to bind them to his will. He will trouble you no more.~  // Adapted from vanilla "A wizard tried to bind them to his will. I put an end to his evil."
 @6001 = ~Keep it. I only did what the moment required.~
 
 // dca_BDKHARMY.d
 @7000 = ~Of course. I'll find a way to free you.~
 @7001 = ~You serve the crusade? Then I will leave you locked up.~
-@7002 = ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~  // From vanilla "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you."
+@7002 = ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~  // Adapted from vanilla "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you."
 @7003 = ~I am merely considering all options. Now, how might we free them?~
-@7004 = ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cages stays shut.~
-@7005 = ~I cannot let crusaders leave this place alive. I will kill them.~
+@7004 = ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cages stay shut.~
+@7005 = ~Letting crusaders live is a risk I am not willing to take. I will kill them.~
 @7006 = ~Stand aside. I want to see what the spikes do.~
 @7007 = ~I was merely thinking out loud. How would I go about freeing you?~
-@7008 = ~I cannot let crusaders leave this place alive. Say whatever prayers you know.~
+@7008 = ~If you serve the crusade, I cannot spare you. Say whatever prayers you know.~
 @7009 = ~Beg louder. I want to hear it when I pull the lever.~
 @7010 = ~I will have to think about this.~
 @7011 = ~The Missing Patrol
@@ -71,4 +71,6 @@ I found the missing crusader patrol. If I can free them, I might be able to gain
 I decided to kill the crusaders anyway. My next task is to take the crusader leader's badge back to the crusader camp.
 
 I found the missing crusader patrol and killed them by pulling a lever. The lever caused spikes to shoot up and impale all the crusaders in the cage. Gruesome. When I return to the crusader camp, I'll tell them that the cultists in this dungeon killed the crusaders. I should bring their leader's badge back with me as proof.~
-@7013 = ~You wear crusader colors. I have no interest in helping you.~
+@7013 = ~You wear crusader colors. I have no interest in helping you. Farewell.~
+@7014 = ~Why free you when I can kill you instead?~
+@7015 = ~I will not free crusaders. Remain where you are. Farewell.~

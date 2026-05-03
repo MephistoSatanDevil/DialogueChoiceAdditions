@@ -29,7 +29,6 @@ OUTER_SET stringref_it_is_not_a_very_noble_act_to_kill = 64260
 OUTER_SET stringref_no_dont_do_that_please_just_let_us_go = 64269
 OUTER_SET stringref_but_it_is_a_sensible_act = 64261
 OUTER_SET stringref_free_us_please_ill_do_anything = 64262
-OUTER_SET stringref_you_wear_crusader_colors = 64253
 OUTER_SET stringref_the_missing_patrol = 64446
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
@@ -48,7 +47,6 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_it_is_not_a_very_noble_act_to_kill = stringref_it_is_not_a_very_noble_act_to_kill + EET_OFFSET
     OUTER_SET stringref_but_it_is_a_sensible_act = stringref_but_it_is_a_sensible_act + EET_OFFSET
     OUTER_SET stringref_free_us_please_ill_do_anything = stringref_free_us_please_ill_do_anything + EET_OFFSET
-    OUTER_SET stringref_you_wear_crusader_colors = stringref_you_wear_crusader_colors + EET_OFFSET
     OUTER_SET stringref_the_missing_patrol = stringref_the_missing_patrol + EET_OFFSET
 END
 // Baldur's Gate (base game) content
@@ -80,9 +78,15 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_sod.tra~ BEGIN
         /* Journal */
         PRINT @90007  /* ~Adding journal entries for Siege of Dragonspear content ...~ */
-        // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
-        ADD_JOURNAL EXISTING TITLE (%stringref_the_missing_patrol%) @7011 /* ~The Missing Patrol [...]~ */
-        ADD_JOURNAL EXISTING TITLE (%stringref_the_missing_patrol%) @7012 /* ~The Missing Patrol [...]~ */
+        ACTION_IF GAME_IS ~eet~ BEGIN
+            // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
+            ADD_JOURNAL EXISTING TITLE (#264446) @7011 /* ~The Missing Patrol [...]~ */
+            ADD_JOURNAL EXISTING TITLE (#264446) @7012 /* ~The Missing Patrol [...]~ */
+        END ELSE BEGIN
+            // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
+            ADD_JOURNAL EXISTING TITLE (#64446) @7011 /* ~The Missing Patrol [...]~ */
+            ADD_JOURNAL EXISTING TITLE (#64446) @7012 /* ~The Missing Patrol [...]~ */
+        END
         // Add "I decided to kill the crusaders anyway." to quest journal
         // if the player decides to do that despite explicitly saying they won't
         COPY_EXISTING ~BDLEVER2.BCS~ ~override~
@@ -155,7 +159,7 @@ END~
         OUTER_SPRINT impale_or_not_rasaad_dorn_choices ~~~~~
             IF ~~ THEN REPLY @7003 /* ~I am merely considering all options. Now, how might we free them?~ */ EXTERN ~BDKHARMY~ 3
             IF ~~ THEN REPLY @7004 /* ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.~ */ EXTERN ~BDKHARMY~ LetKharmyBe
-            IF ~~ THEN REPLY @7005 /* ~I cannot let crusaders leave this place alive. I will kill them.~ */ EXTERN ~BDKHARMY~ DecidedToKillKharmyNew
+            IF ~~ THEN REPLY @7005 /* ~Letting crusaders live is a risk I am not willing to take. I will kill them.~ */ EXTERN ~BDKHARMY~ DecidedToKillKharmyNew
             IF ~~ THEN REPLY @7006 /* ~Stand aside. I want to see what the spikes do.~ */ EXTERN ~BDKHARMY~ DecidedToKillKharmyNew
             IF ~~ THEN REPLY @7010 /* ~I will have to think about this.~ */ EXTERN ~BDKHARMY~ ThinkAboutIt
         ~~~~~

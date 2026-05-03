@@ -18,6 +18,7 @@ Dialogue choice requirements:
 - Avoid too many choices for trivial matters
 - Avoid having two or more choices that are too similar
 - Avoid changing or adding NPC dialogue, and only do so if seamless compatibility with Voices Voices Extravaganza can be ensured
+- Does not introduce bugs
 - Compatibility with major mods
 - Compatibility with [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/)
 - Compatibility with [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/)

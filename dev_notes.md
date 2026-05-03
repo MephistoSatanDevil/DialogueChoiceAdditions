@@ -953,7 +953,15 @@ State 30:
 
 - Of course.
   - Of course. I'll find a way to open the cages for you.
-- ⭐ Of course. I'll find a way to free you.
+- ⭐⭐ Of course. I'll find a way to free you.
+- You wear crusader colors. I have no interest in helping you.
+  - You wear crusader colors. I have no interest in helping you. Goodbye.
+  - ⭐⭐ You wear crusader colors. I have no interest in helping you. Farewell.
+  - You wear crusader colors. I have no interest in freeing you.
+- ⭐⭐ Why help you when I can kill you?
+  - Help a crusader? Why help you when I can kill you?
+  - Why free crusaders when I can kill them?
+  - Why free crusaders when I could kill them instead?
 
 LLM:
 
@@ -961,16 +969,49 @@ LLM:
   - Very well. I’ll look for a way to open the cages.
   - I’ll help. There must be some way to open these cages.
   - Keep your voice down. I’ll look for a way to free you.
+- Why free a crusader when I could kill one?
+  - ⭐ Why should I free you when I could kill you instead?
+  - ⭐ HUMAN: Why free you when I could kill you instead?
+  - ⭐⭐ HUMAN: Why free you when I can kill you instead?
+  - Why open your cage when I could make it your tomb?
+  - Help a crusader? Why help you when I can kill you?
+  - Help a crusader? I could end you just as easily.
+  - Help you? A trapped crusader is a rare opportunity.
+  - You ask for rescue, but your colors argue for execution.
+  - Three crusaders, begging aid? Give me one reason I should not cut you down where you stand.
+  - Help three crusaders? Give me one reason I should not kill you instead.
+  - Three crusaders trapped and helpless. Why should I not simply kill you where you are?
+  - Help three crusaders? I see no reason not to kill you where you stand.
+  - Help you? I am more inclined to put an end to you.
+
+Original:
+
+1. Who are you?
+2. You seem to be in a nasty spot.
+3. You wear crusader colors. I have no interest in helping you. In fact, I should kill you right now.
+
+New:
+
+1. Who are you?
+2. You seem to be in a nasty spot.
+3. You wear crusader colors. I have no interest in helping you. Farewell.
+4. Why free you when I can kill you?
+
+Option 4 → "No! Don't do that, please! Just let us go."
+
 
 ## Crusaders; help
 
 "Private Keherrem of the crusade here. We're on a real important mission, and these kooky cultists caught us. Help!"
+"No! Don't do that, please! Just let us go."
 
 - I cannot afford to let any crusade free. I will have to let you stay in these cages.
 - Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you.
   - Those spikes in the floor were designed to shoot up and impale you. Perhaps I shall kill you.
   - Those spikes in the floor that are designed to shoot up and impale you, are those connected to this lever here?
   - ⭐ Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.
+- It is not in my interest to help crusaders.
+  - I am not inclined to help crusaders. Goodbye.
 
 LLM:
 
@@ -1003,9 +1044,13 @@ LLM:
   - Your mission ends in this cage, unless someone else opens it. I am leaving.
   - I want no part in freeing crusaders. I am moving on.
   - If you march with the crusade, I cannot risk freeing you. I am leaving you here.
-
-LLM:
-
+  - A crusader’s plight is none of my concern.
+  - I do not make a habit of helping crusaders. Goodbye.
+  - Important mission or no, I will not aid the crusade.
+  - You serve the crusade. That is reason enough to leave you here.
+    - You serve the crusade. That is reason enough to leave you caged. Farewell.
+  - I care little for crusaders and less for their missions.
+  - I will not free crusaders. Remain where you are. Farewell.
 - Those slots in the floor—where the spikes shoot up and impale you—are they connected to this lever?
   - Let me guess: that lever across the room makes spikes shoot up through the floor and impale you?
   - Those slits beneath you look made for spikes. Does that lever across the room raise them to impale you?
@@ -1029,6 +1074,9 @@ LLM:
   - I cannot risk letting three crusaders live. Now I will kill you.
   - I cannot risk letting three crusaders live. Prepare to die.
   - I cannot risk letting three crusaders live. Say your last words.
+  - Letting crusaders live is too big a risk. Say whatever prayers you know.
+  - If I let you live, I might regret it later if I end up with your blade against my back. Say whatever prayers you know.
+  - If I let you live, I may regret it later with your blade against my back. Say whatever prayers you know.
 - You'd rather live under these terrible conditions? Suit yourself. Good bye.
   - You would rather rot in that cage of yours? Suit yourself. Good bye.
   - You would rather rot in that cage of yours? Suit yourself. I'll go now.
@@ -1045,15 +1093,49 @@ LLM:
   - Enough. I only wanted the truth from you. How do I get you out?
   - ⭐⭐ I am merely considering all options. How would I go about freeing you?
 - ⭐ If you are crusaders, I cannot let you leave this place alive. Make your peace.
-  - ⭐ Crusaders are too dangerous to spare. Say whatever prayers you know.
-  - ⭐ I cannot risk letting crusaders leave this place alive. Make whatever peace you can.
-  - ⭐ HUMAN: I cannot risk letting crusaders leave this place alive. Say whatever prayers you know.
-  - ⭐⭐ HUMAN: I cannot let crusaders leave this place alive. Say whatever prayers you know.
-  - ⭐⭐ HUMAN: I cannot let crusaders leave this place alive. Say your prayers.
-  - ⭐ Crusaders are too dangerous to loose. Prepare yourselves.
+  - Crusaders are too dangerous to spare. Say whatever prayers you know.
+  - I cannot risk letting crusaders leave this place alive. Make whatever peace you can.
+  - HUMAN: I cannot risk letting crusaders leave this place alive. Say whatever prayers you know.
+  - ⭐ HUMAN: If you are crusaders, I cannot let you live. Say whatever prayers you know.
+  - ⭐ HUMAN: If you are crusaders, I cannot let you live. Say your prayers.
+  - ⭐ HUMAN: If you are crusaders, I cannot let you live. Say your prayers.
+  - ⭐⭐ If you serve the crusade, I cannot spare you. Say whatever prayers you know.
+  - HUMAN: I cannot risk letting crusaders leave this place alive. Say whatever prayers you know.
+  - HUMAN: I cannot risk letting crusaders leave this place alive. Say whatever prayers you know. Say your prayers.
+  - Crusaders are too dangerous to loose. Prepare yourselves.
+  - Crusaders are too dangerous to keep alive. Prepare yourselves.
   - I have seen what your crusade brings. I will not let you carry it farther.
   - Three fewer crusaders may be worth one pull of a lever.
   - If mercy means freeing crusaders, I choose caution. Say your prayers.
+  - I cannot afford pity here. Pray to whatever god still hears you.
+  - Too many have died under your banner for me to open these cages. Pray.
+  - Your lives are not worth the risk they carry. Pray, Keherrem.
+  - The crusade has made enemies of us all. I will not spare you. Pray.
+  - Your cause has made you too dangerous to spare. Pray while you can.
+  - Mercy for crusaders is a risk I will not take. Say whatever prayers you know.
+  - No. Letting crusaders live is too great a risk. Pray while you can.
+  - I cannot spare crusaders and hope they stay harmless. Say your prayers.
+  - Your lives are a danger I cannot leave behind. Say whatever prayers you know.
+  - Letting crusaders live is a gamble I will not make. Pray now.
+  - Spare you now, and I may find your blades at my back before this is done. Say whatever prayers you know.
+  - I will not spare crusaders only to meet their steel behind me. Say whatever prayers you know.
+  - If I open these cages, I may be opening my own grave. Pray while you can.
+  - Let you go, and I may spend my last breath regretting it. Pray.
+  - Mercy now may become murder later, and mine at that. Say your prayers.
+  - I cannot loose you and trust you to stay harmless. Pray to whatever god will hear you.
+  - Spared foes have a way of returning with sharper intentions. Say whatever prayers you know.
+  - No. If you walk free, I may meet you again from the wrong end of a blade.
+  - I will not spare you today only to bleed for it tomorrow. Pray.
+  - A cage is the only thing keeping your steel from my back. I will not open it.
+  - I will not gamble my life on your gratitude. Say whatever prayers you know.
+  - I have seen what spared zealots do with second chances. Pray.
+  - Your lives are a debt I may be forced to pay in blood. I refuse.
+  - Mercy is easy to beg for and easier to betray. Pray now.
+  - You ask for life, but offer me only risk in return. Say whatever prayers you know.
+  - A living enemy behind me is a fool’s mercy. I am no fool.
+  - Crusaders or no, I cannot gamble with lives that may yet turn blades against me. Say your prayers.
+  - ⭐ If you are what you say, then I cannot afford mercy. Pray while you can.
+  - ⭐⭐ HUMAN: Letting crusaders live is a risk I am not willing to take. Say your prayers.
 - You would rather rot in that cage than face the lever? Suit yourself. I’ll leave you to it.
   - You would rather rot in that cage of yours? Suit yourself. I’ll leave you to it.
   - Then the lever stays untouched, and the cage stays locked. I am leaving.
@@ -1110,6 +1192,7 @@ Jaherred: NO! Don't! Don't, don't, don't, don't do that!
 - I am merely considering all options. I haven't decided yet. Now, let's consider this option: how might we free them?
   - Let us consider all options. How might we free them?
   - Let us consider all options first. How might we free them?
+- ⭐⭐ Letting crusaders live is a risk I am not willing to take. I will kill them.
 
 LLM:
 
@@ -1130,3 +1213,9 @@ LLM:
   - I am weighing death against release. Prisoner, speak for the latter.
   - The lever remains untouched. For now, tell me what stands between them and freedom.
   - I have considered the spikes. Now I will consider the lock. How is it opened?
+- ⭐ They are defenseless now. They will not be, if I open those cages.
+  - A noble act may yet get us killed. I will not spare crusaders only to face their steel later.
+  - I will not dress folly as mercy. These crusaders are too dangerous to spare.
+  - Spare them, and we may answer for it in blood. I will not take that risk.
+  - A prisoner today, a crusader with a blade tomorrow. No.
+  - Nobility is cold comfort when a spared foe returns with steel drawn. They die here.
