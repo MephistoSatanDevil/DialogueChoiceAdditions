@@ -4,6 +4,8 @@ This document comprises rough development notes and brainstorm data; not polishe
 
 ## Candidates for expansion
 
+- [ ] Keherrem
+- [ ] Madele
 - [ ] End dialogues early in Candlekeep return
 - [ ] Iron Throne NPCs
 - [ ] Character rejoin dialogue
@@ -707,7 +709,7 @@ New:
   - Unfortunately, I cannot stay and talk.
   - I must go, unfortunately.
 - I just wanted to say hello. Goodbye.
-  - Good to meet you. Unfortunately, I must go. Goodbye. 
+  - Good to meet you. Unfortunately, I must go. Goodbye.
   - I only wished to greet you. Goodbye.
   - I only wished to greet you. Goodbye for now.
   - I only wanted to say hello. Goodbye for now.
@@ -915,15 +917,16 @@ State 9:
 "That's no business of yours, surface-dweller."
 
 - If you do not care about survival, then do not let me interfere.
-- 
+
 LLM:
-  - Then settle this in blood, if you must. I want no part in it.
-  - ⭐ Then I withdraw. Let your choices claim you.
-  - HUMAN: Then I withdraw. Settle it in blood, then, if you must.
-  - Then I want no part in this. Kill each other, if that is all you understand.
-  - Then I leave you to it. Settle your grievance in blood, if you must.
-  - Then I’ll not stand between you. Let whoever wants blood take it.
-  - Then I withdraw. If neither side will yield, finish it by the blade.
+
+- Then settle this in blood, if you must. I want no part in it.
+- ⭐ Then I withdraw. Let your choices claim you.
+- HUMAN: Then I withdraw. Settle it in blood, then, if you must.
+- Then I want no part in this. Kill each other, if that is all you understand.
+- Then I leave you to it. Settle your grievance in blood, if you must.
+- Then I’ll not stand between you. Let whoever wants blood take it.
+- Then I withdraw. If neither side will yield, finish it by the blade.
 
 ### Begone
 
@@ -934,7 +937,6 @@ State 10:
 - ⭐ If you are so set on dying, then so be it.
 - ⭐⭐ If you are so intent on dying, then so be it.
 
-
 State 3 (BDTHERLI):
 
 "You heard <PRO_HIMHER>! Cut the black-skinned bastards to pieces!"
@@ -942,3 +944,188 @@ State 3 (BDTHERLI):
 State 30:
 
 "Attack! Kill the rivvin, all of them!"
+
+## BDKHARMY (Keherrem)
+
+## Help
+
+"Help! Let us out of here! HELP!"
+
+- Of course.
+  - Of course. I'll find a way to open the cages for you.
+- ⭐ Of course. I'll find a way to free you.
+
+LLM:
+
+- All right. I’ll see if I can get these cages open.
+  - Very well. I’ll look for a way to open the cages.
+  - I’ll help. There must be some way to open these cages.
+  - Keep your voice down. I’ll look for a way to free you.
+
+## Crusaders; help
+
+"Private Keherrem of the crusade here. We're on a real important mission, and these kooky cultists caught us. Help!"
+
+- I cannot afford to let any crusade free. I will have to let you stay in these cages.
+- Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you.
+  - Those spikes in the floor were designed to shoot up and impale you. Perhaps I shall kill you.
+  - Those spikes in the floor that are designed to shoot up and impale you, are those connected to this lever here?
+  - ⭐ Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.
+
+LLM:
+
+- Crusaders? Then freeing you would be a mistake.
+  - If you serve the crusade, I cannot let you go free.
+    - ⭐ HUMAN: If you serve the crusade, I cannot let you free. I will leave these cages locked.
+    - ⭐⭐ HUMAN: If you serve the crusade, I cannot let you free. I will leave you here.
+    - ⭐⭐ HUMAN: If you serve the crusade, I will have to leave you here.
+    - ⭐⭐ HUMAN: If you serve the crusade, I will leave you here.
+    - HUMAN: Crusaders are better left locked up.
+    - HUMAN: Since you serve the crusade, I will leave you locked up.
+    - HUMAN: Crusaders? Unfortunately, I will have to leave you locked up.
+    - HUMAN: I won't be freeing any crusaders. I will leave you locked up.
+    - HUMAN: Given that you serve the crusade, I will leave you locked up.
+    - HUMAN: You serve the crusade? Then I will leave you locked up.
+    - HUMAN: Crusaders? Then I will leave you locked up.
+  - The crusade has caused enough trouble. I will not loose more of its soldiers.
+  - Your mission ends here, Private. I’m leaving you in the cages.
+  - Crusaders? Then I cannot set you loose. I am leaving you here.
+  - I cannot risk letting crusaders go free. I am walking away.
+  - If you march with the crusade, I will leave these cages locked.
+  - No. I am walking away before I regret opening those doors.
+  - Your crusade is trouble I do not need. I am leaving you caged.
+  - Your cause is not mine. I am turning away.
+  - I cannot trust soldiers of the crusade. I am leaving you behind.
+  - The cultists may be mad, but they have spared me a difficult choice. I am leaving.
+  - I will not free you only to face you later. I am leaving.
+  - No. I am going to leave you in the cages.
+  - The safest choice is to leave you locked up. That is what I will do.
+  - Your mission ends in this cage, unless someone else opens it. I am leaving.
+  - I want no part in freeing crusaders. I am moving on.
+  - If you march with the crusade, I cannot risk freeing you. I am leaving you here.
+
+LLM:
+
+- Those slots in the floor—where the spikes shoot up and impale you—are they connected to this lever?
+  - Let me guess: that lever across the room makes spikes shoot up through the floor and impale you?
+  - Those slits beneath you look made for spikes. Does that lever across the room raise them to impale you?
+  - That lever across the room would not happen to send spikes through the floor and impale you, would it?
+  - A cage, a lever, and slots for spikes to shoot up and impale you. Subtle.
+  - A cage, floor-slots for spikes, and a lever across the room. I take it the spikes are meant to impale you?
+  - If I pull that lever, do spikes rise from the floor and impale you?
+  - Those grooves in the floor—are they for spikes that impale prisoners when that lever is pulled?
+
+## Impale
+
+"NO! Don't! Don't, don't, don't, don't do that!"
+
+- Sorry. I was only thinking out loud. I won't kill you. Tell me how I can free you.
+  - Sorry. I was just thinking out loud. I won't kill you. Tell me how I can free you.
+  - ⭐ Sorry. I was thinking out loud. I won't kill you. Tell me how I can free you.
+  - Sorry. I was thinking aloud. I won't kill you. Tell me how I can free you.
+  - ⭐⭐ I was merely thinking out loud. I won't kill you. Tell me how I can free you.
+- I cannot risk letting three crusaders live.
+  - I cannot risk letting three crusaders live. Now I will kill you.
+  - I cannot risk letting three crusaders live. Prepare to die.
+  - I cannot risk letting three crusaders live. Say your last words.
+- You'd rather live under these terrible conditions? Suit yourself. Good bye.
+  - You would rather rot in that cage of yours? Suit yourself. Good bye.
+  - You would rather rot in that cage of yours? Suit yourself. I'll go now.
+- You have joined the crusade and therefore you must die. No sin shall go unpunished.
+- I will enjoy this.
+
+LLM:
+
+- I spoke too harshly. I will not pull the lever. Tell me how to open the cages.
+  - ⭐ HUMAN: Sorry. I was thinking out loud. I won't kill you. Tell me how to open the cages.
+  - Peace. I will not kill helpless prisoners. Tell me how you may be freed.
+  - Easy. I was only thinking aloud. I will not kill you. Tell me how to get these cages open.
+  - I will not kill prisoners in a cage. Tell me how these locks open.
+  - Enough. I only wanted the truth from you. How do I get you out?
+  - ⭐⭐ I am merely considering all options. How would I go about freeing you?
+- ⭐ If you are crusaders, I cannot let you leave this place alive. Make your peace.
+  - ⭐ Crusaders are too dangerous to spare. Say whatever prayers you know.
+  - ⭐ I cannot risk letting crusaders leave this place alive. Make whatever peace you can.
+  - ⭐ HUMAN: I cannot risk letting crusaders leave this place alive. Say whatever prayers you know.
+  - ⭐⭐ HUMAN: I cannot let crusaders leave this place alive. Say whatever prayers you know.
+  - ⭐⭐ HUMAN: I cannot let crusaders leave this place alive. Say your prayers.
+  - ⭐ Crusaders are too dangerous to loose. Prepare yourselves.
+  - I have seen what your crusade brings. I will not let you carry it farther.
+  - Three fewer crusaders may be worth one pull of a lever.
+  - If mercy means freeing crusaders, I choose caution. Say your prayers.
+- You would rather rot in that cage than face the lever? Suit yourself. I’ll leave you to it.
+  - You would rather rot in that cage of yours? Suit yourself. I’ll leave you to it.
+  - Then the lever stays untouched, and the cage stays locked. I am leaving.
+  - Then keep your lives and your cage. I am done here.
+  - Then I will leave the lever alone, and leave you in the cage.
+  - I will not pull the lever, but neither will I open the cage. You remain here.
+  - Then the spikes stay down, and the locks stay shut. Farewell.
+  - I will spare your lives, not grant your freedom.
+  - Be grateful. I am leaving you caged instead of dead.
+  - I will not kill prisoners in a cage. But I will not loose crusaders on the Coast either. The bars stay shut.
+  - I will not murder prisoners, but neither will I accept responsibility for releasing enemy soldiers whose purpose I do not know.
+  - I will not kill prisoners in a cage. But I will not loose crusaders on the Coast either. The bars stay shut.
+    - ⭐ HUMAN: I will not kill prisoners in a cage. But I will not loose crusaders on the Coast either. The cage stays shut.
+    - I will not kill prisoners in a cage. But I will not set crusaders loose on the Coast either. The cage stays shut.
+    - I will not pull the lever on helpless prisoners. But I will not open the door for crusaders. The cage stays shut.
+    - HUMAN: I will not pull the lever on helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.
+    - HUMAN: I will not end the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.
+    -⭐⭐ I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.
+    - HUMAN: I will not end the lives of helpless prisoners against their will. But neither will I open the door for crusaders. The cage stays shut.
+    - I will not execute helpless prisoners. But I will not release crusaders back into the world. The cage stays shut.
+    - I will not murder prisoners for convenience. But neither will I loose soldiers of the crusade. The cage stays shut.
+    - I will not kill you. I will not free you. The cage stays shut.
+    - I will not answer the crusade with slaughter. But I will not aid it with mercy. The cage stays shut.
+    - You are prisoners, and I will not kill prisoners. You are crusaders, and I will not free crusaders. The cage stays shut.
+    - I did not put you here, and I will not kill you here. But I will not free crusaders either. The cage stays shut.
+    - Killing you would be murder. Freeing you would be folly. The cage stays shut.
+    - The spikes stay down. The bars stay closed. That is the only mercy I offer.
+    - Mercy forbids the lever. Prudence forbids the key. The cage stays shut.
+  - Your deaths will not be on my hand. Nor will your freedom. I am leaving the cages as I found them.
+- ⭐⭐ Beg louder. I want to hear it when I pull the lever.
+  - No, keep begging. It suits the moment.
+  - No. I want to see what the lever does.
+  - Your panic makes a strong argument for pulling it.
+  - I wonder whether the spikes are as sharp as they look.
+  - ⭐ A lever, three crusaders, and no witnesses. How could I resist?
+
+Player: Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.
+Jaherred: NO! Don't! Don't, don't, don't, don't do that!
+
+1. Sorry. I was thinking aloud. I won't kill you. Tell me how I can free you.
+    Jaherred: There must be a key around here somewhere! I saw a big lizard lady; maybe she has it. Free us and I'll do anything you say!
+2. I cannot let crusaders leave this place alive. Say whatever prayers you know.
+    Jaherred: Free us, please! I'll do anything you say if you help.
+3. I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.
+    Jaherred: Free us, please! I'll do anything you say if you help.
+4. Beg louder. I want to hear it when I pull the lever.
+    Jaherred: Free us, please! I'll do anything you say if you help.
+
+## Don't impale
+
+"It is not a very noble act to kill a defenseless prisoner. You should find another way to help them."
+
+- Don't interfere, Rasaad. I shall enjoy their screams.
+- I am merely considering all options. I haven't decided yet. Now, let's consider this option: how might we free them?
+  - Let us consider all options. How might we free them?
+  - Let us consider all options first. How might we free them?
+
+LLM:
+
+- Stand aside, Rasaad. I want to hear them scream when the spikes rise.
+  - Stand aside, Rasaad. I want to hear them scream when the spikes impale them.
+  - Do not test me, Rasaad. I mean to pull the lever and enjoy what follows.
+  - ⭐ Stand back. Their pleading is almost as pleasant as what comes next.
+  - Noble acts are for noble causes. This one calls for screams.
+  - ⭐ Do not interfere. I want to see what the spikes do.
+  - ⭐⭐ HUMAN: Stand aside. I want to see what the spikes do.
+  - Spare me, Rasaad. I did not come here to be merciful.
+  - Noble? No. Memorable? Perhaps. Stand aside.
+- The lever is one answer. Before I choose it, I would hear another.
+  - I have not condemned them yet. Prisoner, how might these cages be opened?
+  - Perhaps there is another way. Perhaps not. Prisoner, speak.
+  - I am still taking measure of the matter. If death is not the answer, then how are they freed?
+  - One pull would end this. Another path may yet serve better. How are the cages opened?
+  - I am weighing death against release. Prisoner, speak for the latter.
+  - The lever remains untouched. For now, tell me what stands between them and freedom.
+  - I have considered the spikes. Now I will consider the lock. How is it opened?

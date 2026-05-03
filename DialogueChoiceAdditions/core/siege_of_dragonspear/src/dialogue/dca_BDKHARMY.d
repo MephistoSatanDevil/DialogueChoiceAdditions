@@ -1,0 +1,89 @@
+/* Keherrem
+
+----
+
+~Help! Let us out of here! HELP!~ */
+
+EXTEND_TOP ~BDKHARMY~ 0
+    IF ~~ THEN REPLY @7000 /* ~Of course. I'll find a way to free you.~ */ GOTO 3
+END
+
+/* ~Private Keherrem of the crusade here. We're on a real important mission, and these kooky cultists caught us. Help!~ */
+
+ADD_TRANS_TRIGGER ~BDKHARMY~ 1 ~False()~ DO 4  // Hide the fifth option; we will add a replacement
+
+EXTEND_BOTTOM ~BDKHARMY~ 1
+    // From vanilla option "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you."
+    // The original option lead immediately to killing (or companion dialogue then killing)
+    // Instead, we move to a state where the player can motivate their killing or pull back
+    IF ~!IsValidForPartyDialogue("Rasaad")~ THEN REPLY @7002  /* ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~ */ GOTO ImpaleOrNot
+    IF ~IsValidForPartyDialogue("Rasaad")~ THEN REPLY @7002  /* ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~ */ EXTERN ~RASAADJ~ ImpaleOrNotRasaad
+END
+
+/* ---- */
+
+APPEND ~RASAADJ~
+    IF ~~ THEN BEGIN ImpaleOrNotRasaad
+        SAY #%stringref_it_is_not_a_very_noble_act_to_kill% /* ~It is not a very noble act to kill a defenseless prisoner. You should find another way to help them.~ */
+        IF ~IsValidForPartyDialogue("Dorn")~ THEN EXTERN ~DORNJ~ ASensibleActNew
+        %impale_or_not_rasaad_dorn_choices%
+    END
+END
+
+APPEND ~DORNJ~
+    IF ~~ THEN BEGIN ASensibleActNew
+        SAY #%stringref_but_it_is_a_sensible_act% /* ~But it is a sensible act.~ */
+        %impale_or_not_rasaad_dorn_choices%
+    END
+END
+
+// The analogous vanilla state doesn't use his most panicked line
+APPEND ~BDKHARMY~
+    IF ~~ THEN BEGIN DecidedToKillKharmyNew
+        SAY #%stringref_no_dont_dont_dont% /* ~NO! Don't! Don't, don't, don't, don't do that!~ */
+        COPY_TRANS ~BDKHARMY~ 7
+    END
+END
+
+APPEND ~BDKHARMY~
+    IF ~~ THEN BEGIN ImpaleOrNot
+        SAY #%stringref_no_dont_do_that_please_just_let_us_go% /* ~No! Don't do that, please! Just let us go.~ */
+        IF ~~ THEN REPLY @7007 /* ~I was merely thinking out loud. How would I go about freeing you?~ */ GOTO 3
+        IF ~~ THEN REPLY @7004 /* ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.~ */ GOTO LetKharmyBe
+        IF ~~ THEN REPLY @7008 /* ~I cannot let crusaders leave this place alive. Say whatever prayers you know.~ */ GOTO DecidedToKillKharmyNew
+        IF ~~ THEN REPLY @7009 /* ~Beg louder. I want to hear it when I pull the lever.~ */ GOTO DecidedToKillKharmyNew
+        IF ~~ THEN REPLY @7010 /* ~I will have to think about this.~ */ GOTO ThinkAboutIt
+    END
+END
+
+APPEND ~BDKHARMY~
+    IF ~~ THEN BEGIN LetKharmyBe
+        SAY #%stringref_free_us_please_ill_do_anything%
+        IF ~~ THEN DO ~SetGlobal("bd_sdd201_missing_keherram","GLOBAL",100)~ SOLVED_JOURNAL @7011 EXIT
+    END
+END
+
+APPEND ~BDKHARMY~
+    IF ~~ THEN BEGIN ThinkAboutIt
+        SAY #%stringref_free_us_please_ill_do_anything%
+        COPY_TRANS ~BDKHARMY~ 3
+    END
+END
+
+/* ~Free us, please!~ */
+
+REPLACE_STATE_TRIGGER ~BDKHARMY~ 10 ~OR(2) Global("bd_sdd201_missing_keherram","GLOBAL",1) Global("bd_sdd201_missing_keherram","GLOBAL",100)~
+
+EXTEND_BOTTOM ~BDKHARMY~ 10 #1
+    IF ~~ THEN REPLY @7004 /* ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.~ */ GOTO LetKharmyBe
+END
+
+/* ~You have proof of that?~ */
+
+// Prevent adding "I should return [...]" to journal
+// if the player decided to let Kharmy/Keherrem be and didn't pull the kill lever
+ADD_TRANS_TRIGGER ~BDGUAR20~ 7 ~!Global("bd_sdd201_missing_keherram","GLOBAL",100) !Global("bd_sdd201_missing_keherram_lever","GLOBAL",2)~
+/* (No text) */
+EXTEND_BOTTOM ~BDGUAR20~ 7
+    IF ~~ THEN EXIT
+END

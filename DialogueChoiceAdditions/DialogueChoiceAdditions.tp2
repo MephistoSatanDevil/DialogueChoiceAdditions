@@ -24,6 +24,11 @@ OUTER_SET stringref_who_are_you_master_gnome = 51767
 OUTER_SET stringref_this_isnt_the_surface = 51768
 OUTER_SET stringref_you_have_thirty_seconds = 51769
 OUTER_SET stringref_farewell_know_that_you_have_a_friend = 41416
+OUTER_SET stringref_no_dont_dont_dont = 64259
+OUTER_SET stringref_it_is_not_a_very_noble_act_to_kill = 64260
+OUTER_SET stringref_no_dont_do_that_please_just_let_us_go = 64269
+OUTER_SET stringref_but_it_is_a_sensible_act = 64261
+OUTER_SET stringref_free_us_please_ill_do_anything = 64262
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -36,6 +41,11 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_this_isnt_the_surface = stringref_this_isnt_the_surface + EET_OFFSET
     OUTER_SET stringref_you_have_thirty_seconds = stringref_you_have_thirty_seconds + EET_OFFSET
     OUTER_SET stringref_farewell_know_that_you_have_a_friend = stringref_farewell_know_that_you_have_a_friend + EET_OFFSET
+    OUTER_SET stringref_no_dont_dont_dont = stringref_no_dont_dont_dont + EET_OFFSET
+    OUTER_SET stringref_no_dont_do_that_please_just_let_us_go = stringref_no_dont_do_that_please_just_let_us_go + EET_OFFSET
+    OUTER_SET stringref_it_is_not_a_very_noble_act_to_kill = stringref_it_is_not_a_very_noble_act_to_kill + EET_OFFSET
+    OUTER_SET stringref_but_it_is_a_sensible_act = stringref_but_it_is_a_sensible_act + EET_OFFSET
+    OUTER_SET stringref_free_us_please_ill_do_anything = stringref_free_us_please_ill_do_anything + EET_OFFSET
 END
 /* Dialogue */
 // Baldur's Gate (base game) content
@@ -67,21 +77,73 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_sod.tra~ BEGIN
         // They get their own line in vanilla, and our line is for everyone else
         OUTER_SPRINT compromise_dialogue_changes ~~~~~
-        IF ~ OR(2)
-            !Class(Player1,CLERIC_ALL)
-            !Alignment(Player1,LAWFUL_GOOD)
-            OR(2)
-            !Class(Player1,CLERIC_ALL)
-            !Alignment(Player1,LAWFUL_NEUTRAL)
-            OR(2)
-            !Class(Player1,PALADIN_ALL)
-            !Alignment(Player1,LAWFUL_GOOD)
-            OR(2)
-            !Class(Player1,PALADIN_ALL)
-            !Alignment(Player1,LAWFUL_NEUTRAL)
-            ~ THEN REPLY @7 /* ~I appreciate the distinction, but my answer is no.~ */ DO ~SetGlobal("bd_MDD1001_morale","global",1)
+            IF ~ OR(2)
+                !Class(Player1,CLERIC_ALL)
+                !Alignment(Player1,LAWFUL_GOOD)
+                OR(2)
+                !Class(Player1,CLERIC_ALL)
+                !Alignment(Player1,LAWFUL_NEUTRAL)
+                OR(2)
+                !Class(Player1,PALADIN_ALL)
+                !Alignment(Player1,LAWFUL_GOOD)
+                OR(2)
+                !Class(Player1,PALADIN_ALL)
+                !Alignment(Player1,LAWFUL_NEUTRAL)
+                ~ THEN REPLY @7 /* ~I appreciate the distinction, but my answer is no.~ */ DO ~SetGlobal("bd_MDD1001_morale","global",1)
         ~ GOTO 25
         ~~~~~
+        OUTER_SPRINT impale_or_not_rasaad_dorn_choices ~~~~~
+            IF ~~ THEN REPLY @7003 /* ~I am merely considering all options. Now, how might we free them?~ */ EXTERN ~BDKHARMY~ 3
+            IF ~~ THEN REPLY @7004 /* ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.~ */ EXTERN ~BDKHARMY~ LetKharmyBe
+            IF ~~ THEN REPLY @7005 /* ~I cannot let crusaders leave this place alive. I will kill them.~ */ EXTERN ~BDKHARMY~ DecidedToKillKharmyNew
+            IF ~~ THEN REPLY @7006 /* ~Stand aside. I want to see what the spikes do.~ */ EXTERN ~BDKHARMY~ DecidedToKillKharmyNew
+            IF ~~ THEN REPLY @7010 /* ~I will have to think about this.~ */ EXTERN ~BDKHARMY~ ThinkAboutIt
+        ~~~~~
+        // FIXME stringrefS
+        ADD_JOURNAL EXISTING TITLE (#264446) @7011 /* ~The Missing Patrol [...]~ */
+        ADD_JOURNAL EXISTING TITLE (#264446) @7012 /* ~The Missing Patrol [...]~ */
+        // FIXME stringref
+        COPY_EXISTING ~BDLEVER2.BCS~ ~override~
+            DECOMPILE_AND_PATCH BEGIN
+                REPLACE_TEXTUALLY EXACT_MATCH
+~IF
+  Clicked([ANYONE])
+  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
+  !Global("bd_sdd201_missing_keherram","GLOBAL",3)
+  !Global("bd_sdd201_missing_door","GLOBAL",2)
+  !GlobalTimerNotExpired("BD_BARK","MYAREA")
+  GlobalLT("bd_plot","global",250)
+THEN
+  RESPONSE #100
+    AddJournalEntry(264444,QUEST)
+    Continue()
+END~
+~IF
+  Clicked([ANYONE])
+  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
+  Global("bd_sdd201_missing_keherram","GLOBAL",100)
+  !Global("bd_sdd201_missing_door","GLOBAL",2)
+  !GlobalTimerNotExpired("BD_BARK","MYAREA")
+  GlobalLT("bd_plot","global",250)
+THEN
+  RESPONSE #100
+    AddJournalEntry(@7012,QUEST)
+    Continue()
+END
+IF
+  Clicked([ANYONE])
+  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
+  !Global("bd_sdd201_missing_keherram","GLOBAL",100)
+  !Global("bd_sdd201_missing_keherram","GLOBAL",3)
+  !Global("bd_sdd201_missing_door","GLOBAL",2)
+  !GlobalTimerNotExpired("BD_BARK","MYAREA")
+  GlobalLT("bd_plot","global",250)
+THEN
+  RESPONSE #100
+    AddJournalEntry(264444,QUEST)
+    Continue()
+END~
+            END
         // Disable overlapping dialogue options from the mod "Jastey's Tweaks for SoD and EET (and BGT)", component "More Dialogue Choices _Prevent Dead Ends"
         OUTER_SET JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID = ID_OF_LABEL ~setup-c#sodtweaks.tp2~ ~JasteySodTweaks-MoreDialogueChoices_PreventDeadEnds~
         ACTION_IF MOD_IS_INSTALLED ~setup-c#sodtweaks.tp2~ ~%JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID%~ BEGIN
@@ -92,6 +154,7 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDBELLOW.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDELANC.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDYINGM.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDKHARMY.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDPWATER.d~
