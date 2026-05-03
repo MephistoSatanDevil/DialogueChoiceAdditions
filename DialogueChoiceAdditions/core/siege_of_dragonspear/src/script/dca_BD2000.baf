@@ -1,0 +1,17 @@
+// When the Boareskyr Bridge conflict is over,
+// clear "The Missing Patrol" journal entry if the player explicitly decided to leave Keherrem alive in his cage
+IF
+    // Note that Keherrem's name uses a different spelling in variable names
+    Global("bd_sdd201_missing_keherram","GLOBAL",100)  // Player explicitly decided to leave Keherrem alive in his cage
+    Global("dca_sdd201_missing_patrol_journal_done","MYAREA",0)
+    OR(2)
+        Global("bd_bridgefort_surrendered","GLOBAL",1)
+        Global("bd_bridgefort_sabotaged","GLOBAL",1)
+THEN
+  RESPONSE #100
+    // Last chance to save or kill Keherrem has passed,
+    // so mark the quest as done if the player explicitly decided to leave him alive
+    AddJournalEntry(@7011, QUEST_DONE)  // The Missing Patrol
+    SetGlobal("dca_sdd201_missing_patrol_journal_done","MYAREA",1)
+    Continue()
+END

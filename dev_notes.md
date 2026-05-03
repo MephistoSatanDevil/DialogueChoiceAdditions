@@ -1017,7 +1017,8 @@ LLM:
 
 ## Impale
 
-"NO! Don't! Don't, don't, don't, don't do that!"
+~~"NO! Don't! Don't, don't, don't, don't do that!"~~
+"No! Don't do that, please! Just let us go."
 
 - Sorry. I was only thinking out loud. I won't kill you. Tell me how I can free you.
   - Sorry. I was just thinking out loud. I won't kill you. Tell me how I can free you.

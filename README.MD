@@ -108,6 +108,7 @@ New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/Dialogu
 - Bellowgulp Bluefingers
 - De Lancie
 - Dying Myconid
+- Keherrem
 - Murs
 - Nederlok
 - Nereid

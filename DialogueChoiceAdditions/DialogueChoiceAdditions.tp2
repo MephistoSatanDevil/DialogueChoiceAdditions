@@ -29,6 +29,8 @@ OUTER_SET stringref_it_is_not_a_very_noble_act_to_kill = 64260
 OUTER_SET stringref_no_dont_do_that_please_just_let_us_go = 64269
 OUTER_SET stringref_but_it_is_a_sensible_act = 64261
 OUTER_SET stringref_free_us_please_ill_do_anything = 64262
+OUTER_SET stringref_you_wear_crusader_colors = 64253
+OUTER_SET stringref_the_missing_patrol = 64446
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -46,10 +48,12 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_it_is_not_a_very_noble_act_to_kill = stringref_it_is_not_a_very_noble_act_to_kill + EET_OFFSET
     OUTER_SET stringref_but_it_is_a_sensible_act = stringref_but_it_is_a_sensible_act + EET_OFFSET
     OUTER_SET stringref_free_us_please_ill_do_anything = stringref_free_us_please_ill_do_anything + EET_OFFSET
+    OUTER_SET stringref_you_wear_crusader_colors = stringref_you_wear_crusader_colors + EET_OFFSET
+    OUTER_SET stringref_the_missing_patrol = stringref_the_missing_patrol + EET_OFFSET
 END
-/* Dialogue */
 // Baldur's Gate (base game) content
 ACTION_IF GAME_IS ~eet bgee~ BEGIN
+    /* Dialogue */
     PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_bg.tra~ BEGIN
         OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~  /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
@@ -73,10 +77,66 @@ ACTION_IF GAME_IS ~eet bgee~ BEGIN
 END
 // Baldur's Gate: Siege of Dragonspear content
 ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
-    PRINT @90004  /* ~Compiling dialogue files for Siege of Dragonspear content ...~ */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_sod.tra~ BEGIN
-        // They get their own line in vanilla, and our line is for everyone else
+        /* Journal */
+        PRINT @90007  /* ~Adding journal entries for Siege of Dragonspear content ...~ */
+        // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
+        ADD_JOURNAL EXISTING TITLE (%stringref_the_missing_patrol%) @7011 /* ~The Missing Patrol [...]~ */
+        ADD_JOURNAL EXISTING TITLE (%stringref_the_missing_patrol%) @7012 /* ~The Missing Patrol [...]~ */
+        // Add "I decided to kill the crusaders anyway." to quest journal
+        // if the player decides to do that despite explicitly saying they won't
+        COPY_EXISTING ~BDLEVER2.BCS~ ~override~
+            DECOMPILE_AND_PATCH BEGIN
+                REPLACE_TEXTUALLY EXACT_MATCH
+// Note that Keherrem's name uses a different spelling in variable names
+~IF
+  Clicked([ANYONE])
+  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
+  !Global("bd_sdd201_missing_keherram","GLOBAL",3)
+  !Global("bd_sdd201_missing_door","GLOBAL",2)
+  !GlobalTimerNotExpired("BD_BARK","MYAREA")
+  GlobalLT("bd_plot","global",250)
+THEN
+  RESPONSE #100
+    AddJournalEntry(%stringref_the_missing_patrol%,QUEST)
+    Continue()
+END~
+~IF
+  Clicked([ANYONE])
+  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
+  Global("bd_sdd201_missing_keherram","GLOBAL",100)
+  !Global("bd_sdd201_missing_door","GLOBAL",2)
+  !GlobalTimerNotExpired("BD_BARK","MYAREA")
+  GlobalLT("bd_plot","global",250)
+THEN
+  RESPONSE #100
+    AddJournalEntry(@7012,QUEST)  // The Missing Patrol I decided to kill the crusaders anyway. My next task is to take the crusader leader's badge back to the crusader camp. I found the missing crusader patrol and killed them by pulling a lever. The lever caused spikes to shoot up and impale all the crusaders in the cage. Gruesome. When I return to the crusader camp, I'll tell them that the cultists in this dungeon killed the crusaders. I should bring their leader's badge back with me as proof.
+    Continue()
+END
+IF
+  Clicked([ANYONE])
+  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
+  !Global("bd_sdd201_missing_keherram","GLOBAL",100)
+  !Global("bd_sdd201_missing_keherram","GLOBAL",3)
+  !Global("bd_sdd201_missing_door","GLOBAL",2)
+  !GlobalTimerNotExpired("BD_BARK","MYAREA")
+  GlobalLT("bd_plot","global",250)
+THEN
+  RESPONSE #100
+    AddJournalEntry(264444,QUEST)
+    Continue()
+END~
+            END
+        /* Script */
+        PRINT @90008  /* ~Patching script for Siege of Dragonspear content ...~ */
+        // When the last chance to save or kill Keherrem has passed,
+        // mark the "The Missing Patrol" as completed if the player explicitly decided to leave him alive
+        // TODO Playtest
+        EXTEND_TOP ~BD2000.bcs~ ~%MOD_FOLDER%/core/siege_of_dragonspear/src/script/dca_BD2000.baf~
+        /* Dialogue */
+        PRINT @90004  /* ~Compiling dialogue files for Siege of Dragonspear content ...~ */
         OUTER_SPRINT compromise_dialogue_changes ~~~~~
+            // They get their own line in vanilla, and our line is for everyone else
             IF ~ OR(2)
                 !Class(Player1,CLERIC_ALL)
                 !Alignment(Player1,LAWFUL_GOOD)
@@ -99,51 +159,6 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
             IF ~~ THEN REPLY @7006 /* ~Stand aside. I want to see what the spikes do.~ */ EXTERN ~BDKHARMY~ DecidedToKillKharmyNew
             IF ~~ THEN REPLY @7010 /* ~I will have to think about this.~ */ EXTERN ~BDKHARMY~ ThinkAboutIt
         ~~~~~
-        // FIXME stringrefS
-        ADD_JOURNAL EXISTING TITLE (#264446) @7011 /* ~The Missing Patrol [...]~ */
-        ADD_JOURNAL EXISTING TITLE (#264446) @7012 /* ~The Missing Patrol [...]~ */
-        // FIXME stringref
-        COPY_EXISTING ~BDLEVER2.BCS~ ~override~
-            DECOMPILE_AND_PATCH BEGIN
-                REPLACE_TEXTUALLY EXACT_MATCH
-~IF
-  Clicked([ANYONE])
-  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
-  !Global("bd_sdd201_missing_keherram","GLOBAL",3)
-  !Global("bd_sdd201_missing_door","GLOBAL",2)
-  !GlobalTimerNotExpired("BD_BARK","MYAREA")
-  GlobalLT("bd_plot","global",250)
-THEN
-  RESPONSE #100
-    AddJournalEntry(264444,QUEST)
-    Continue()
-END~
-~IF
-  Clicked([ANYONE])
-  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
-  Global("bd_sdd201_missing_keherram","GLOBAL",100)
-  !Global("bd_sdd201_missing_door","GLOBAL",2)
-  !GlobalTimerNotExpired("BD_BARK","MYAREA")
-  GlobalLT("bd_plot","global",250)
-THEN
-  RESPONSE #100
-    AddJournalEntry(@7012,QUEST)
-    Continue()
-END
-IF
-  Clicked([ANYONE])
-  Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
-  !Global("bd_sdd201_missing_keherram","GLOBAL",100)
-  !Global("bd_sdd201_missing_keherram","GLOBAL",3)
-  !Global("bd_sdd201_missing_door","GLOBAL",2)
-  !GlobalTimerNotExpired("BD_BARK","MYAREA")
-  GlobalLT("bd_plot","global",250)
-THEN
-  RESPONSE #100
-    AddJournalEntry(264444,QUEST)
-    Continue()
-END~
-            END
         // Disable overlapping dialogue options from the mod "Jastey's Tweaks for SoD and EET (and BGT)", component "More Dialogue Choices _Prevent Dead Ends"
         OUTER_SET JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID = ID_OF_LABEL ~setup-c#sodtweaks.tp2~ ~JasteySodTweaks-MoreDialogueChoices_PreventDeadEnds~
         ACTION_IF MOD_IS_INSTALLED ~setup-c#sodtweaks.tp2~ ~%JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID%~ BEGIN

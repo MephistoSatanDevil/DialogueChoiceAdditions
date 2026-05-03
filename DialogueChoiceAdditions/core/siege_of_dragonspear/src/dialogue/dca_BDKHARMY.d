@@ -4,8 +4,17 @@
 
 ~Help! Let us out of here! HELP!~ */
 
+ADD_TRANS_TRIGGER ~BDKHARMY~ 0 ~False()~ DO 2  // Hide the third option; we will add a replacement
+
 EXTEND_TOP ~BDKHARMY~ 0
     IF ~~ THEN REPLY @7000 /* ~Of course. I'll find a way to free you.~ */ GOTO 3
+END
+
+EXTEND_BOTTOM ~BDKHARMY~ 0
+    // The analogous vanilla state uses his most panicked line;
+    // we extend this branch and use a lesser panicked line first
+    IF ~!IsValidForPartyDialogue("Rasaad")~ THEN REPLY #%stringref_you_wear_crusader_colors% /* ~You wear crusader colors. I have no interest in helping you. In fact, I should kill you right now. */ GOTO ImpaleOrNot
+    IF ~IsValidForPartyDialogue("Rasaad")~ THEN REPLY #%stringref_you_wear_crusader_colors% /* ~You wear crusader colors. I have no interest in helping you. In fact, I should kill you right now. */ EXTERN ~RASAADJ~ ImpaleOrNotRasaad
 END
 
 /* ~Private Keherrem of the crusade here. We're on a real important mission, and these kooky cultists caught us. Help!~ */
@@ -59,20 +68,23 @@ END
 APPEND ~BDKHARMY~
     IF ~~ THEN BEGIN LetKharmyBe
         SAY #%stringref_free_us_please_ill_do_anything%
-        IF ~~ THEN DO ~SetGlobal("bd_sdd201_missing_keherram","GLOBAL",100)~ SOLVED_JOURNAL @7011 EXIT
+        // Global("bd_sdd201_missing_keherram","GLOBAL",100): Player explicitly decided to leave Keherrem alive in his cage
+        // Note that Keherrem's name uses a different spelling in variable names
+        IF ~~ THEN DO ~SetGlobal("bd_sdd201_missing_keherram","GLOBAL",100)~ UNSOLVED_JOURNAL @7011 EXIT
     END
 END
 
 APPEND ~BDKHARMY~
     IF ~~ THEN BEGIN ThinkAboutIt
         SAY #%stringref_free_us_please_ill_do_anything%
-        COPY_TRANS ~BDKHARMY~ 3
+        COPY_TRANS ~BDKHARMY~ 3  // From "There must be a key around here somewhere" state
     END
 END
 
 /* ~Free us, please!~ */
 
-REPLACE_STATE_TRIGGER ~BDKHARMY~ 10 ~OR(2) Global("bd_sdd201_missing_keherram","GLOBAL",1) Global("bd_sdd201_missing_keherram","GLOBAL",100)~
+// Allow conversation to trigger if the player explicitly decided to leave Keherrem alive in his cage
+REPLACE_STATE_TRIGGER ~BDKHARMY~ 10 ~OR(2) Global("bd_sdd201_missing_keherram","GLOBAL",1) Global("bd_sdd201_missing_keherram","GLOBAL",100)~  // From `Global("bd_sdd201_missing_keherram","GLOBAL",1)`
 
 EXTEND_BOTTOM ~BDKHARMY~ 10 #1
     IF ~~ THEN REPLY @7004 /* ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cage stays shut.~ */ GOTO LetKharmyBe
@@ -81,9 +93,11 @@ END
 /* ~You have proof of that?~ */
 
 // Prevent adding "I should return [...]" to journal
-// if the player decided to let Kharmy/Keherrem be and didn't pull the kill lever
-ADD_TRANS_TRIGGER ~BDGUAR20~ 7 ~!Global("bd_sdd201_missing_keherram","GLOBAL",100) !Global("bd_sdd201_missing_keherram_lever","GLOBAL",2)~
+// if the player decided to let Kharmy/Keherrem be
+// (pulling the kill lever sets bd_sdd201_missing_keherram to 3,
+// so this trigger won't interfere if the player changed their mind and pulled the lever anyway)
+ADD_TRANS_TRIGGER ~BDGUAR20~ 7 ~!Global("bd_sdd201_missing_keherram","GLOBAL",100)~
 /* (No text) */
-EXTEND_BOTTOM ~BDGUAR20~ 7
+EXTEND_BOTTOM ~BDGUAR20~ 7  // Crusader Sergeant
     IF ~~ THEN EXIT
 END
