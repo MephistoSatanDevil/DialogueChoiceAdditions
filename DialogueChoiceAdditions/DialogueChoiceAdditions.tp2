@@ -125,7 +125,7 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
   GlobalLT("bd_plot","global",250)
 THEN
   RESPONSE #100
-    AddJournalEntry(%stringref_the_missing_patrol%,QUEST)
+    AddJournalEntry(%stringref_the_missing_patrol_my_next_task%,QUEST)
     Continue()
 END~
 ~IF
@@ -137,7 +137,9 @@ END~
   GlobalLT("bd_plot","global",250)
 THEN
   RESPONSE #100
-    AddJournalEntry(@7012,QUEST)  // The Missing Patrol I decided to kill the crusaders anyway. My next task is to take the crusader leader's badge back to the crusader camp. I found the missing crusader patrol and killed them by pulling a lever. The lever caused spikes to shoot up and impale all the crusaders in the cage. Gruesome. When I return to the crusader camp, I'll tell them that the cultists in this dungeon killed the crusaders. I should bring their leader's badge back with me as proof.
+    AddJournalEntry(@7012,QUEST)  // The Missing Patrol I can take the crusader leader's badge back to the crusader camp and lie about what happened. I had meant neither to rescue nor kill them, but a nearby lever proved too tempting. When I pulled it, spikes shot up through the cages and impaled the crusaders, killing all three of them.
+    // ka = kill anyway
+    SetGlobal("bd_sdd201_missing_keherram_ka","GLOBAL",1)  // Player killed the crusaders by pulling the lever after explicitly deciding to leave them alive
     Continue()
 END
 IF
@@ -150,7 +152,7 @@ IF
   GlobalLT("bd_plot","global",250)
 THEN
   RESPONSE #100
-    AddJournalEntry(264444,QUEST)
+    AddJournalEntry(%stringref_the_missing_patrol_my_next_task%,QUEST)
     Continue()
 END~
             END
