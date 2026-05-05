@@ -947,6 +947,24 @@ State 30:
 
 ## BDKHARMY (Keherrem)
 
+### Issue after modding dialogue
+
+~~The journal makes the player lie about who killed the crusaders if they choose to kill them, even if they killed them for other reasons.~~
+
+Possible fixes
+
+- A. Change journal text so it doesn't phrase the deception part as necessary
+- B. Change dialogue options so that they again reflect the evil quest path
+  As far as my attempts at this goes, this muddies the water (e.g. "Letting crusaders live is a risk I am not willing to take. Your fellows will hear that the cultists killed you.").
+- C. Branch "why kill when you can access the camp by saving" from "kill to deceive or kill for other reasons" in dialogue
+  E.g. "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you.". Muddies the water.
+- D. Add instrumental evil path
+  Already up at 5 options; can't think of a fix that feels right
+- E. Instrumental evil option if the player has talked to the sargent / The Missing Patrol quest has started
+  Same issue as with D.
+
+Fixed using option A.
+
 ## Help
 
 "Help! Let us out of here! HELP!"

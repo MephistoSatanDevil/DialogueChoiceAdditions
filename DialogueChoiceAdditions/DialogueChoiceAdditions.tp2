@@ -95,18 +95,18 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
         PRINT @90007  /* ~Adding journal entries for Siege of Dragonspear content ...~ */
         ACTION_IF GAME_IS ~eet~ BEGIN
             // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - Left be
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - Left be - killed anyway
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7018  // The Missing Patrol - Left be - completed
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - Leave be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - Leave be - killed anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7018  // The Missing Patrol - Kill or free - said to leave anyway
             // Journal entry for if the player killed Keherrem and didn't lie to get in to the camp
             ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7017  // The Missing Patrol - Killed - not lied - completed
         END ELSE BEGIN
             // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
-            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7011  // The Missing Patrol - Left be
-            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7012  // The Missing Patrol - Left be - killed anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7011  // The Missing Patrol - Leave be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7012  // The Missing Patrol - Leave be - killed anyway
             ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7017  // The Missing Patrol - Killed - not lied - completed
             // Journal entry for if the player killed Keherrem and didn't lie to get in to the camp
-            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7018  // The Missing Patrol - Left be - completed
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7018  // The Missing Patrol - Kill or free - said to leave anyway
         END
         /* Script */
         PRINT @90008  /* ~Extending scripts for Siege of Dragonspear content ...~ */

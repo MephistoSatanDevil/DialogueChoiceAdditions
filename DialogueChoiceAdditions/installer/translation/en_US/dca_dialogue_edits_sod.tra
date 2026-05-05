@@ -68,7 +68,7 @@ I found the missing crusader patrol. If I can free them, I might be able to gain
 
 I can take the crusader leader's badge back to the crusader camp and lie about what happened.
 
-I found the missing crusader patrol and decided to leave them in their cages. I had meant neither to rescue nor kill them, but a nearby lever proved too tempting. When I pulled it, spikes shot up through the cages and impaled the crusaders, killing all three of them.~
+I had meant neither to rescue nor kill them, but a nearby lever proved too tempting. When I pulled it, spikes shot up through the cages and impaled the crusaders, killing all three of them.~
 @7013 = ~You wear crusader colors. I have no interest in helping you. Farewell.~
 @7014 = ~Why free you when I can kill you instead?~
 @7015 = ~I will not free crusaders. Remain where you are. Farewell.~
@@ -79,9 +79,7 @@ I can take the crusader leader's badge back to the crusader camp and lie about w
 I found the missing crusader patrol imprisoned by cultists in the ruined temple. I killed them by pulling a lever which caused spikes to shoot up and impale all the crusaders in the cage. Gruesome.~
 @7017 = ~The Missing Patrol
 
-I could have taken the patrol leader's badge back to the crusader camp and lied about their fate in an attempt to gain entry to the camp, but I chose not to.
-
-I found the missing crusader patrol imprisoned by cultists in the ruined temple. I killed them by pulling a lever which caused spikes to shoot up and impale all the crusaders in the cage. Gruesome.~
+I chose not to lie about the missing patrol.~
 @7018 = ~The Missing Patrol
 
-I found the missing crusader patrol imprisoned by cultists in the ruined temple. Freeing them might have helped me gain access to the crusader camp, and killing them might have let me return with a convincing lie about their fate. There was a switch on the wall, with giant spikes poised beneath the cage, but I chose neither path. I left the crusaders where I found them, still locked in their cages.~
+I decided to leave the crusaders in their cages.~

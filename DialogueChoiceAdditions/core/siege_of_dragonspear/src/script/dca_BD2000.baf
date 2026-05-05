@@ -3,6 +3,7 @@
 IF
     // Note that Keherrem's name uses a different spelling in variable names
     Global("bd_sdd201_missing_keherram", "GLOBAL", 100)  // Player explicitly decided to leave Keherrem alive in his cage
+    Global("bd_sdd201_missing_keherram_lb_s", "GLOBAL", 1)  // Player has the shorter journal entry for leaving Keherrem alive
     Global("dca_sdd201_missing_patrol_journal_done", "MYAREA", 0)
     OR(2)
         Global("bd_bridgefort_surrendered", "GLOBAL", 1)
@@ -15,8 +16,26 @@ THEN
         SetGlobal("dca_sdd201_missing_patrol_journal_done", "MYAREA", 1)
         Continue()
 END
+IF
+    Global("bd_sdd201_missing_keherram", "GLOBAL", 100)  // Player explicitly decided to leave Keherrem alive in his cage
+    // lb = leave be
+    // s = short journal entry
+    !Global("bd_sdd201_missing_keherram_lb_s", "GLOBAL", 1)  // Player has the longer journal entry for leaving Keherrem alive
+    Global("dca_sdd201_missing_patrol_journal_done", "MYAREA", 0)
+    OR(2)
+        Global("bd_bridgefort_surrendered", "GLOBAL", 1)
+        Global("bd_bridgefort_sabotaged", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        // Last chance to save or kill Keherrem has passed,
+        // so mark the quest as done if the player explicitly decided to leave him alive
+        AddJournalEntry(@7011, QUEST_DONE)  // The Missing Patrol
+        SetGlobal("dca_sdd201_missing_patrol_journal_done", "MYAREA", 1)
+        Continue()
+END
 // When the Boareskyr Bridge conflict is over,
 // clear "The Missing Patrol" journal entry if the player killed Keherrem
+// Since we phrase this journal entry as optional, it should not linger as an active quest
 IF
     Global("bd_sdd201_missing_keherram", "GLOBAL", 3)  // Player killed Keherrem
     Global("dca_sdd201_missing_patrol_journal_done", "MYAREA", 0)
@@ -27,11 +46,6 @@ THEN
     RESPONSE #100
         // Last chance to lie about Keherrem's fate to gain entry to the camp has passed,
         // so mark the quest as done
-        // Since we phrase this journal entry as optional, it should not linger as an active quest
-        EraseJournalEntry(%stringref_the_missing_patrol_i_must_find%)
-        EraseJournalEntry(%stringref_the_missing_patrol_my_next_task%)  // The Missing Patrol
-        EraseJournalEntry(@7011)  // The Missing Patrol
-        EraseJournalEntry(@7012)  // The Missing Patrol
         AddJournalEntry(@7017, QUEST_DONE)  // The Missing Patrol
         SetGlobal("dca_sdd201_missing_patrol_journal_done", "MYAREA", 1)
         Continue()
