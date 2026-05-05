@@ -12,7 +12,7 @@ THEN
     RESPONSE #100
         // Last chance to save or kill Keherrem has passed,
         // so mark the quest as done if the player explicitly decided to leave him alive
-        AddJournalEntry(@7018, QUEST_DONE)  // The Missing Patrol
+        AddJournalEntry(@7017, QUEST_DONE)  // The Missing Patrol
         SetGlobal("dca_sdd201_missing_patrol_journal_done", "MYAREA", 1)
         Continue()
 END
@@ -38,15 +38,32 @@ END
 // Since we phrase this journal entry as optional, it should not linger as an active quest
 IF
     Global("bd_sdd201_missing_keherram", "GLOBAL", 3)  // Player killed Keherrem
+    // ka = kill anyway
+    !Global("bd_sdd201_missing_keherram_ka", "GLOBAL", 1)  // Player did not: kill Keherrem despite saying they would leave him
     Global("dca_sdd201_missing_patrol_journal_done", "MYAREA", 0)
     OR(2)
         Global("bd_bridgefort_surrendered", "GLOBAL", 1)
         Global("bd_bridgefort_sabotaged", "GLOBAL", 1)
 THEN
     RESPONSE #100
-        // Last chance to lie about Keherrem's fate to gain entry to the camp has passed,
+        // Last chance to lie about Keherrem's fate has passed,
         // so mark the quest as done
-        AddJournalEntry(@7017, QUEST_DONE)  // The Missing Patrol
+        AddJournalEntry(%stringref_the_missing_patrol_my_next_task%, QUEST_DONE)  // The Missing Patrol
+        SetGlobal("dca_sdd201_missing_patrol_journal_done", "MYAREA", 1)
+        Continue()
+END
+IF
+    Global("bd_sdd201_missing_keherram", "GLOBAL", 3)  // Player killed Keherrem
+    Global("bd_sdd201_missing_keherram_ka", "GLOBAL", 1)  // Player killed Keherrem despite saying they would leave him
+    Global("dca_sdd201_missing_patrol_journal_done", "MYAREA", 0)
+    OR(2)
+        Global("bd_bridgefort_surrendered", "GLOBAL", 1)
+        Global("bd_bridgefort_sabotaged", "GLOBAL", 1)
+THEN
+    RESPONSE #100
+        // Last chance to lie about Keherrem's fate has passed,
+        // so mark the quest as done
+        AddJournalEntry(@7012, QUEST_DONE)  // The Missing Patrol
         SetGlobal("dca_sdd201_missing_patrol_journal_done", "MYAREA", 1)
         Continue()
 END

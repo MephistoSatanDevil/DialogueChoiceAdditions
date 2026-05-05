@@ -74,7 +74,7 @@ APPEND ~BDKHARMY~
         // Note that Keherrem's name uses a different spelling in variable names
         // Add the shorter entry if the player has already elected to save or kill
         IF ~~ THEN EXIT
-        IF ~!Global("bd_sdd201_missing_keherram","GLOBAL",100)~ THEN DO ~SetGlobal("bd_sdd201_missing_keherram","GLOBAL",100) SetGlobal("bd_sdd201_missing_keherram_lb_s","GLOBAL",1)~ UNSOLVED_JOURNAL @7018 EXIT  // The Missing Patrol - leave be - short entry
+        IF ~!Global("bd_sdd201_missing_keherram","GLOBAL",100)~ THEN DO ~SetGlobal("bd_sdd201_missing_keherram","GLOBAL",100) SetGlobal("bd_sdd201_missing_keherram_lb_s","GLOBAL",1)~ UNSOLVED_JOURNAL @7017 EXIT  // The Missing Patrol - leave be - short entry
         IF ~GlobalLT("bd_sdd201_missing_keherram","GLOBAL",1)~ THEN DO ~SetGlobal("bd_sdd201_missing_keherram","GLOBAL",100)~ UNSOLVED_JOURNAL @7011 EXIT  // The Missing Patrol - leave be - longer entry
     END
 END
