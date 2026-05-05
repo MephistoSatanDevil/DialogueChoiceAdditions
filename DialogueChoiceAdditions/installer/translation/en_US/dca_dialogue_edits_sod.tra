@@ -53,7 +53,7 @@
 @7002 = ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~  // Adapted from vanilla "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you."
 @7003 = ~I am merely considering all options. Now, how might we free them?~
 @7004 = ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cages stay shut.~
-@7005 = ~Letting crusaders live is a risk I am not willing to take. I will kill them.~
+@7005 = ~Letting crusaders live is a risk I am not willing to take. Say whatever prayers you know.~
 @7006 = ~Stand aside. I want to see what the spikes do.~
 @7007 = ~I was merely thinking out loud. How would I go about freeing you?~
 @7008 = ~If you serve the crusade, I cannot spare you. Say whatever prayers you know.~
@@ -63,14 +63,25 @@
 
 I decided to leave the crusaders in their cages.
 
-I can free the crusaders to gain access to the camp, or use the switch on the wall to kill them.
-
 I found the missing crusader patrol. If I can free them, I might be able to gain access to the crusader camp. Someone on this level must have a key to their cage. There's also a switch on the wall and giant spikes poised beneath the cage. If I kill the crusaders, I might be able to convince the camp guard that they were dead when I found them.~
 @7012 = ~The Missing Patrol
 
-I decided to kill the crusaders anyway. My next task is to take the crusader leader's badge back to the crusader camp.
+I can take the crusader leader's badge back to the crusader camp and lie about what happened.
 
-I found the missing crusader patrol and killed them by pulling a lever. The lever caused spikes to shoot up and impale all the crusaders in the cage. Gruesome. When I return to the crusader camp, I'll tell them that the cultists in this dungeon killed the crusaders. I should bring their leader's badge back with me as proof.~
+I found the missing crusader patrol and decided to leave them in their cages. I had meant neither to rescue nor kill them, but a nearby lever proved too tempting. When I pulled it, spikes shot up through the cages and impaled the crusaders, killing all three of them.~
 @7013 = ~You wear crusader colors. I have no interest in helping you. Farewell.~
 @7014 = ~Why free you when I can kill you instead?~
 @7015 = ~I will not free crusaders. Remain where you are. Farewell.~
+@7016 = ~The Missing Patrol
+
+I can take the crusader leader's badge back to the crusader camp and lie about what happened.
+
+I found the missing crusader patrol imprisoned by cultists in the ruined temple. I killed them by pulling a lever which caused spikes to shoot up and impale all the crusaders in the cage. Gruesome.~
+@7017 = ~The Missing Patrol
+
+I could have taken the patrol leader's badge back to the crusader camp and lied about their fate in an attempt to gain entry to the camp, but I chose not to.
+
+I found the missing crusader patrol imprisoned by cultists in the ruined temple. I killed them by pulling a lever which caused spikes to shoot up and impale all the crusaders in the cage. Gruesome.~
+@7018 = ~The Missing Patrol
+
+I found the missing crusader patrol imprisoned by cultists in the ruined temple. Freeing them might have helped me gain access to the crusader camp, and killing them might have let me return with a convincing lie about their fate. There was a switch on the wall, with giant spikes poised beneath the cage, but I chose neither path. I left the crusaders where I found them, still locked in their cages.~

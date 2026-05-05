@@ -999,7 +999,6 @@ New:
 
 Option 4 → "No! Don't do that, please! Just let us go."
 
-
 ## Crusaders; help
 
 "Private Keherrem of the crusade here. We're on a real important mission, and these kooky cultists caught us. Help!"
@@ -1077,11 +1076,18 @@ LLM:
   - Letting crusaders live is too big a risk. Say whatever prayers you know.
   - If I let you live, I might regret it later if I end up with your blade against my back. Say whatever prayers you know.
   - If I let you live, I may regret it later with your blade against my back. Say whatever prayers you know.
+    - Letting crusaders live is a risk I am not willing to take. Your fellows shall hear that the cultists killed you.
 - You'd rather live under these terrible conditions? Suit yourself. Good bye.
   - You would rather rot in that cage of yours? Suit yourself. Good bye.
   - You would rather rot in that cage of yours? Suit yourself. I'll go now.
 - You have joined the crusade and therefore you must die. No sin shall go unpunished.
 - I will enjoy this.
+- Killing you will help me get into the camp. (instrumental evil)
+  - If I kill you and take your badge, the sargent might let me in the camp. I will tell them the cultists killed you.
+  - I will tell your fellows the cultists killed you.
+  - Your fellows will hear the cultists killed you.
+  - I will kill you and bring your badge to the sergeant, and they will let me into the camp.
+- Your badge may be useful to me.
 
 LLM:
 
@@ -1136,6 +1142,12 @@ LLM:
   - Crusaders or no, I cannot gamble with lives that may yet turn blades against me. Say your prayers.
   - ⭐ If you are what you say, then I cannot afford mercy. Pray while you can.
   - ⭐⭐ HUMAN: Letting crusaders live is a risk I am not willing to take. Say your prayers.
+    - Crusaders are too dangerous to leave alive. Your comrades will hear that the cultists killed you.
+    - Three fewer crusaders is no loss to me. Your comrades will think the cultists responsible.
+    - Mercy for crusaders is a luxury I cannot afford. Your fellows will hear you died at cultist hands.
+    - Dead crusaders tell no tales. Your fellows will hear the cultists did the deed.
+    - ⭐⭐ Leaving crusaders alive is a risk I will not take. Your fellows shall hear that the cultists killed you.
+    - ⭐⭐ If you serve the crusade, I cannot spare you. The cultists will take the blame.
 - You would rather rot in that cage than face the lever? Suit yourself. I’ll leave you to it.
   - You would rather rot in that cage of yours? Suit yourself. I’ll leave you to it.
   - Then the lever stays untouched, and the cage stays locked. I am leaving.
@@ -1171,6 +1183,11 @@ LLM:
   - Your panic makes a strong argument for pulling it.
   - I wonder whether the spikes are as sharp as they look.
   - ⭐ A lever, three crusaders, and no witnesses. How could I resist?
+- The sergeant only needs a story. Your corpses can give me one.
+  - The sergeant sent me for proof. Your badge will serve just as well as your rescue.
+  - Your sergeant wants proof. Your badge will do, and the cultists will take the blame.
+  - The sergeant wanted proof of what happened to you. Your badge will do, and the cultists will take the blame.
+- Your badge may serve as proof of your fate if I meet others from the crusade.
 
 Player: Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.
 Jaherred: NO! Don't! Don't, don't, don't, don't do that!
@@ -1193,6 +1210,7 @@ Jaherred: NO! Don't! Don't, don't, don't, don't do that!
   - Let us consider all options. How might we free them?
   - Let us consider all options first. How might we free them?
 - ⭐⭐ Letting crusaders live is a risk I am not willing to take. I will kill them.
+  - Letting crusaders live is a risk I am not willing to take. I will tell their fellows the cultists killed them.
 
 LLM:
 

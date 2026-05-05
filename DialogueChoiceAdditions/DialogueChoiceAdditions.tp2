@@ -30,6 +30,8 @@ OUTER_SET stringref_no_dont_do_that_please_just_let_us_go = 64269
 OUTER_SET stringref_but_it_is_a_sensible_act = 64261
 OUTER_SET stringref_free_us_please_ill_do_anything = 64262
 OUTER_SET stringref_the_missing_patrol = 64446
+OUTER_SET stringref_the_missing_patrol_my_next_task = 64444
+OUTER_SET stringref_the_missing_patrol_i_must_find = 64440
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -48,6 +50,8 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_but_it_is_a_sensible_act = stringref_but_it_is_a_sensible_act + EET_OFFSET
     OUTER_SET stringref_free_us_please_ill_do_anything = stringref_free_us_please_ill_do_anything + EET_OFFSET
     OUTER_SET stringref_the_missing_patrol = stringref_the_missing_patrol + EET_OFFSET
+    OUTER_SET stringref_the_missing_patrol_my_next_task = stringref_the_missing_patrol_my_next_task + EET_OFFSET
+    OUTER_SET stringref_the_missing_patrol_i_must_find = stringref_the_missing_patrol_i_must_find + EET_OFFSET
 END
 // Baldur's Gate (base game) content
 ACTION_IF GAME_IS ~eet bgee~ BEGIN
@@ -76,23 +80,42 @@ END
 // Baldur's Gate: Siege of Dragonspear content
 ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_sod.tra~ BEGIN
+        /* Strings */
+        PRINT @90009  /* ~Replacing strings for Siege of Dragonspear content ...~ */
+        ACTION_IF GAME_IS ~eet~ BEGIN
+            // Modify the journal entry for if the player killed Keherrem to phrase deception as optional
+            // (useful if the player killed them for pragmatic reasons but doesn't want to lie)
+            STRING_SET 264444 @7016  // The Missing Patrol - Killed
+        END ELSE BEGIN
+            // Journal entry for if the player killed Keherrem modified to phrase deception as optional
+            // (useful if the player killed them for pragmatic reasons but doesn't want to lie)
+            STRING_SET 64444 @7016  // The Missing Patrol - Killed
+        END
         /* Journal */
         PRINT @90007  /* ~Adding journal entries for Siege of Dragonspear content ...~ */
         ACTION_IF GAME_IS ~eet~ BEGIN
             // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
-            ADD_JOURNAL EXISTING TITLE (#264446) @7011 /* ~The Missing Patrol [...]~ */
-            ADD_JOURNAL EXISTING TITLE (#264446) @7012 /* ~The Missing Patrol [...]~ */
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - Left be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - Left be - killed anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7018  // The Missing Patrol - Left be - completed
+            // Journal entry for if the player killed Keherrem and didn't lie to get in to the camp
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7017  // The Missing Patrol - Killed - not lied - completed
         END ELSE BEGIN
             // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
-            ADD_JOURNAL EXISTING TITLE (#64446) @7011 /* ~The Missing Patrol [...]~ */
-            ADD_JOURNAL EXISTING TITLE (#64446) @7012 /* ~The Missing Patrol [...]~ */
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7011  // The Missing Patrol - Left be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7012  // The Missing Patrol - Left be - killed anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7017  // The Missing Patrol - Killed - not lied - completed
+            // Journal entry for if the player killed Keherrem and didn't lie to get in to the camp
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7018  // The Missing Patrol - Left be - completed
         END
+        /* Script */
+        PRINT @90008  /* ~Extending scripts for Siege of Dragonspear content ...~ */
         // Add "I decided to kill the crusaders anyway." to quest journal
         // if the player decides to do that despite explicitly saying they won't
+        // Note that Keherrem's name uses a different spelling in variable names
         COPY_EXISTING ~BDLEVER2.BCS~ ~override~
             DECOMPILE_AND_PATCH BEGIN
                 REPLACE_TEXTUALLY EXACT_MATCH
-// Note that Keherrem's name uses a different spelling in variable names
 ~IF
   Clicked([ANYONE])
   Global("bd_sdd201_missing_keherram_lever","GLOBAL",1)
@@ -131,16 +154,13 @@ THEN
     Continue()
 END~
             END
-        /* Script */
-        PRINT @90008  /* ~Patching script for Siege of Dragonspear content ...~ */
         // When the last chance to save or kill Keherrem has passed,
         // mark the "The Missing Patrol" as completed if the player explicitly decided to leave him alive
-        // TODO Playtest
-        EXTEND_TOP ~BD2000.bcs~ ~%MOD_FOLDER%/core/siege_of_dragonspear/src/script/dca_BD2000.baf~
+        EXTEND_TOP ~BD2000.bcs~ ~%MOD_FOLDER%/core/siege_of_dragonspear/src/script/dca_BD2000.baf~ EVALUATE_BUFFER
         /* Dialogue */
         PRINT @90004  /* ~Compiling dialogue files for Siege of Dragonspear content ...~ */
+        // They get their own line in vanilla, and our line is for everyone else
         OUTER_SPRINT compromise_dialogue_changes ~~~~~
-            // They get their own line in vanilla, and our line is for everyone else
             IF ~ OR(2)
                 !Class(Player1,CLERIC_ALL)
                 !Alignment(Player1,LAWFUL_GOOD)

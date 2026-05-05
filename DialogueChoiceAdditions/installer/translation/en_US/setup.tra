@@ -10,4 +10,5 @@
 @90005 = ~Unsupported game.~
 @90006 = ~Installing voiceover files for Siege of Dragonspear content ...~
 @90007 = ~Adding journal entries for Siege of Dragonspear content ...~
-@90008 = ~Patching script for Siege of Dragonspear content ...~
+@90008 = ~Extending scripts for Siege of Dragonspear content ...~
+@90009 = ~Replacing strings for Siege of Dragonspear content ...~
