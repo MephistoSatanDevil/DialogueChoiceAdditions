@@ -49,7 +49,7 @@
 
 // dca_BDKHARMY.d
 @7000 = ~Of course. I'll find a way to free you.~
-@7001 = ~You serve the crusade? Then I will leave you locked up.~
+@7001 = ~~
 @7002 = ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~  // Adapted from vanilla "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you."
 @7003 = ~I am merely considering all options. Now, how might we free them?~
 @7004 = ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cages stay shut.~
