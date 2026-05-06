@@ -20,29 +20,6 @@ ALTER_TRANS ~BDMADELE~
         "REPLY" ~@8008~ /* ~That is all I need to know. Farewell.~ */
 END
 
-/* ~The base god of treachery now rules here; his mocking laugh sears my brain. I will not say his name. She can never make me say his name! A new age of Bhaal will be upon us, and soon. The Harpers stole and slew our children, but still I remain faithful. The Lord of Murder will rise again.~ */
-
-// Make the query about the children lead directly to the tale of the children
-// Seems like an oversight in vanilla
-ALTER_TRANS ~BDMADELE~
-    BEGIN 4 END  // State 4
-    BEGIN 1 END  // second response
-    /* ~What tale shall I spin for you? That of our stolen children, or of our collapse?~ */
-    BEGIN
-        "EPILOGUE" ~GOTO 6~
-END
-
-/* ~"Stole" is not the proper word. "Liberated" is more accurate. Harpers sometimes rescue innocents from cults prepared to sacrifice them.~ */
-
-// Make the query about the children (in State 4) lead more directly to the tale of the children (after Jaheira's line here)
-// Seems like an oversight in vanilla
-ALTER_TRANS ~JAHEIRAJ~
-    BEGIN 776 END  // State 776
-    BEGIN 0 END  // first response
-    BEGIN
-        "EPILOGUE" ~EXTERN BDMADELE 6~
-END
-
 /* ~Alone in the dust. Alone in the rust. Hahahahaha! Forgotten servant of a forgotten god.~ */
 
 // Hide the fourth option if the player has the key
@@ -64,7 +41,6 @@ ADD_TRANS_ACTION ~BDMADELE~
     BEGIN 4 END  // Fifth response
     /* ~Rot in your cell. You deserve no better.~ */
     ~AddJournalEntry(@8003,QUEST)~
-END
 
 // Copy this response from State 12
 EXTEND_TOP ~BDMADELE~ 19
