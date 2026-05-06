@@ -110,6 +110,7 @@ New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/Dialogu
 - De Lancie
 - Dying Myconid
 - Keherrem
+- Madele
 - Murs
 - Nederlok
 - Nereid

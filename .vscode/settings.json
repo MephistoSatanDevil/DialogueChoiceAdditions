@@ -9,6 +9,7 @@
         "Caelar",
         "Candlekeep",
         "CHARNAME",
+        "Cyric",
         "Diarmid",
         "Dorn",
         "Dragonspear",
@@ -22,6 +23,7 @@
         "Kharmy",
         "Koveras",
         "Lancie",
+        "Madele",
         "myconid",
         "Nashkel",
         "Nederlok",
@@ -36,7 +38,9 @@
         "stringref",
         "Therli",
         "Voleta",
+        "wardstone",
         "Waterdeep",
-        "Wyrm's"
+        "Wyrm's",
+        "Ziatar"
     ]
 }

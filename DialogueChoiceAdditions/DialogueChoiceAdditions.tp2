@@ -32,6 +32,12 @@ OUTER_SET stringref_free_us_please_ill_do_anything = 64262
 OUTER_SET stringref_the_missing_patrol = 64446
 OUTER_SET stringref_the_missing_patrol_my_next_task = 64444
 OUTER_SET stringref_the_missing_patrol_i_must_find = 64440
+OUTER_SET stringref_she_thought_i_was_powerless = 64167
+OUTER_SET stringref_what_forgotten_god = 64078
+OUTER_SET stringref_i_am_here_to_free_you_i_found_the_key = 64079
+OUTER_SET stringref_i_will_return_once_i_have_the_means = 64081
+OUTER_SET stringref_rot_in_your_cell = 64082
+OUTER_SET stringref_ive_come_here_looking_for_a_wardstone = 64062
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -52,6 +58,12 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_the_missing_patrol = stringref_the_missing_patrol + EET_OFFSET
     OUTER_SET stringref_the_missing_patrol_my_next_task = stringref_the_missing_patrol_my_next_task + EET_OFFSET
     OUTER_SET stringref_the_missing_patrol_i_must_find = stringref_the_missing_patrol_i_must_find + EET_OFFSET
+    OUTER_SET stringref_she_thought_i_was_powerless = stringref_she_thought_i_was_powerless + EET_OFFSET
+    OUTER_SET stringref_what_forgotten_god = stringref_what_forgotten_god + EET_OFFSET
+    OUTER_SET stringref_i_am_here_to_free_you_i_found_the_key = stringref_i_am_here_to_free_you_i_found_the_key + EET_OFFSET
+    OUTER_SET stringref_i_will_return_once_i_have_the_means = stringref_i_will_return_once_i_have_the_means + EET_OFFSET
+    OUTER_SET stringref_rot_in_your_cell = stringref_rot_in_your_cell + EET_OFFSET
+    OUTER_SET stringref_ive_come_here_looking_for_a_wardstone = stringref_ive_come_here_looking_for_a_wardstone + EET_OFFSET
 END
 // Baldur's Gate (base game) content
 ACTION_IF GAME_IS ~eet bgee~ BEGIN
@@ -94,15 +106,19 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
         /* Journal */
         PRINT @90007  /* ~Adding journal entries for Siege of Dragonspear content ...~ */
         ACTION_IF GAME_IS ~eet~ BEGIN
-            // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - Leave be
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - Leave be - killed anyway
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7017  // The Missing Patrol - Kill or free - said to leave anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - leave be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - leave be killed anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7017  // The Missing Patrol - kill or free said to leave anyway 
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8003  // The Eyeless Priestess - leave be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8004  // The Eyeless Priestess - free - good
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8005  // The Eyeless Priestess - free - neutral/evil
         END ELSE BEGIN
-            // Journal entries for if the player explicitly decides to leave Keherrem in his cage alive
-            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7011  // The Missing Patrol - Leave be
-            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7012  // The Missing Patrol - Leave be - killed anyway
-            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7017  // The Missing Patrol - Kill or free - said to leave anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7011  // The Missing Patrol leave be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7012  // The Missing Patrol leave be killed anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7017  // The Missing Patrol kill or free said to leave anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64982) @8003  // The Eyeless Priestess - leave be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64982) @8004  // The Eyeless Priestess - free - good
+            ADD_JOURNAL EXISTING MANAGED TITLE (#64982) @8005  // The Eyeless Priestess - free - neutral/evil
         END
         /* Script */
         PRINT @90008  /* ~Extending scripts for Siege of Dragonspear content ...~ */
@@ -192,6 +208,7 @@ END~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDELANC.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDYINGM.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDKHARMY.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMADELE.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDMURS.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDNEDERL.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDPWATER.d~
