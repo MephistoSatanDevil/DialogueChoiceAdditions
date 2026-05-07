@@ -10,11 +10,10 @@ This document comprises rough development notes and brainstorm data; not polishe
 - [ ] Iron Throne NPCs
 - [ ] Character rejoin dialogue
 - [ ] Caelar
+- [ ] Add journal when killing Madele
 - ~~[ ] Final BG1 battle~~
 - ~~[ ] Koveras~~
 - ~~[ ] Centeol~~
-- [x] Rieltar
-- [x] Merchant (Seven Suns, human)
 
 ## BDNEDERL
 

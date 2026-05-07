@@ -114,6 +114,7 @@ New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/Dialogu
 - Murs
 - Nederlok
 - Nereid
+- Slug
 - Shapur
 - Therli
 

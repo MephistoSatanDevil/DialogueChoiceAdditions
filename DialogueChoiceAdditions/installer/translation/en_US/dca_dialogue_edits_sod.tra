@@ -95,3 +95,9 @@ I freed Madele from her imprisonment.~
 @8006 = ~I have nothing to say to you.~
 @8007 = ~I have nothing more to say to you.~
 @8008 = ~That is all I need to know. Farewell.~
+
+// dca_BDSLUG.d
+@9000 = ~Fine. No talk, then.~
+@9001 = ~How did you end up here?~
+@9002 = ~I have to go now. Farewell.~
+@9003 = ~I see. Well, I had best get a move on. Farewell.~
