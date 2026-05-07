@@ -30,7 +30,7 @@ The author of *Dialogue Choice Additions* is VioletSister.
 
 A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang). Voices Voices Extravaganza is also licensed under CC BY-NC-SA 4.0.
 
-[WeiDU](https://weidu.org/) is made by [Westley Weimer](https://weidu.org/).
+[WeiDU](https://weidu.org/) is made by Westley Weimer.
 
 [WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager) is made by [Argent77](https://github.com/Argent77)
 

@@ -71,7 +71,7 @@ If the NPC dialogue is voiced in vanilla, "new" dialogue is only added if it can
 
 ### Enhanced Edition Trilogy
 
-*Dialogue Choice Additions* has currently only been tested with [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET) and to a lesser extent extent vanilla *Baldur's Gate: Enhanced Edition* (with Enhanced Edition Fixpack). Whether it works on old *Baldur's Gate*, or *Baldur's Gate Trilogy* (BGT), I do not know. DCA currently only makes changes to "Baldur's Gate" and "Siege of Dragonspear" content. You do not need to have *Siege of Dragonspear* installed (unless you're using EET), although the mod has not been tested without it.
+*Dialogue Choice Additions* has currently only been tested with [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET) and to a lesser extent vanilla *Baldur's Gate: Enhanced Edition* (with Enhanced Edition Fixpack). Whether it works on old *Baldur's Gate*, or *Baldur's Gate Trilogy* (BGT), I do not know. DCA currently only makes changes to "Baldur's Gate" and "Siege of Dragonspear" content. You do not need to have *Siege of Dragonspear* installed (unless you're using EET), although the mod has not been tested without it.
 
 It should be installed before EET_end.
 
@@ -129,7 +129,7 @@ Adjust the instructions for your operating system. Ask an AI assistant (copy pas
 
 A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang).
 
-[WeiDU](https://weidu.org/) is made by [Westley Weimer](https://weidu.org/).
+[WeiDU](https://weidu.org/) is made by Westley Weimer.
 
 [WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager) is made by [Argent77](https://github.com/Argent77)
 
