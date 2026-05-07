@@ -110,7 +110,7 @@ If you use [Infinity Engine Mod Installer](https://github.com/dark0dave/mod_inst
 2. Extract the archive to your game directory (so the the binary—e.g. "setup-DialogueChoiceAdditions.exe"— and the "DialogueChoiceAdditions" directory goes directly into your game directory)
 3. Run the installer (e.g. setup-DialogueChoiceAdditions.exe).
 
-### Uninstallation
+## Uninstallation
 
 1. Go to your game directory and run setup-DialogueChoiceAdditions.exe
 2. Enter "u" to uninstall.
