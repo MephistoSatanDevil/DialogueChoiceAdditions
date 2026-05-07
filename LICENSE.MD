@@ -22,11 +22,17 @@ Under the following terms:
 
 For the full legal code, see the second [License](https://github.com/virginviolet/DialogueChoiceAdditions/?tab=License-2-ov-file) on GitHub or read the file "LICENSE-BY-NC-SA-FOUR.MD".
 
+[WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager) (.github/workflows/[WeiduModPackager.yml](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/workflows/WeiduModPackager.yml])) is not covered by the license.
+
 ## Attribution
 
 The author of *Dialogue Choice Additions* is VioletSister.
 
-Most of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang). Voices Voices Extravaganza is also licensed under CC BY-NC-SA 4.0.
+A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang). Voices Voices Extravaganza is also licensed under CC BY-NC-SA 4.0.
+
+[WeiDU](https://weidu.org/) is made by [Westley Weimer](https://weidu.org/).
+
+[WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager) is made by [Argent77](https://github.com/Argent77)
 
 Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000), and Throne of Bhaal (2001) are ©BioWare. Dungeons & Dragons material is ©Wizards of the Coast.
 

@@ -87,19 +87,52 @@ The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" compo
 
 ## Installation
 
-1. On GitHub, click the "Code" button and select "Download Zip"
-2. Extract the mod
-   a. (Project Infinity) If you use [Project Infinity](https://forums.beamdog.com/discussion/74335/project-infinity-mod-manager-for-baldurs-gate-icewind-dale-planescape-torment-and-eet), extract the zip archive to your "Extracted mods" directory, and click the refresh button in Project Infinity.
-   b. (manual installation) If you don't use Project Infinity, extract the DialogueChoiceAdditions directory from the zip archive to your game directory.
-   c. (mod_installer) I don't know how that works.
-3. Install the mod components you want.
-   a. (Project Infinity) Select the mod components you want, press Set-InstallSequence, then press Start-Installation.
-   b. (manual installation) Place [weidu.exe](https://weidu.org/) in your game directory, navigate to your installation directory in a command prompt (hint: `cd`), then run `.\weidu.exe .\DialogueChoiceAdditions\DialogueChoiceAdditions.tp2 --game "C:\path\to\your\game\installation\directory" --use-lang en_US --language 0 --force-install 0` (replace the path) for the "Core" component, and `.\weidu.exe .\DialogueChoiceAdditions\DialogueChoiceAdditions.tp2 --game "C:\path\to\your\game\installation\directory" --use-lang en_US --language 0 --force-install 1` for the VVE patch.
-   c. (mod_installer) I don't know how that works.
+### Project Infinity
+
+If you use [Project Infinity](https://forums.beamdog.com/discussion/74335/project-infinity-mod-manager-for-baldurs-gate-icewind-dale-planescape-torment-and-eet):
+
+1. Go to [Releases](https://github.com/virginviolet/DialogueChoiceAdditions/releases/latest) and download the .iemod file.
+2. As usual with WeiDU installer mods, disable anti-virus software (including Windows Defender) temporarily.
+3. Double-click the .iemod file and open with Project Infinity.
+4. Select "Import Mod".
+5. If you already had a Project Infinity window open and this opens another one, then close one of them.
+6. Select the mod components you want.
+7. Press "Set-InstallSequence".
+8. Press "Start-Installation".
+9. Re-enable anti-virus software.
+10. Run the game and have fun!
+
+### Infinity Engine Mod Installer
+
+If you use [Infinity Engine Mod Installer](https://github.com/dark0dave/mod_installer) (mod_installer), I cannot help you. I have never used it.
+
+### Semi-manual installation
+
+1. Go to [Releases](https://github.com/virginviolet/DialogueChoiceAdditions/releases/latest) and download the .zip archive that has the prefix that matches your operating system.
+2. Extract the archive to your game directory (so the the binary—e.g. "setup-DialogueChoiceAdditions.exe"— and the "DialogueChoiceAdditions" directory goes directly in your game directory)
+3. Run the installer (e.g. setup-DialogueChoiceAdditions.exe).
+
+### Uninstallation
+
+1. Go to your game directory and run setup-DialogueChoiceAdditions.exe
+2. Enter "u" to uninstall.
+
+If that doesn't work:
+
+1. Place [weidu.exe](https://weidu.org/) in your game directory.
+2. Navigate to your installation directory in a command prompt (hint: `cd`).
+3. Run `.\weidu.exe .\DialogueChoiceAdditions\DialogueChoiceAdditions.tp2 --game "C:\path\to\your\game\installation\directory" --use-lang en_US --language 0 --force-install 0` (replace the path) for the "Core" component
+4. Run `.\weidu.exe .\DialogueChoiceAdditions\DialogueChoiceAdditions.tp2 --game "C:\path\to\your\game\installation\directory" --use-lang en_US --language 0 --force-install 1` for the VVE patch.
+
+Adjust the instructions for your operating system. Ask an AI assistant (copy paste the instructions) or a friend for help if you need it.
 
 ## Attribution
 
-Most of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang).
+A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang). Voices Voices Extravaganza is also licensed under CC BY-NC-SA 4.0.
+
+[WeiDU](https://weidu.org/) is made by [Westley Weimer](https://weidu.org/).
+
+[WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager) is made by [Argent77](https://github.com/Argent77)
 
 Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000), and Throne of Bhaal (2001) are ©BioWare. Dungeons & Dragons material is ©Wizards of the Coast.
 
@@ -150,3 +183,4 @@ New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/Dialog
 - [Adobe Audition](https://www.adobe.com/products/audition.html)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [BGForge MLS](https://marketplace.visualstudio.com/publishers/BGforge)
+- [WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager)
