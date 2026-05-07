@@ -94,11 +94,12 @@ If you use [Project Infinity](https://forums.beamdog.com/discussion/74335/projec
 3. Double-click the .iemod file and open with Project Infinity.
 4. Select "Import Mod".
 5. If you already had a Project Infinity window open and this opens another one, then close one of them.
-6. Select the mod components you want.
-7. Press "Set-InstallSequence".
-8. Press "Start-Installation".
-9. Re-enable anti-virus software.
-10. Run the game and have fun!
+6. Click the refresh button (🔃).
+7. Select the mod components you want.
+8. Press "Set-InstallSequence".
+9. Press "Start-Installation".
+10. Re-enable anti-virus software.
+11. Run the game and have fun!
 
 ### Infinity Engine Mod Installer
 
