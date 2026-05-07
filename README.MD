@@ -31,9 +31,9 @@ In accordance with these goals and requirements, vanilla dialogue choices someti
 
 To highlight changes, new dialogue choices are set in bold type in this example (but not in the actual game).
 
-### Before
-
 > De Lancie: We know Dragonspear is being supplied via the caverns you'll be visiting shortly, if all goes as planned. If you put a few drops of this in the enemy food supplies and water, we would have an edge when we finally confront the Shining Lady.
+
+### Before
 
 1. Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?
 2. What? Explosives are one thing, but poison is too much. I'll hear no more of this.
@@ -41,8 +41,6 @@ To highlight changes, new dialogue choices are set in bold type in this example 
 4. I will show the Shining Lady's followers the same mercy they would have shown me. Give me the poison.
 
 ### After
-
-> De Lancie: We know Dragonspear is being supplied via the caverns you'll be visiting shortly, if all goes as planned. If you put a few drops of this in the enemy food supplies and water, we would have an edge when we finally confront the Shining Lady.
 
 1. **An ugly task, but I will see it done.**
 2. Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?
