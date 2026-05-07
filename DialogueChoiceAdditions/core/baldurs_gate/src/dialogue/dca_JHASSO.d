@@ -30,7 +30,7 @@ END
 APPEND ~JHASSO~
     // Add a variant without "shapeshifter scum" for if the Seven Suns story haven't started yet
     IF ~!Global("TalkedToScar","GLOBAL",1) !Global("JhassoFreed","GLOBAL",1) !Global("Chapter","GLOBAL",7)~ THEN BEGIN WellYoullGetNaught
-        SAY @7000 /* ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me.~ [EDJHA01] */
+        SAY @7000 /* ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me.~ [DCJHA01] */
         IF ~~ THEN REPLY @7001 /* ~What are you talking about?~ */ GOTO 1
         IF ~~ THEN REPLY @7002 /* ~Are you being held captive here?~ */ GOTO 1
         IF ~~ THEN REPLY @7003 /* ~Maybe another day, then.~ */ EXIT

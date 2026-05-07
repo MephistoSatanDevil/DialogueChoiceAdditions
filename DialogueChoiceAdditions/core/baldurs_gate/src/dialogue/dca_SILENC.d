@@ -17,7 +17,7 @@ END
 
 APPEND ~SILENC~
     IF ~~ THEN BEGIN YouveGotTillIGetMyMuscle
-        SAY @5003 /* ~You've got till I get my muscle to be gone. After that, you'll hit the bricks a touch harder.~ [EDDEL02] */
+        SAY @5003 /* ~You've got till I get my muscle to be gone. After that, you'll hit the bricks a touch harder.~ [DCDEL02] */
     IF ~~ THEN DO ~SetGlobal("NoPayment","GLOBAL",1)~ EXIT
     END
 END

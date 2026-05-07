@@ -10,7 +10,7 @@ END
 
 APPEND ~PROST4~
     IF ~~ THEN BEGIN NoMatter
-        SAY @2001 /* ~No matter. More of me for someone else...~ [EDPRO01] */
+        SAY @2001 /* ~No matter. More of me for someone else...~ [DCPRO01] */
     IF ~~ THEN EXIT
     END
 END

@@ -43,7 +43,7 @@ END
 APPEND ~VOLETA~
     IF ~~ THEN BEGIN JustBeSure
         // Shortened from State 7
-        SAY @9 /* ~Just you be sure to give that Sarevok a shank o' steel.~ [EDVOL02] */
+        SAY @9 /* ~Just you be sure to give that Sarevok a shank o' steel.~ [DCVOL02] */
     IF ~~ THEN EXIT
     END
 END
@@ -95,7 +95,7 @@ END
 APPEND ~VOLETA~
     IF ~NumTimesTalkedToGT(0)~ THEN BEGIN ImJustGoingToStayHere
         // Dialogue shortened from State 4
-        SAY @5 /* ~I'm just going to stay here and catch my breath.~ [EDVOL01] */
+        SAY @5 /* ~I'm just going to stay here and catch my breath.~ [DCVOL01] */
         IF ~~ THEN REPLY @0 /* ~Who did this to you?~ */ GOTO 3
         COPY_TRANS ~VOLETA~ 5 /* ~Where does the maze lead?~ */
         IF ~~ THEN REPLY @11 /* ~Are you able to guide me through the maze?~ */ GOTO 6 // Edited from vanilla line "Could you guide me through the maze so I can find him?"

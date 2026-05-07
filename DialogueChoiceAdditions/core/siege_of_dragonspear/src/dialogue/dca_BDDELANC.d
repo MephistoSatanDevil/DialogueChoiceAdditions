@@ -48,7 +48,7 @@ END
 APPEND ~%bddelanc%~
     // Abridged from State 23
     IF ~~ THEN BEGIN Compromise
-        SAY @5 /* ~Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?~ [EDDEL01] */
+        SAY @5 /* ~Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?~ [DCDEL01] */
         COPY_TRANS ~%bddelanc%~ 23
     END
 END

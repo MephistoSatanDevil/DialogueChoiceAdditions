@@ -1,6 +1,6 @@
 # Dialogue Choice Additions
 
-**Dialogue Choice Additions** (DCA) is a work-in-progress mod for *Baldur's Gate* (*Enhanced Edition* or *[Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/)*) that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game. It does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)). It also improves [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her.
+**Dialogue Choice Additions** (DCA) is a mod for *Baldur's Gate* (*Enhanced Edition* or *[Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/)*) that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game. It does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)). It also improves [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her.
 
 The project's goals are as follows:
 
