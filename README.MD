@@ -63,7 +63,7 @@ For the new state, it's shortened to the following:
 
 > Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?
 
-To be clear, the old line is not removed. It will still be triggered if the player picks the vanilla dialogue option that leads to it (in this case, "Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?")
+To be clear, the old line is not removed; it will still be triggered if the player picks the vanilla dialogue option that leads to it (in this case, "Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?")
 
 In the case where a line cannot be cleanly extracted from VVE audio, a new voiceover file is generated with AI.
 
@@ -107,7 +107,7 @@ If you use [Infinity Engine Mod Installer](https://github.com/dark0dave/mod_inst
 ### Semi-manual installation
 
 1. Go to [Releases](https://github.com/virginviolet/DialogueChoiceAdditions/releases/latest) and download the .zip archive that has the prefix that matches your operating system.
-2. Extract the archive to your game directory (so the the binary—e.g. "setup-DialogueChoiceAdditions.exe"— and the "DialogueChoiceAdditions" directory goes directly in your game directory)
+2. Extract the archive to your game directory (so the the binary—e.g. "setup-DialogueChoiceAdditions.exe"— and the "DialogueChoiceAdditions" directory goes directly into your game directory)
 3. Run the installer (e.g. setup-DialogueChoiceAdditions.exe).
 
 ### Uninstallation
