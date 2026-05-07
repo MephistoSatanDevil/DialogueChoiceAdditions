@@ -11,6 +11,7 @@ The project's goals are as follows:
 - NPC followups to player choices follow naturally
 - Cover as many things as the player might want to do in any given situation
 - Generally, the player character should be explicit (bad: "I don't like this."; good: "I will not tolerate your lies!")
+- Compatibility with major mods
 
 Dialogue choice requirements:
 
@@ -19,7 +20,6 @@ Dialogue choice requirements:
 - Avoid having two or more choices that are too similar
 - Avoid changing or adding NPC dialogue, and only do so if seamless compatibility with Voices Voices Extravaganza can be ensured
 - Does not introduce bugs
-- Compatibility with major mods
 - Compatibility with [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/)
 - Compatibility with [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/)
 
