@@ -1,15 +1,17 @@
 # Dialogue Choice Additions
 
-**Dialogue Choice Additions** (DCA) is a mod for *Baldur's Gate* (*Enhanced Edition* or *[Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/)*) that adds additional dialogue choices (also known as dialogue options, responses, or replies) to specific dialogues in the game. It does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)). It also improves [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her.
+**Dialogue Choice Additions** (DCA) is a vanilla-faithful mod for *Baldur's Gate* (*Enhanced Edition* or *[Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/)*) that gives player characters more ways to respond in various conversations throughout the game.
+
+Additional dialogue choices (also known as dialogue options, responses, or replies) are added to specific dialogues where the original game left plausible responses uncovered. Additionally, some [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) are improved in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her. DCA does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)).
 
 The project's goals are as follows:
 
-- Vast roleplay coverage
-- Vast moral coverage
+- Cover as many things as the player might want to do in any given situation (e.g. end the conversation)
+- Broad roleplay coverage
+- Broad moral/ethical coverage
 - Vanilla-friendly / style matches the rest of the game
 - Story cohesion
 - NPC followups to player choices follow naturally
-- Cover as many things as the player might want to do in any given situation
 - Generally, the player character should be explicit (bad: "I don't like this."; good: "I will not tolerate your lies!")
 - Compatibility with major mods
 
@@ -24,6 +26,32 @@ Dialogue choice requirements:
 - Compatibility with [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/)
 
 In accordance with these goals and requirements, vanilla dialogue choices sometimes have to be changed or removed. This is done very conservatively, however, and generally avoided.
+
+## Example
+
+To highlight changes, new dialogue choices are set in bold type in this example (but not in the actual game).
+
+### Before
+
+> De Lancie: We know Dragonspear is being supplied via the caverns you'll be visiting shortly, if all goes as planned. If you put a few drops of this in the enemy food supplies and water, we would have an edge when we finally confront the Shining Lady.
+
+1. Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?
+2. What? Explosives are one thing, but poison is too much. I'll hear no more of this.
+3. That would give us a significant advantage, but managing it would entail significant risk. Which means I'll want a significant reward.
+4. I will show the Shining Lady's followers the same mercy they would have shown me. Give me the poison.
+
+### After
+
+> De Lancie: We know Dragonspear is being supplied via the caverns you'll be visiting shortly, if all goes as planned. If you put a few drops of this in the enemy food supplies and water, we would have an edge when we finally confront the Shining Lady.
+
+1. **An ugly task, but I will see it done.**
+2. Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?
+3. **I want no part in victory purchased with needless suffering.**
+4. That would give us a significant advantage, but managing it would entail significant risk. Which means I'll want a significant reward.
+5. I will show the Shining Lady's followers the same mercy they would have shown me. Give me the poison.
+6. **I kill when it suits me, but I will not play poisoner for you. Press me no further.**
+
+This may be a bit on the excessive side with regards to number of choices presented, but this is arguably a morally complicated situation, and each choice offers a unique stance.
 
 ## Compatibility
 
@@ -45,7 +73,7 @@ If the NPC dialogue is voiced in vanilla, "new" dialogue is only added if it can
 
 ### Enhanced Edition Trilogy
 
-*Dialogue Choice Additions* has currently only been tested with [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET), but it should work on *Baldur's Gate: Enhanced Edition* as well. Whether it works on old *Baldur's Gate*, or *Baldur's Gate Trilogy* (BGT) I do not know. DCA currently only makes changes to Baldur's Gate and Siege of Dragonspear content. You should not need to have *Siege of Dragonspear* installed, if you're not using EET.
+*Dialogue Choice Additions* has currently only been tested with [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET) and to a lesser extent extent vanilla *Baldur's Gate: Enhanced Edition* (with Enhanced Edition Fixpack). Whether it works on old *Baldur's Gate*, or *Baldur's Gate Trilogy* (BGT), I do not know. DCA currently only makes changes to "Baldur's Gate" and "Siege of Dragonspear" content. You do not need to have *Siege of Dragonspear* installed (unless you're using EET), although the mod has not been tested without it.
 
 It should be installed before EET_end.
 
@@ -68,12 +96,6 @@ The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" compo
    a. (Project Infinity) Select the mod components you want, press Set-InstallSequence, then press Start-Installation.
    b. (manual installation) Place [weidu.exe](https://weidu.org/) in your game directory, navigate to your installation directory in a command prompt (hint: `cd`), then run `.\weidu.exe .\DialogueChoiceAdditions\DialogueChoiceAdditions.tp2 --game "C:\path\to\your\game\installation\directory" --use-lang en_US --language 0 --force-install 0` (replace the path) for the "Core" component, and `.\weidu.exe .\DialogueChoiceAdditions\DialogueChoiceAdditions.tp2 --game "C:\path\to\your\game\installation\directory" --use-lang en_US --language 0 --force-install 1` for the VVE patch.
    c. (mod_installer) I don't know how that works.
-
-## Roadmap
-
-The version number will change to 1.0.0 once support for *Baldur's Gate: Enhanced Edition* (without EET) has been confirmed.
-
-The mod should be published to major modding websites eventually.
 
 ## Attribution
 
