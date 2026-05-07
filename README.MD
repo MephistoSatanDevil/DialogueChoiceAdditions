@@ -126,7 +126,7 @@ Adjust the instructions for your operating system. Ask an AI assistant (copy pas
 
 ## Attribution
 
-A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang). Voices Voices Extravaganza is also licensed under CC BY-NC-SA 4.0.
+A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang).
 
 [WeiDU](https://weidu.org/) is made by [Westley Weimer](https://weidu.org/).
 
