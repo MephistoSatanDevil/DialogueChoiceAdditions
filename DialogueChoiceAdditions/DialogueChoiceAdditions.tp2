@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/backup/DialogueChoiceAdditions~
 // SUPPORT ~https://github.com/VioletSister/DialogueChoiceAdditions/issues~ // URL displayed if install fails
 AUTHOR ~VioletSister~
-VERSION ~1.0.0~
+VERSION ~1.0.1~
 LANGUAGE ~English~ ~en_US~ ~DialogueChoiceAdditions/installer/translation/en_US/setup.tra~
 
 BEGIN @0  // Dialogue Choice Additions: Core
