@@ -16,8 +16,9 @@ OUTER_SPRINT bdbellow ~BDBELLOW~
 /* StringRefs */
 OUTER_SET stringref_fitting_last_words = 10844
 OUTER_SET stringref_no_words = 37478
-OUTER_SET stringref_where_does_this_maze_lead = 11727
+OUTER_SET stringref_where_does_the_maze_lead = 11727
 OUTER_SET stringref_where_does_it_lead = 10843
+OUTER_SET stringref_tandem_in_extremis_evidently = 27505
 OUTER_SET stringref_blast_you_all = 10833
 OUTER_SET stringref_were_not_here_to_torture = 1020
 OUTER_SET stringref_who_are_you_master_gnome = 51767
@@ -42,8 +43,9 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
     OUTER_SET stringref_no_words = stringref_no_words + EET_OFFSET
-    OUTER_SET stringref_where_does_this_maze_lead = stringref_where_does_this_maze_lead + EET_OFFSET
+    OUTER_SET stringref_where_does_the_maze_lead = stringref_where_does_the_maze_lead + EET_OFFSET
     OUTER_SET stringref_where_does_it_lead = stringref_where_does_it_lead + EET_OFFSET
+    OUTER_SET stringref_tandem_in_extremis_evidently = stringref_tandem_in_extremis_evidently + EET_OFFSET
     OUTER_SET stringref_blast_you_all = stringref_blast_you_all + EET_OFFSET
     OUTER_SET stringref_were_not_here_to_torture = stringref_were_not_here_to_torture + EET_OFFSET
     OUTER_SET stringref_who_are_you_master_gnome = stringref_who_are_you_master_gnome + EET_OFFSET
@@ -67,26 +69,27 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 END
 // Baldur's Gate (base game) content
 ACTION_IF GAME_IS ~eet bgee~ BEGIN
-    /* Dialogue */
-    PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
+    /* Journal */
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_bg.tra~ BEGIN
-        OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~  /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
-        ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
-            OUTER_SPRINT doppelganger_merchant_busy_response ~@8001~  /* ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01] */
-        END
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPMER.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPPSM.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_FLAMGG.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_JHASSO.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_PROST4.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAGEFA.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAHVIN.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RIELTA.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SCAR.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SILENC.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_TELANO.d~
-        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_VOLETA.d~
+        /* Dialogue */
+        PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
+            OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~  /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
+            ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
+                OUTER_SPRINT doppelganger_merchant_busy_response ~@8001~  /* ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01] */
+            END
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPMER.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPPSM.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_FLAMGG.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_JHASSO.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_PROST4.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAGEFA.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAHVIN.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RIELTA.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SCAR.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SILENC.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_TELANO.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_VOLETA.d~
     END
 END
 // Baldur's Gate: Siege of Dragonspear content

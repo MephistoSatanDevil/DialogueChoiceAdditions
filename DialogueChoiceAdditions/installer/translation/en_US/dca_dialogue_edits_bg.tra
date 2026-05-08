@@ -8,12 +8,16 @@
 @2 = ~Hmph. We'll see about that. Goodbye.~
 @3 = ~That's all I need to know. Goodbye.~
 @4 = ~I shall. Goodbye.~
+// From vanilla "Where does it lead? You want to follow him? You'll be dead before you get a hundred feet, but I guess it's your life. The maze apparently connects to the Undercity, but I ain't heard of nobody that has gone through and lived to tell. It's kinda meant as a decoy retreat of sorts. Lead intruders down here and they think it's the way out. Usually you don't see them again after that. Ain't seen a live person leave ever. She's full o' undead and kept clean by jellies. Better get a move on if you hope to catch them. I'm just going to stay here and catch my breath."
 @5 = ~I'm just going to stay here and catch my breath.~ [DCVOL01]
-@6 = ~Could you guide me through this maze?~
-@7 = ~Rest ye well.~
+@6 = ~~
+@7 = ~Rest ye well.~  // From vanilla "I understand. Rest ye well."
 @8 = ~I should get going.~
+// From vanilla "Yeah, whatever. Just you be sure to give that Sarevok a shank o' steel."
 @9 = ~Just you be sure to give that Sarevok a shank o' steel.~ [DCVOL02]
+// From vanilla "Could you guide me through the maze so I can find him?"
 @10 = ~Um, is there any chance you would be able to see me through the maze?~
+// From vanilla "Could you guide me through the maze so I can find him?"
 @11 = ~Are you able to guide me through the maze?~
 
 // dca_RAHVIN.d
@@ -72,5 +76,5 @@
 // dca_RIELTA.d
 @12000 = ~Sorry. We'll head back out.~
 @12001 = ~No one told me this room was off limits.~
-@12002 = ~I believe I have a place in this discussion.~ 
+@12002 = ~I believe I have a place in this discussion.~
 @12003 = ~I'll leave when I'm finished.~
