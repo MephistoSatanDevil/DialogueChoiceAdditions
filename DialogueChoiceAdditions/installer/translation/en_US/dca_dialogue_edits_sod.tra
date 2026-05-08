@@ -4,10 +4,12 @@
 
 // dca_BDDELANC.d
 @0 = ~Fine. I'll be off.~
+// Replaces vanilla "...Very well. What do you require of me?"
 @1 = ~...Very well. What else have you learned?~
 @2 = ~An ugly task, but I will see it done.~
 @3 = ~I want no part in victory purchased with needless suffering.~
 @4 = ~I kill when it suits me, but I will not play poisoner for you. Press me no further.~
+// From vanilla "Given a choice between victory and honor, I know which I'll choose. I can see you'll not be persuaded entirely by reason—given your reputation, I can't say I'm surprised. Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?"
 @5 = ~Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?~ [DCDEL01]
 @6 = ~What is going on here?~
 @7 = ~I appreciate the distinction, but my answer is no.~
@@ -25,12 +27,15 @@
 @3000 = ~I know good counsel when I hear it. Goodbye.~
 
 // dca_DYINGM.d
+// Replaces vanilla "I can't understand you. Are you all right? What is that horrible smell?"
 @3000 = ~I can't understand you. Are you all right?~
 @3001 = ~I think we should leave.~
 
 // dca_BDBELLOW.d
 @4000 = ~A touching reunion with the surface, no doubt. Farewell.~
+// From vanilla "If you gotta mosey off, I understand. We'll be here if you need anythin'."
 @4001 = ~If you gotta mosey off, I understand.~ [DCBLW01]
+// From vanilla "*gasp* I thought we'd never get back up! Sure is good to see the surface again."
 @4002 = ~Sure is good to see the surface again.~ [DCBLW02]
 @4003 = ~I'll leave you to enjoy the fresh cave air, then.~
 
@@ -44,13 +49,15 @@
 @5004 = ~I merely hoped talking might spare a great deal of bleeding.~
 
 // dca_BDPWATER.d
-@6000 = ~A wizard tried to bind them to his will. He will trouble you no more.~  // Adapted from vanilla "A wizard tried to bind them to his will. I put an end to his evil."
+// From vanilla "A wizard tried to bind them to his will. I put an end to his evil."
+@6000 = ~A wizard tried to bind them to his will. He will trouble you no more.~  
 @6001 = ~Keep it. I only did what the moment required.~
 
 // dca_BDKHARMY.d
 @7000 = ~Of course. I'll find a way to free you.~
 @7001 = ~~
-@7002 = ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~  // Adapted from vanilla "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you."
+// From vanilla "Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders. I'll tell your fellows the cultists killed you."
+@7002 = ~Those spikes in the floor were designed to shoot up and impale you. One pull of that lever across the room and I'd rid the world of three crusaders.~
 @7003 = ~I am merely considering all options. Now, how might we free them?~
 @7004 = ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cages stay shut.~
 @7005 = ~Letting crusaders live is a risk I am not willing to take. Say whatever prayers you know.~
@@ -59,19 +66,29 @@
 @7008 = ~If you serve the crusade, I cannot spare you. Say whatever prayers you know.~
 @7009 = ~Beg louder. I want to hear it when I pull the lever.~
 @7010 = ~I will have to think about this.~
+// From vanilla "The Missing Patrol
+// 
+// My next task is to take the crusader leader's badge back to the crusader camp. [...]"
 @7011 = ~The Missing Patrol
 
 I decided to leave the crusaders in their cages.
 
 I found the missing crusader patrol. If I can free them, I might be able to gain access to the crusader camp. Someone on this level must have a key to their cage. There's also a switch on the wall and giant spikes poised beneath the cage. If I kill the crusaders, I might be able to convince the camp guard that they were dead when I found them.~
+// From vanilla "The Missing Patrol
+// 
+// My next task is to take the crusader leader's badge back to the crusader camp. [...]"
 @7012 = ~The Missing Patrol
 
 I can take the crusader leader's badge back to the crusader camp and lie about what happened.
 
 I had meant neither to rescue nor kill them, but a nearby lever proved too tempting. When I pulled it, spikes shot up through the cages and impaled the crusaders, killing all three of them.~
+// From vanilla "You wear crusader colors. I have no interest in helping you. In fact, I should kill you right now."
 @7013 = ~You wear crusader colors. I have no interest in helping you. Farewell.~
 @7014 = ~Why free you when I can kill you instead?~
 @7015 = ~I will not free crusaders. Remain where you are. Farewell.~
+// Replaces vanilla "The Missing Patrol
+// 
+// My next task is to take the crusader leader's badge back to the crusader camp. [...]"
 @7016 = ~The Missing Patrol
 
 I can take the crusader leader's badge back to the crusader camp and lie about what happened.

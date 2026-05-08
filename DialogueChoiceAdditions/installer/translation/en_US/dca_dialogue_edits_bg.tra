@@ -3,7 +3,9 @@
 // npc  string
 
 // dca_VOLETA.d
+// From vanilla "You look injured. Who has done this to you?"
 @0 = ~Who did this to you?~
+// Replaces vanilla, "I mean you no harm. I am only here to find Sarevok."
 @1 = ~I am not with the one who harmed you. Have you seen Sarevok?~
 @2 = ~Hmph. We'll see about that. Goodbye.~
 @3 = ~That's all I need to know. Goodbye.~
@@ -15,7 +17,7 @@
 @8 = ~I should get going.~
 // From vanilla "Yeah, whatever. Just you be sure to give that Sarevok a shank o' steel."
 @9 = ~Just you be sure to give that Sarevok a shank o' steel.~ [DCVOL02]
-// From vanilla "Could you guide me through the maze so I can find him?"
+// Replaces vanilla "Could you guide me through the maze so I can find him?"
 @10 = ~Um, is there any chance you would be able to see me through the maze?~
 // From vanilla "Could you guide me through the maze so I can find him?"
 @11 = ~Are you able to guide me through the maze?~
@@ -25,6 +27,7 @@
 
 // dca_PROST4.d
 @2000 = ~No, thank you.~
+// From vanilla "I am sure you do. No matter. More of me for someone else..."
 @2001 = ~No matter. More of me for someone else...~ [DCPRO01]
 
 // dca_DIARMID.d
@@ -37,13 +40,16 @@
 @5000 = ~You call it safekeeping, yet your tone is threatening. I think it best if I leave.~
 @5001 = ~Don't you dare insult me again.~
 @5002 = ~I was strolling about. I'll take my leave.~
+// From vanilla "You've not the coin? I don't run a charity here! You've got till I get my muscle to be gone. After that, you'll hit the bricks a touch harder."
 @5003 = ~You've got till I get my muscle to be gone. After that, you'll hit the bricks a touch harder.~ [DCSIL01]
 @5004 = ~I don't feel like paying.~
 
 // dca_DOPPSM.d
+// From vanilla "We want to talk to the owner of the Seven Suns."
 @6000 = ~We're here to speak with Jhasso.~
 
 // dca_JHASSO.d
+// From vanilla "Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me, shapeshifter scum."
 @7000 = ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me.~ [DCJHA01]
 @7001 = ~What are you talking about?~
 @7002 = ~Are you being held captive here?~
@@ -51,17 +57,23 @@
 @7004 = ~Scar wants answers, and so do we. Who are you?~
 
 // dca_DOPMER.d
+// From the creature soundset; "[COMMON MAN 2] Leave us alone, will you? Nothin' for you here."
 @8000 = ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02]
+// From vanilla "Still you pester us! Do you have no shame?! Explain yourself!"
 @8001 = ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01]
 
 // dca_SCAR.d
+// From vanilla "Greetings, I am Scar, second-in-command of the Flaming Fist. My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne."
 @9000 = ~Greetings. I am Scar, second-in-command of the Flaming Fist.~ [DCSCA01]
+// From vanilla or Unfinished Business, "Just a minute. You said something about needing help. I'm interested in working for you now."
 @9001 = ~I am the one involved in the clearing of the Nashkel mines.~
 @9002 = ~Do you need help with anything?~
 @9003 = ~I am looking for a job.~
 @9004 = ~Well met. Things seem uneasy in Baldur's Gate.~
 @9005 = ~I will leave you to your work.~
+// From vanilla "I'm sorry to hear that. You're free to go. If you ever have any trouble, or if you change your mind about helping me, you can find me right here."
 @9006 = ~If you ever have any trouble, you can find me right here.~ [DCSCA02]
+// From vanilla "Greetings, I am Scar, second-in-command of the Flaming Fist. My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne."
 @9007 = ~My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne.~ [DCSCA03]
 
 // dca_TELANO.d
@@ -71,6 +83,7 @@
 // dca_FLAMGG.d
 @11000 = ~My point of origin is my own affair.~
 @11001 = ~I will not be questioned like a common criminal.~
+// From vanilla "I don't like your sarcasm. If you won't cooperate, then I'll just bring you to talk with my commander."
 @11002 = ~If you won't cooperate, then I'll just bring you to talk with my commander.~ [DCFLG01]
 
 // dca_RIELTA.d
