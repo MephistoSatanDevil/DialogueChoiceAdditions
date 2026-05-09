@@ -203,8 +203,8 @@ END~
         // Disable overlapping dialogue options from the mod "Jastey's Tweaks for SoD and EET (and BGT)", component "More Dialogue Choices _Prevent Dead Ends"
         OUTER_SET JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID = ID_OF_LABEL ~setup-c#sodtweaks.tp2~ ~JasteySodTweaks-MoreDialogueChoices_PreventDeadEnds~
         ACTION_IF MOD_IS_INSTALLED ~setup-c#sodtweaks.tp2~ ~%JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID%~ BEGIN
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility/siege_of_dragonspear/src/dialogue/dca_jt_BDNEDERL.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility/siege_of_dragonspear/src/dialogue/dca_jt_BDDELANC.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility_patch/siege_of_dragonspear/src/dialogue/dca_jt_BDNEDERL.d~
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility_patch/siege_of_dragonspear/src/dialogue/dca_jt_BDDELANC.d~
         END
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDARBING.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDBELLOW.d~
