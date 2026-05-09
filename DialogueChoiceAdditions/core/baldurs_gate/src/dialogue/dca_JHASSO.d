@@ -5,6 +5,7 @@
 Sorry, my friends, but I have very little information to give you. I have been a captive of the doppelgangers for quite a time, and am out of touch with the politics of my beloved city. */
 
 // Disable this if it's Chapter 7
+// because he's not captive in Chapter 7
 REPLACE_STATE_TRIGGER ~JHASSO~ 16 ~StateCheck(Myself,STATE_CHARMED) !Global("JhassoFreed","GLOBAL",1) !Global("Chapter","GLOBAL",7)~ // From `StateCheck(Myself,STATE_CHARMED)`
 
 /* ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me, shapeshifter scum.~ */
@@ -42,7 +43,7 @@ END
 ALTER_TRANS ~JHASSO~
     BEGIN 6 END // State 6
     BEGIN 0 END // first answer
-    /* ~~ */
+    /* (No text) */
     BEGIN
         // JhassoIsFree: whether Jhasso is free or in captivity
         // JhassoFreed: whether the player has had the conversation with Jhasso that ends with him escaping
@@ -54,7 +55,7 @@ ALTER_TRANS ~JHASSO~
 ALTER_TRANS ~JHASSO~
     BEGIN 18 END // State 18
     BEGIN 0 END // first answer
-    /* ~~ */
+    /* (No text) */
     BEGIN
         "ACTION" ~EscapeArea() SetGlobal("JhassoIsFree","GLOBAL",1) SetGlobal("JhassoFreed","GLOBAL",1)~
     END

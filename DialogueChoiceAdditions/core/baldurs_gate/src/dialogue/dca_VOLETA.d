@@ -103,6 +103,8 @@ END
 
 /* ---- */
 
+// New top-level state
+// so that Voleta won't say her "Blast you all thrice over!" line every time you talk as if she had forgotten about your last exchange
 APPEND ~VOLETA~
     IF ~NumTimesTalkedToGT(0)~ THEN BEGIN ImJustGoingToStayHere
         // Dialogue shortened from State 4
