@@ -73,23 +73,28 @@ ACTION_IF GAME_IS ~eet bgee~ BEGIN
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_bg.tra~ BEGIN
         /* Dialogue */
         PRINT @90003  /* ~Compiling dialogue files for Baldur's Gate content ...~ */
-            OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~  /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
-            ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
-                OUTER_SPRINT doppelganger_merchant_busy_response ~@8001~  /* ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01] */
-            END
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPMER.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPPSM.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_FLAMGG.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_JHASSO.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_PROST4.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAGEFA.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAHVIN.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RIELTA.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SCAR.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SILENC.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_TELANO.d~
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_VOLETA.d~
+        OUTER_SPRINT doppelganger_merchant_busy_response ~@8000~  /* ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02] */
+        ACTION_IF MOD_IS_INSTALLED ~vveBG.tp2~ ~0~ BEGIN
+            OUTER_SPRINT doppelganger_merchant_busy_response ~@8001~  /* ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01] */
+        END
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DIARMID.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPMER.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_DOPPSM.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_FLAMGG.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_JHASSO.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_PROST4.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAGEFA.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RAHVIN.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_RIELTA.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SCAR.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_SILENC.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_TELANO.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_VOLETA.d~
+        OUTER_SET JARLS_ADVENTURE_PACK_SEVEN_SUNS_ID = ID_OF_LABEL ~Setup-JA#BGT_AdvPack.tp2~ ~JA#BGT_AdvPack-Seven_Suns~
+        ACTION_IF MOD_IS_INSTALLED ~Setup-JA#BGT_AdvPack.tp2~ ~%JARLS_ADVENTURE_PACK_SEVEN_SUNS_ID%~ BEGIN
+            PRINT @90011  /* ~Compiling dialogue files for the "Seven Suns" component of Jarl's Adventure Pack ...~ */
+            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jarls_adventure_pack_compatibility_patch/baldurs_gate/src/dialogue/dca_jap_JHASSO.d~
+        END
     END
 END
 // Baldur's Gate: Siege of Dragonspear content
@@ -111,7 +116,7 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
         ACTION_IF GAME_IS ~eet~ BEGIN
             ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - leave be
             ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - leave be killed anyway
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7017  // The Missing Patrol - kill or free said to leave anyway 
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7017  // The Missing Patrol - kill or free said to leave anyway
             ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8003  // The Eyeless Priestess - leave be
             ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8004  // The Eyeless Priestess - free - good
             ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8005  // The Eyeless Priestess - free - neutral/evil
@@ -203,9 +208,11 @@ END~
         // Disable overlapping dialogue options from the mod "Jastey's Tweaks for SoD and EET (and BGT)", component "More Dialogue Choices _Prevent Dead Ends"
         OUTER_SET JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID = ID_OF_LABEL ~setup-c#sodtweaks.tp2~ ~JasteySodTweaks-MoreDialogueChoices_PreventDeadEnds~
         ACTION_IF MOD_IS_INSTALLED ~setup-c#sodtweaks.tp2~ ~%JATSEYS_TWEAKS_MORE_DIALOGUE_CHOICES_PREVENT_DEAD_ENDS_ID%~ BEGIN
+            PRINT @90010  /* ~Compiling dialogue files for the "More Dialogue Choices _Prevent Dead Ends" component of Jastey's Tweaks for SoD and EET (and BGT) ...~ */
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility_patch/siege_of_dragonspear/src/dialogue/dca_jt_BDNEDERL.d~
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility_patch/siege_of_dragonspear/src/dialogue/dca_jt_BDDELANC.d~
         END
+        PRINT @90012  /* ~Compiling dialogue files for vanilla Siege of Dragonspear content ...~ */
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDARBING.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDBELLOW.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDDELANC.d~
