@@ -47,6 +47,7 @@
 // dca_DOPPSM.d
 // From vanilla "We want to talk to the owner of the Seven Suns."
 @6000 = ~We're here to speak with Jhasso.~
+@6001 = ~Not until we get to see the owner.~
 
 // dca_JHASSO.d
 // From vanilla "Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me, shapeshifter scum."
