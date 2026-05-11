@@ -21,9 +21,6 @@ OUTER_SET stringref_where_does_it_lead = 10843
 OUTER_SET stringref_tandem_in_extremis_evidently = 27505
 OUTER_SET stringref_blast_you_all = 10833
 OUTER_SET stringref_were_not_here_to_torture = 1020
-OUTER_SET stringref_jhasso_1_pant_come_here_to_torment = 4715
-OUTER_SET stringref_well_youll_get_naught = 1011
-OUTER_SET stringref_damn_this_would_have_cost = 4716
 OUTER_SET stringref_who_are_you_master_gnome = 51767
 OUTER_SET stringref_this_isnt_the_surface = 51768
 OUTER_SET stringref_you_have_thirty_seconds = 51769
@@ -50,9 +47,6 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_where_does_it_lead = stringref_where_does_it_lead + EET_OFFSET
     OUTER_SET stringref_tandem_in_extremis_evidently = stringref_tandem_in_extremis_evidently + EET_OFFSET
     OUTER_SET stringref_blast_you_all = stringref_blast_you_all + EET_OFFSET
-    OUTER_SET stringref_jhasso_1_pant_come_here_to_torment = stringref_jhasso_1_pant_come_here_to_torment + EET_OFFSET
-    OUTER_SET stringref_well_youll_get_naught = stringref_well_youll_get_naught + EET_OFFSET
-    OUTER_SET stringref_damn_this_would_have_cost = stringref_damn_this_would_have_cost + EET_OFFSET
     OUTER_SET stringref_were_not_here_to_torture = stringref_were_not_here_to_torture + EET_OFFSET
     OUTER_SET stringref_who_are_you_master_gnome = stringref_who_are_you_master_gnome + EET_OFFSET
     OUTER_SET stringref_this_isnt_the_surface = stringref_this_isnt_the_surface + EET_OFFSET
@@ -97,12 +91,6 @@ ACTION_IF GAME_IS ~eet bgee~ BEGIN
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_TELANO.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_VOLETA.d~
         OUTER_SET JARLS_ADVENTURE_PACK_SEVEN_SUNS_ID = ID_OF_LABEL ~Setup-JA#BGT_AdvPack.tp2~ ~JA#BGT_AdvPack-Seven_Suns~
-        ACTION_IF NOT MOD_IS_INSTALLED ~Setup-JA#BGT_AdvPack.tp2~ ~%JARLS_ADVENTURE_PACK_SEVEN_SUNS_ID%~ BEGIN
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/baldurs_gate/src/dialogue/dca_JHASSO_jap_not_installed.d~
-        END ELSE BEGIN
-            PRINT @90011  /* ~Compiling dialogue files for the "Seven Suns" component of Jarl's Adventure Pack ...~ */
-            COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jarls_adventure_pack_compatibility_patch/baldurs_gate/src/dialogue/dca_jap_JHASSO.d~
-        END
     END
     /* Sound */
     PRINT @90013  /* ~Installing voiceover files for Baldur's Gate content ...~ */
