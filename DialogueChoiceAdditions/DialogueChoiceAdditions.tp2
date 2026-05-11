@@ -22,6 +22,8 @@ OUTER_SET stringref_tandem_in_extremis_evidently = 27505
 OUTER_SET stringref_blast_you_all = 10833
 OUTER_SET stringref_were_not_here_to_torture = 1020
 OUTER_SET stringref_jhasso_1_pant_come_here_to_torment = 4715
+OUTER_SET stringref_well_youll_get_naught = 1011
+OUTER_SET stringref_damn_this_would_have_cost = 4716
 OUTER_SET stringref_who_are_you_master_gnome = 51767
 OUTER_SET stringref_this_isnt_the_surface = 51768
 OUTER_SET stringref_you_have_thirty_seconds = 51769
@@ -49,6 +51,8 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_tandem_in_extremis_evidently = stringref_tandem_in_extremis_evidently + EET_OFFSET
     OUTER_SET stringref_blast_you_all = stringref_blast_you_all + EET_OFFSET
     OUTER_SET stringref_jhasso_1_pant_come_here_to_torment = stringref_jhasso_1_pant_come_here_to_torment + EET_OFFSET
+    OUTER_SET stringref_well_youll_get_naught = stringref_well_youll_get_naught + EET_OFFSET
+    OUTER_SET stringref_damn_this_would_have_cost = stringref_damn_this_would_have_cost + EET_OFFSET
     OUTER_SET stringref_were_not_here_to_torture = stringref_were_not_here_to_torture + EET_OFFSET
     OUTER_SET stringref_who_are_you_master_gnome = stringref_who_are_you_master_gnome + EET_OFFSET
     OUTER_SET stringref_this_isnt_the_surface = stringref_this_isnt_the_surface + EET_OFFSET

@@ -28,9 +28,7 @@ ADD_STATE_TRIGGER ~JHASSO~ 16 ~!Global("JhassoIsFree","GLOBAL",1)~ // From `Stat
 /* ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me, shapeshifter scum.~ */
 
 // You would only get one try to interview him once in vanilla - that doesn't make much sense
-// Make it conditional on either having received the job offer from Scar or it being Chapter Seven,
-// because Scar is dead in Chapter Seven
-ADD_STATE_TRIGGER ~JHASSO~ 0 ~!Global("JhassoIsFree","GLOBAL",1) OR(2) Global("TalkedToScar","GLOBAL",1) Global("Chapter","GLOBAL",7)~
+ADD_STATE_TRIGGER ~JHASSO~ 0 ~!Global("JhassoIsFree","GLOBAL",1) Global("TalkedToScar","GLOBAL",1) !Global("Chapter","GLOBAL",7)~
 
 ADD_TRANS_TRIGGER ~JHASSO~ 0 ~False()~ DO 2 // Hide the third option; will add it to the top
 /* ~We're not here to torture you, we're here to save you.~ */
@@ -45,13 +43,14 @@ EXTEND_TOP ~JHASSO~ 0
 END
 
 EXTEND_BOTTOM ~JHASSO~ 0
-    IF ~Global("Chapter","GLOBAL",7)~ THEN REPLY @7001 /* ~What are you talking about?~ */ GOTO 1
-    IF ~Global("Chapter","GLOBAL",7)~ THEN REPLY @7002 /* ~Are you being held captive here?~ */ GOTO 1
+    IF ~!Global("TalkedToScar","GLOBAL",1)~ THEN REPLY @7001 /* ~What are you talking about?~ */ GOTO 1
+    IF ~!Global("TalkedToScar","GLOBAL",1)~ THEN REPLY @7002 /* ~Are you being held captive here?~ */ GOTO 1
     IF ~~ THEN REPLY @7003 /* ~Maybe another day, then.~ */ EXIT
 END
 
 APPEND ~JHASSO~
-    // Add a variant without "shapeshifter scum" for if the Seven Suns story hasn't started yet
+    // Add a variant without "shapeshifter scum" for if you haven't received the job offer from Scar
+    // and Scar isn't assassinated
     IF ~NumTimesTalkedTo(0) !Global("JhassoFreed","GLOBAL",1) !Global("TalkedToScar","GLOBAL",1) !Global("Chapter","GLOBAL",7)~ THEN BEGIN WellYoullGetNaughtSpoilerFree
         SAY @7000 /* ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me.~ [DCJHA01] */
         IF ~~ THEN REPLY @7001 /* ~What are you talking about?~ */ GOTO 1
@@ -60,22 +59,10 @@ APPEND ~JHASSO~
     END
 END
 
-// Add this voiced line from his soundset
+// Add a variant without "shapeshifter scum" for if you haven't received the job offer from Scar
+// and Scar isn't assassinated
 APPEND ~JHASSO~
-    IF ~!Global("JhassoFreed","GLOBAL",1) Global("TalkedToScar","GLOBAL",1) !Global("Chapter","GLOBAL",7)~ THEN BEGIN ComeToTormentMeSomeMore
-        SAY #%stringref_jhasso_1_pant_come_here_to_torment% /* ~[JHASSO 1] *pant* Come to torment me some more, you shapeshifting bastards?~ [JHASS01] */
-        IF ~Global("TalkedToScar","GLOBAL",1)~ THEN REPLY #%stringref_were_not_here_to_torture% /* ~We're not here to torture you, we're here to save you.~ */ GOTO 2
-        IF ~Global("TalkedToScar","GLOBAL",1)~ THEN REPLY @7004 /* ~Scar wants answers, and so do we. Who are you?~ */ DO ~SetGlobal("JA#JHASSO_TALK","LOCALS",1)~ GOTO 4
-        IF ~Global("Chapter","GLOBAL",7) !Global("TalkedToScar","GLOBAL",1)~ THEN REPLY @7001 /* ~What are you talking about?~ */ GOTO 1
-        IF ~Global("Chapter","GLOBAL",7) !Global("TalkedToScar","GLOBAL",1)~ THEN REPLY @7002 /* ~Are you being held captive here?~ */ GOTO 1
-        IF ~~ THEN REPLY @7006 /* ~Another time, perhaps.~ */ EXIT
-    END
-END
-
-// Add this shortened version for if the Seven Suns story hasn't started yet
-// and Scar isn't dead
-APPEND ~JHASSO~
-    IF ~!Global("JhassoFreed","GLOBAL",1) !Global("Chapter","GLOBAL",7)~ THEN BEGIN ComeToTormentMeSomeMoreSpoilerFree
+    IF ~!Global("JhassoFreed","GLOBAL",1) !Global("TalkedToScar","GLOBAL",1) !Global("Chapter","GLOBAL",7)~ THEN BEGIN ComeToTormentMeSomeMoreSpoilerFree
         SAY @7005 /* ~*pant* Come to torment me some more?~ [DCJHA02] */
         IF ~~ THEN REPLY @7001 /* ~What are you talking about?~ */ GOTO 1
         IF ~~ THEN REPLY @7002 /* ~Are you being held captive here?~ */ GOTO 1
@@ -87,12 +74,6 @@ END
 
 // Make the state only trigger if you have freed him
 ADD_STATE_TRIGGER ~JHASSO~ 7 ~Global("JhassoFreed","GLOBAL",1)~ // From `Global("Chapter","GLOBAL",7)`
-
-/* ~[JHASSO 2] Damn, this would've cost my business a pretty penny!~ */
-
-// This sentence does not make sense to me before the situation has cleared up; only show if he is free
-REPLACE_STATE_TRIGGER ~JHASSO~ 19 ~Global("JhassoIsFree","GLOBAL",1)~ // From `True()`
-
 
 /* ~Back so soon! How did your battle fare?~ */
 
