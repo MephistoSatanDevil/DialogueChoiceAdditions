@@ -2,33 +2,20 @@
 
 ----
 
-~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me, shapeshifter scum.~ */
+~You want to torture me again? Do what you want, but you won't learn anything from me.~ */
 
-// Add this trigger back (we removed it in dca_JHASSO.d) because JAP adds a state that is meant to be used
-// when Jhasso is talked to subsequent times
-ADD_STATE_TRIGGER JHASSO 0 ~NumTimesTalkedTo(0)~
-
-/* ~Well, you'll get naught from me this day, not a cry of pain nor the knowledge in my noggin. Get away from me.~ */
-
-// Add the same trigger as before to DCA's WellYoullGetNaught state
-REPLACE_TRIGGER_TEXT JHASSO
-~!Global("TalkedToScar","GLOBAL",1)
-!Global("JhassoFreed","GLOBAL",1)
-!Global("Chapter","GLOBAL",7)~
-~NumTimesTalkedTo(0) \0~ // Append
-
-/* ~You want to torture me again? Do what you want, but you won't learn anything from me.~ */
-
-// Add `NumTimesTalkedToGT(0)` trigger to JAP's JA#JHASSO_01 state
-// because otherwise it will trigger before DCA's WellYoullGetNaught state (presuming DCA is installed after JAP)
+// Disable this state
+// because DCA's states ComeToTormentMeSomeMore and ComeToTormentMeSomeMoreSpoilerFree are arguably better
 REPLACE_TRIGGER_TEXT JHASSO
 ~Global("JA#JHASSO_MOVE","GLOBAL",0)
 Global("JA#JHASSO_TALK","LOCALS",0)~
-~NumTimesTalkedToGT(0) \0~ // Append
+~False()~
 
 /* ~Hmm. The events in the city seem to be running wild. Have you changed your mind?~ */
 
-// Add JhassoFreed conditional so that it won't trigger before DCA's WellYoullGetNaught state
+// Add JhassoFreed conditional
+// so that it won't
+// trigger before DCA's states WellYoullGetNaughtSpoilerFree, ComeToTormentMeSomeMore, and ComeToTormentMeSomeMoreSpoilerFree
 REPLACE_TRIGGER_TEXT JHASSO
 ~Global("JA#JHASSO_QUEST","GLOBAL",0)
 !Global("ENDOFBG1","GLOBAL",2)~
@@ -37,5 +24,5 @@ REPLACE_TRIGGER_TEXT JHASSO
 /* ~[JHASSO 2] Damn, this would've cost my business a pretty penny!~ */
 
 // Prevent this state from
-// triggering instead of JAP's JA#JHASSO_11 ("Hmm. The events in the city seem to be running wild. Have you changed your mind?")
-REPLACE_STATE_TRIGGER ~JHASSO~ 19 ~Global("JhassoIsFree","GLOBAL",1) Global("JA#JHASSO_CH7_TALK","LOCALS",0)~
+// triggering instead of some of the states from JAP
+REPLACE_STATE_TRIGGER ~JHASSO~ 19 ~!Global("JA#JHASSO_MOVE","GLOBAL",2) !Global("JA#DOPPSE_TALK","GLOBAL",1) !Global("JA#JHASSO_CH7_TALK","LOCALS",100) Global("JhassoIsFree","GLOBAL",1) Global("JA#JHASSO_CH7_TALK","LOCALS",0)~

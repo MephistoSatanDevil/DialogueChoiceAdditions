@@ -55,6 +55,8 @@
 @7002 = ~Are you being held captive here?~
 @7003 = ~Maybe another day, then.~
 @7004 = ~Scar wants answers, and so do we. Who are you?~
+@7005 = ~*pant* Come to torment me some more?~ [DCJHA02]
+@7006 = ~Another time, perhaps.~
 
 // dca_DOPMER.d
 // From the creature soundset; "[COMMON MAN 2] Leave us alone, will you? Nothin' for you here."
