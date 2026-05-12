@@ -83,6 +83,15 @@ Do not use DCA if you do not have Enhanced Edition Fixpack (EEFP) installed. DCA
 
 The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" component of the mod [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/). In some cases, this mod hides dialogue choices from Jastey's SoD Tweak Pack in accordance with this project's goals, where the two mods change the same dialogue states. Dialogue Choice Additions should be installed *after* the Jastey's SoD Tweak Pack component.
 
+### Other known compatible mods
+
+- [Jarl's Adventure Pack](https://www.gibberlings3.net/forums/topic/39828-kerzenburgforum-jarls-adventure-pack-bug-report-and-support-thread/). Most likely; I haven't playtested with the "Jopi" component, but it seems unlikely there should be a problem.
+- [Baldur's Gate Romantic Encounters](https://www.gibberlings3.net/mods/npcs/bg-romantic-encounters/) (BG1RE).
+
+### Other mods
+
+Mods that alter dialogues with the same NPCs might not be compatible. Leave a notice (on [GitHub](https://github.com/virginviolet/DialogueChoiceAdditions/) or [The Gibberlings Three](https://www.gibberlings3.net/forums/topic/41248-dialogue-choice-additions/issues)) if you know any that hasn't been mentioned.
+
 ## Installation
 
 ### Project Infinity
@@ -183,3 +192,7 @@ New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/Dialog
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [BGForge MLS](https://marketplace.visualstudio.com/publishers/BGforge)
 - [WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager)
+
+## External links
+
+- The Gibberlings Three forum thread: [Dialogue Choice Additions](https://www.gibberlings3.net/forums/topic/41248-dialogue-choice-additions/)
