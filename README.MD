@@ -81,7 +81,7 @@ Do not use DCA if you do not have Enhanced Edition Fixpack (EEFP) installed. DCA
 
 ### Jastey's SoD Tweak Pack
 
-The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" component of the mod [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/). In some cases, this mod hides dialogue choices from Jastey's SoD Tweak Pack in accordance with this project's goals, where the two mods change the same dialogue states. Dialogue Choice Additions should be installed *after* the Jastey's SoD Tweak Pack component.
+The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" component of the mod [Jastey's SoD Tweak Pack](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/). In some cases, this mod hides dialogue choices from Jastey's SoD Tweak Pack in accordance with this project's goals, where the two mods change the same dialogue states (I recommend their mod, but the combined result in these cases was not desirable). Dialogue Choice Additions should be installed *after* the Jastey's SoD Tweak Pack component.
 
 ### Other known compatible mods
 
