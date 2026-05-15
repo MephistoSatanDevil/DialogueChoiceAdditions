@@ -898,8 +898,8 @@ LLM:
   - If this is the surface, I'd hate to see the cellar.
   - ⭐⭐ I'll leave you to enjoy the fresh cave air, then.
   - ⭐⭐ A touching reunion with the surface, no doubt. Farewell.
-    - I’ll not spoil your reunion with the surface. Farewell.
-    - A fine surface you’ve found. May it keep you company.
+    - I'll not spoil your reunion with the surface. Farewell.
+    - A fine surface you've found. May it keep you company.
     - A touching reunion, no doubt. Farewell.
   - I know not what game you play, gnome, but I'll have no part in it.
   - I'll not be waylaid by every oddity in the dark.
@@ -924,7 +924,7 @@ LLM:
 - HUMAN: Then I withdraw. Settle it in blood, then, if you must.
 - Then I want no part in this. Kill each other, if that is all you understand.
 - Then I leave you to it. Settle your grievance in blood, if you must.
-- Then I’ll not stand between you. Let whoever wants blood take it.
+- Then I'll not stand between you. Let whoever wants blood take it.
 - Then I withdraw. If neither side will yield, finish it by the blade.
 
 ### Begone
@@ -982,10 +982,10 @@ Fixed using option A.
 
 LLM:
 
-- All right. I’ll see if I can get these cages open.
-  - Very well. I’ll look for a way to open the cages.
-  - I’ll help. There must be some way to open these cages.
-  - Keep your voice down. I’ll look for a way to free you.
+- All right. I'll see if I can get these cages open.
+  - Very well. I'll look for a way to open the cages.
+  - I'll help. There must be some way to open these cages.
+  - Keep your voice down. I'll look for a way to free you.
 - Why free a crusader when I could kill one?
   - ⭐ Why should I free you when I could kill you instead?
   - ⭐ HUMAN: Why free you when I could kill you instead?
@@ -1045,7 +1045,7 @@ LLM:
     - HUMAN: You serve the crusade? Then I will leave you locked up.
     - HUMAN: Crusaders? Then I will leave you locked up.
   - The crusade has caused enough trouble. I will not loose more of its soldiers.
-  - Your mission ends here, Private. I’m leaving you in the cages.
+  - Your mission ends here, Private. I'm leaving you in the cages.
   - Crusaders? Then I cannot set you loose. I am leaving you here.
   - I cannot risk letting crusaders go free. I am walking away.
   - If you march with the crusade, I will leave these cages locked.
@@ -1060,7 +1060,7 @@ LLM:
   - Your mission ends in this cage, unless someone else opens it. I am leaving.
   - I want no part in freeing crusaders. I am moving on.
   - If you march with the crusade, I cannot risk freeing you. I am leaving you here.
-  - A crusader’s plight is none of my concern.
+  - A crusader's plight is none of my concern.
   - I do not make a habit of helping crusaders. Goodbye.
   - Important mission or no, I will not aid the crusade.
   - You serve the crusade. That is reason enough to leave you here.
@@ -1155,7 +1155,7 @@ LLM:
   - Your lives are a debt I may be forced to pay in blood. I refuse.
   - Mercy is easy to beg for and easier to betray. Pray now.
   - You ask for life, but offer me only risk in return. Say whatever prayers you know.
-  - A living enemy behind me is a fool’s mercy. I am no fool.
+  - A living enemy behind me is a fool's mercy. I am no fool.
   - Crusaders or no, I cannot gamble with lives that may yet turn blades against me. Say your prayers.
   - ⭐ If you are what you say, then I cannot afford mercy. Pray while you can.
   - ⭐⭐ HUMAN: Letting crusaders live is a risk I am not willing to take. Say your prayers.
@@ -1165,8 +1165,8 @@ LLM:
     - Dead crusaders tell no tales. Your fellows will hear the cultists did the deed.
     - ⭐⭐ Leaving crusaders alive is a risk I will not take. Your fellows shall hear that the cultists killed you.
     - ⭐⭐ If you serve the crusade, I cannot spare you. The cultists will take the blame.
-- You would rather rot in that cage than face the lever? Suit yourself. I’ll leave you to it.
-  - You would rather rot in that cage of yours? Suit yourself. I’ll leave you to it.
+- You would rather rot in that cage than face the lever? Suit yourself. I'll leave you to it.
+  - You would rather rot in that cage of yours? Suit yourself. I'll leave you to it.
   - Then the lever stays untouched, and the cage stays locked. I am leaving.
   - Then keep your lives and your cage. I am done here.
   - Then I will leave the lever alone, and leave you in the cage.
@@ -1254,3 +1254,83 @@ LLM:
   - Spare them, and we may answer for it in blood. I will not take that risk.
   - A prisoner today, a crusader with a blade tomorrow. No.
   - Nobility is cold comfort when a spared foe returns with steel drawn. They die here.
+
+## Parley
+
+### Happy sacrifice (DELANC)
+
+Context: parley between Caelar and her crusade and the coalition. Caelar offers retreat from dragonspear castle in favor of borrowing the baahlspawn (the player character) for a few hours or something like that.
+
+the pc/baahlspawn pretty much knows (or suspects) what they want them for, but doesnt want to reveal it here. they need their blood to open a gate to the nine hells.
+
+De Lancie: If I understand you correctly then, you're willing to surrender your troops and abandon Dragonspear Castle. All we have to do is give you the Bhaalspawn.
+[...]
+Caelar: You understand my position, then. I need the child of Bhaal, but only for a short time. I shall return them safe, unharmed, within the week and disperse my troops from Dragonspear Castle.
+[...]
+Hephernan: If it will help end this madness, I will go with Caelar.
+Stonehand: If it'll save the troops—
+Marshal Nederlok: What Caelar plans for the hero may be worse than loss of life. I understand your position, Stonehand, but you must see that cooperation could end in a bigger disaster than a battle.
+De Lancie (coalition leader): It pains me to say it, but Nederlok is right. This time. Though I'd happily sacrifice the Bhaalspawn's life to end this war, we don't know what sending them off with Caelar means.
+
+1. I still think surrender is the best option. I'd gladly give my life to save those around me.
+2. Thank you for the touching display of support, de Lancie.
+3. Surrender is a tool, one I won't use until I'm certain of the outcome. I stay with the coalition.
+
+Human
+
+- I agree.
+  - I agree as well.
+      → Caelar: Time is now our enemy. If someone else seeks the Bhaalspawn... I cannot wait any longer for you to see the light. What will not be given freely must be taken.
+- I trust your judgement, de Lancie.
+
+LLM
+
+- I agree. We can't risk handing me over without knowing what Caelar intends.
+  - I agree. Whatever Caelar promises, surrendering me to her is too great a risk.
+  - I agree. Until we know what Caelar truly means to do with me, I remain with the coalition.
+  - Nederlok and de Lancie are right. I won't gamble the coalition's fate on Caelar's promises.
+  - I agree with Nederlok. Until we know Caelar's true aim, surrender is too great a risk.
+  - Caelar asks for trust while marching an army at our gates. I say we give her none.
+  - No. Whatever Caelar intends, she has gone to great lengths to conceal it. That alone is reason enough to refuse.
+  - ⭐ I agree. Surrendering me may end this battle, but it may begin something far worse.
+    - I agree with Nederlok. No bargain should be struck blind; until Caelar speaks plainly, I go nowhere with her.
+  - Caelar's bargain is too clean. If she needed only my presence, she would have said why.
+  - A commander who hides her purpose should not be trusted with the one thing she demands.
+    - ⭐ No bargain should be struck blind. Until Caelar speaks plainly, I go nowhere with her.
+  - ⭐ She wants the Bhaalspawn badly enough to offer a castle for me. That should trouble everyone here.
+  - I agree with Nederlok. This is not mercy; it is a price, and we do not know what we are buying.
+  - Caelar may promise my safe return, but she has not promised the safety of anything else.
+  - ⭐ I agree. A hidden purpose is poor ground on which to surrender the only thing she truly wants.
+  - ⭐ I agree. If Caelar's purpose were harmless, she would not need to hide it.
+  - ⭐ I agree. Caelar's promise protects me alone, and even that rests on trust she has not earned.
+  - ⭐⭐ I agree. Caelar's terms are generous only if her purpose is harmless—and she has given us no cause to believe that.
+  - ⭐ I agree. A week in Caelar's hands may cost more than a battle at Dragonspear.
+  - ⭐ I agree with de Lancie. My life is not the only thing at stake here.
+  - ⭐ I agree. Caelar offers peace too readily for a price she refuses to name.
+  - I agree. The danger is not that Caelar will kill me. It is that she may not need to.
+  - I agree. Caelar asks us to trust the one demand she will not explain.
+- I trust your judgment, de Lancie. If you say this bargain is too dangerous, I will not dispute it.
+  - For once, de Lancie, I am glad your caution outweighs your dislike of me.
+  - I trust your judgment in this. Caelar has offered too much and explained too little.
+  - Then I leave the decision with you, de Lancie. Better suspicion now than regret later.
+  - I trust your judgment, de Lancie. My life may be expendable, but this choice is not so simple.
+  - You are right to hesitate, de Lancie. Caelar's promise is not enough.
+  - I defer to you, de Lancie. This army is yours to command, and I will not undermine it now.
+  - I trust your judgment, de Lancie. If the coalition will not make this bargain, neither will I.
+  - Then I stand with the coalition. Make your decision, de Lancie, and I will abide by it.
+  - I will not divide our ranks over this. You have my support, de Lancie.
+  - This is your command, de Lancie. I will not set my conscience above the fate of the coalition.
+  - I trust you to weigh the lives at stake, de Lancie. I will follow your lead.
+  - Very well. I place this decision in your hands, de Lancie.
+  - You have command here, de Lancie. I will not contest your call.
+  - If that is your judgment, de Lancie, I accept it.
+  - I came here under the coalition's banner. I will honor its command.
+  - A grim comfort, de Lancie—but I trust your judgment in this.
+  - Your candor does you no favors, de Lancie, but I trust your judgment.
+  - I dislike your reasoning, de Lancie, but I trust your conclusion.
+  - Then I place my fate with the coalition, and trust your judgment, de Lancie.
+  - I heard you plainly, de Lancie. Even so, I trust your judgment.
+  - Not the warmest endorsement I have ever received, but I trust your judgment.
+  - You have made your priorities clear, de Lancie. I trust your judgment all the same.
+  - You would trade my life, but not blindly. I trust that much, at least.
+  - I trust your judgment. If this bargain troubles even you, then it should trouble us all.

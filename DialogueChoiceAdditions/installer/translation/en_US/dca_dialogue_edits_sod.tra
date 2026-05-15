@@ -13,6 +13,7 @@
 @5 = ~Perhaps you are open to compromise. Would it change your mind if I told you the poison wasn't lethal?~ [DCDEL01]
 @6 = ~What is going on here?~
 @7 = ~I appreciate the distinction, but my answer is no.~
+@8 = ~I agree. Caelar's terms are generous only if her purpose is harmless—and she has given us no cause to believe that.~
 
 // dca_BDNEDERL.d
 @1000 = ~The information sounds promising, but was there truly no other means to obtain it?~

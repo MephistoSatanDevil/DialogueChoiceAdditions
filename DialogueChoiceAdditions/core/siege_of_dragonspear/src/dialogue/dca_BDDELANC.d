@@ -54,7 +54,7 @@ APPEND ~%bddelanc%~
 END
 
 EXTEND_TOP ~%bddelanc%~ Compromise #4
-        %compromise_dialogue_changes%
+    %compromise_dialogue_changes%
 END
 
 /* ~Judge me if you must, <CHARNAME>, but for the Sword Coast's sake, do it after the Shining Lady's been dealt with.~ */
@@ -67,4 +67,10 @@ EXTEND_TOP ~%bddelanc%~ 10
     IF ~~ THEN REPLY @1 /* ~...Very well. What else have you learned?~ */ EXTERN ~%bdnederl%~ 28
 END
 
-/* ---- */
+/* ~It pains me to say it, but Nederlok is right. This time. Though I'd happily sacrifice the Bhaalspawn's life to end this war, we don't know what sending them off with Caelar means.~ */
+
+EXTEND_BOTTOM ~%bddelanc%~ 50
+    // Lawful/neutral good/neutral option
+    // Doesn't assume authority over De Lancie
+    IF ~~ THEN REPLY @8 /* ~I agree. Caelar's terms are generous only if her purpose is harmless—and she has given us no cause to believe that.~ */ EXTERN BDCAELAR 40
+END
