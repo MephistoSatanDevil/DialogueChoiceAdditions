@@ -1334,3 +1334,159 @@ LLM
   - You have made your priorities clear, de Lancie. I trust your judgment all the same.
   - You would trade my life, but not blindly. I trust that much, at least.
   - I trust your judgment. If this bargain troubles even you, then it should trouble us all.
+
+### You're not safe here
+
+Context: after parley, caelar wanted to trade the Bhaalspawn (pc) for surrender without explaining why. no deal was made.
+
+De Lancie: Well. I sincerely hope you're worth what you just cost us, <CHARNAME>.
+[...]
+Stonehand: Guess it's war, whether we like it or not.
+Nederlok: Let's get you back to the camp, <CHARNAME>. You're not safe here.
+
+EDIT: I missed the Nederlok line when speaking to LLM at first
+
+responses - llm:
+
+- upset at de lancie
+- shame
+- Half-willing, but angry at Caelar
+- Grim pragmatism
+- Fear / vulnerability
+
+choices - llm:
+
+- ~~So that is what I am to this coalition. A cost to be measured, regretted, and maybe spent.~~
+  - ~~War or no war, it is a strange comfort to know my allies were only uncertain whether selling me would make things worse.~~
+  - ~~I suppose I should be grateful they found a reason not to hand me over.~~
+  - ~~I did not ask anyone to die for me. But I will not be grateful that my life was spared only because my death might be inconvenient.~~
+  - ~~I thought allies were meant to stand beside you before they started calculating your usefulness.~~
+  - ~~War because I would not let myself be handed over like tribute. That is a strange burden to lay at my feet.~~
+  - ~~Whether we like it or not? Some here seemed ready enough, so long as the price was only me.~~
+  - ~~I see. Refusing to be traded makes the war mine now. Convenient.~~
+  - ~~⭐ A moment ago, my life was a bargaining piece. Now the blood to come is my fault for not accepting the role.~~
+  - ~~⭐ It seems my choices are simple: be sacrificed quietly, or be blamed when others draw swords.~~
+  - ~~⭐⭐ Easy thing, calling it war. Harder thing, standing here after hearing how readily peace might have been bought with your own skin.~~
+  - ~~⭐⭐ The war was Caelar's threat. But somehow the shame of surviving it has already found its way to me.~~
+  - ~~No deal was made because Caelar would not explain herself. Yet somehow I am the one being weighed and found costly.~~
+  - ~~I will fight if I must. But I will not pretend I did not hear how quickly my life became strategy.~~
+  - ~~War, because Caelar would not explain herself—and because some bargains only look clean from the far side of the table.~~
+  - ~~War, because Caelar demanded a sacrifice, and some here nearly dignified the demand by considering it.~~
+  - ~~If it is war, perhaps it is because no one in command found the courage to say, plainly, that people are not terms of surrender.~~
+  - ~~War, yes. That is what happens when a tyrant asks for a person and commanders start discussing the price.~~
+  - ~~Seems so. Strange how quickly we arrived there after my life became a matter of arithmetic.~~
+  - ~~⭐ War it is. I wonder whether it might have sounded different if the proposed sacrifice had worn a commander's cloak.~~
+  - ~~⭐ War, because Caelar gave us a monstrous bargain — and because too many reasonable men paused to admire its convenience.~~
+  - ~~⭐ Perhaps. Or perhaps it is war because the first answer to Caelar was not outrage, but calculation.~~
+  - ~~⭐ War, whether we like it or not. Though some seemed to like the alternative rather more than they should have.~~
+  - ~~⭐ So it seems. A crusader threatens us, a commander weighs my life, and somehow the blame finds the nearest Bhaalspawn.~~
+  - ~~Aye, Stonehand. War. Since surrendering someone else was apparently the only peace worth imagining.~~
+  - Not safe from whom? Caelar, or the allies who just discussed spending my life?
+  - Lead on, then. It seems I am safer among soldiers than among strategists.
+  - Not safe here? No. Not while my life is being counted like rations before a siege.
+  - I noticed. Caelar wanted to take me, and some here only objected because they feared what she would do next.
+  - Then get me away from this place. I have had enough of hearing my life discussed as a military expense.
+  - Not safe? I just watched a roomful of allies decide whether my life was cheaper than a battle. Tell me something I do not know.
+  - Safe from what, Nederlok? Caelar’s army, or the next man who decides my death is tidy enough to call strategy?
+  - No. I am not safe here. Not with Caelar outside the walls and men inside them wondering whether I am worth the trouble.
+  - Not safe? The enemy wants me for some hidden purpose, and my allies are angry I made that inconvenient. Yes, I noticed.
+  - Gods, listen to yourselves. Caelar demands me, half this council weighs the bargain, and I am supposed to walk away grateful?
+  - move quickly, before someone finds a cleaner word for handing me over. Duty, perhaps. Necessity. Sacrifice.
+  - Fine. Drag the dangerous thing back to camp before it inconveniences any more commanders by having a pulse.
+  - I did not cost them this war. Caelar did. But I see how eager everyone is to find a smaller target.
+  - Safe is not the word. Contained is the word. Guarded. Counted. Kept alive until someone decides otherwise.
+  - I should have known. Bhaal’s child is never a person for long. Just a problem waiting for some righteous man to solve.
+  - Yes, let us go. I have no wish to remain where my survival is being mourned like a tactical error.
+  - No more councils. No more bargains. If anyone wants to spend my life, they can try taking it from me first.
+  - Caelar promised me "safe and unharmed." Funny. The crusader sounded less eager to see me dead than some in this room.
+  - Caelar asked for me. That was madness. What sickens me is how quickly madness became a proposal.
+  - I will go back to camp. But I will not forget how easily one commander’s conscience survived offering up my life.
+  - Caelar threatened to take me. One expects threats from enemies. From allies, I had hoped for more than arithmetic.
+  - I should be angry at Caelar. I am. But she was not the one who called my death a bargain.
+  - I have no fear of dying in battle. But I will be damned before I stand quietly while allies discuss donating me to one.
+  - If anyone wishes to spend my life, they can stop speaking in councils and come take it from me.
+  - Safe? Caelar promised me safe and unharmed. A moment later, my allies were discussing whether my life was worth spending. I am beginning to hate that word.
+  - ⭐ Safe from whom, Nederlok? The woman who swore I would be returned unharmed, or the man who said he would happily sacrifice me?
+    - Safe from whom, Nederlok? The woman who promised to return me unharmed, or the man who said he would happily see me sacrificed?
+  - Do not call it safety while people in this room are still deciding whether I am a person or a price.
+  - Safe from Caelar, perhaps. Safe from being turned into someone else’s solution? That remains to be seen.
+  - Then get me away from here before another brave soul discovers how noble it would be to spend my life for me.
+  - I will go, but not because I feel safe among people who can say "sacrifice" and mean me.
+  - Safe? No. Guarded, perhaps. Contained. Kept from Caelar until someone else decides what I am worth.
+  - Fine. Lead on. But if anyone else wants to discuss my safety, they can begin by remembering that my life is mine.
+  - “Safe and unharmed,” she said. “Not safe here,” you say. Yet every version of safety seems to begin with someone else deciding where I belong.
+  - Safe? Caelar promised me safe and unharmed. De Lancie promised he would happily sacrifice me. I am beginning to wonder what that word means here.
+  - Not safe here? No. Caelar wants me alive, and my allies are debating whether I am more useful dead.
+  - “Safe and unharmed,” she said. “Happily sacrifice,” he said. Strange day, when the enemy and the ally differ mostly in wording.
+  - No, I am not safe. Caelar would keep me alive for whatever she wants, and De Lancie would spend me for whatever he wants.
+  - Caelar offered safety with chains. De Lancie offered sacrifice with regret. I am not sure which insult is supposed to comfort me.
+- ~~War, then. And here I stand, alive, while others prepare to pay for it.~~
+  - ~~If they die because I remained free, I do not know how I will carry that.~~
+  - ~~Caelar forced this choice. But the shame of it still seems to know my name.~~
+  - ~~War, then. And I am left wondering whether my life has become too expensive to keep.~~
+  - ~~I did not ask to matter this much. Gods help the ones who pay because I do.~~
+  - ~~Then every blade drawn tonight is another answer to whether I should have gone.~~
+  - ~~I know she gave us no reason to trust her. I know that. It does not make this easier.~~
+  - ~~I should be angry. Instead I only feel the weight of everyone who may die in my place.~~
+  - ~~I kept my life. Now we will see what it costs everyone else.~~
+  - ~~A week in Caelar's hands, or a field full of graves. I hate that I was made to weigh them.~~
+- ⭐ I might have gone willingly if she had trusted me with the truth. She chose force instead.
+  - Had Caelar trusted me with the truth, I might have chosen to go. She chose threats instead.
+  - I was not unwilling to listen. But she would rather seize me than trust me.
+  - I might have gone with her, had she given me reason instead of riddles. Now she has given me war.
+  - I would have heard her out. I might even have gone with her. But she chose threats over honesty.
+  - She asked for trust while offering none. That is not parley. That is a demand wearing a halo.
+  - I might have gone willingly, had Caelar trusted me with the truth. Instead she chose force, and now good people will bleed for her silence.
+  - She wanted my cooperation, but would not trust me with the reason. That was her mistake.
+  - ⭐ I might have gone to prevent bloodshed. Instead, because Caelar would not speak plainly, others will bleed.
+  - I would have weighed the sacrifice, had I known what it meant. Caelar demanded payment and hid the price.
+  - ⭐ She told us what she wanted. She did not tell us what it would mean. I will not surrender myself to a lie of omission.
+    - ⭐ HUMAN: She told us what she wanted. She did not tell us what it would mean. I will not surrender myself to a sin of omission.
+  - She might have had me willingly. But she would not say what she meant to do with me, and now she means to take me.
+  - ⭐ I might have accepted the risk, if she had named it plainly. She hid the terms, then blamed us for refusing them.
+  - She asked for a week of my life and would not tell me what she meant to spend it on. No bargain is honest on those terms.
+  - If Caelar had trusted me with the full truth, perhaps I could have spared these soldiers a battle. Her silence will cost them.
+  - She knows what she hid from me. Whatever it was, she judged force safer than honesty. That tells me enough.
+  - Had she been honest, I might have trusted her. Instead she tried to make my ignorance part of the bargain.
+- Enough. Caelar means to take me by force, so we prepare for that.
+  - She revealed her priority. That gives us leverage.
+- Everyone here fears what I am. Good. Let Caelar fear it too.
+  - I am tired of being treated as a disaster waiting to happen. Perhaps I should become one.
+- Do not order me around, Marshal. Advise me.
+- No. First I want answers from the coalition leaders.
+- I decide where I am safest.
+
+beamdog unused:
+
+- I'll die before that devil gets her claws into me.
+
+### sacrifices has to be made
+
+De Lancie: War rarely makes sense.
+Stonehand: An' it's the common folk who pay the price, more often than not.
+De Lancie: To win a war, sacrifices must be made.
+
+- only caelar
+- pacifist
+
+- I refuse that sentiment.
+
+llm:
+
+- Sacrifices, yes. But not ours. Caelar has chosen her path.
+  - If a sacrifice must be made, then Caelar has already volunteered.
+  - The only thing worth sacrificing is Caelar’s crusade.
+  - The only one leading people to slaughter is Caelar.
+- If victory demands innocent blood, then it is not victory.
+  - Sacrifice is too easy a word when others are the ones who bleed.
+  - There must be another path. I will not call slaughter wisdom.
+  - Wars are won by men who speak of sacrifice, and paid for by those who never agreed to it.
+  - If we answer Caelar’s threats with more death, we become part of the same madness.
+  - I won’t mistake bloodshed for necessity.
+  - The common folk have sacrificed enough. It’s time the powerful sacrificed their certainty.
+  - Then we had better be certain they are ours to make.
+  - Victory bought with the lives of innocents is only another defeat.
+  - The common folk have sacrificed enough for other people’s wars.
+  - Not if we can help it.
+  - I won’t accept that until I must.
+  - Then let us be careful who is asked to make those sacrifices.

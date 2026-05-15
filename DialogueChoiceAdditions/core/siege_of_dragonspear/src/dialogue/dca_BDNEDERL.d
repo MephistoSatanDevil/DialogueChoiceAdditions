@@ -25,3 +25,9 @@ EXTEND_TOP ~%bdnederl%~ 27
         EXTERN ~%bddelanc%~ 10
     IF ~~ THEN REPLY @1001 /* ~I trust this is not your first recourse.~ */ EXTERN ~%bddelanc%~ 10
 END
+
+/* ~Let's get you back to the camp, <CHARNAME>. You're not safe here.~ */
+
+EXTEND_BOTTOM ~%bdnederl%~ 46
+    IF ~~ THEN REPLY @1003 /* ~Safe from whom, Nederlok? The woman who promised to return me unharmed, or the man who said he would happily see me sacrificed?~ */ EXTERN ~%bddelanc%~ 55
+END
