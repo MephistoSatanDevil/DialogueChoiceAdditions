@@ -1387,7 +1387,7 @@ choices - llm:
   - I noticed. Caelar wanted to take me, and some here only objected because they feared what she would do next.
   - Then get me away from this place. I have had enough of hearing my life discussed as a military expense.
   - Not safe? I just watched a roomful of allies decide whether my life was cheaper than a battle. Tell me something I do not know.
-  - Safe from what, Nederlok? Caelar’s army, or the next man who decides my death is tidy enough to call strategy?
+  - Safe from what, Nederlok? Caelar's army, or the next man who decides my death is tidy enough to call strategy?
   - No. I am not safe here. Not with Caelar outside the walls and men inside them wondering whether I am worth the trouble.
   - Not safe? The enemy wants me for some hidden purpose, and my allies are angry I made that inconvenient. Yes, I noticed.
   - Gods, listen to yourselves. Caelar demands me, half this council weighs the bargain, and I am supposed to walk away grateful?
@@ -1395,12 +1395,12 @@ choices - llm:
   - Fine. Drag the dangerous thing back to camp before it inconveniences any more commanders by having a pulse.
   - I did not cost them this war. Caelar did. But I see how eager everyone is to find a smaller target.
   - Safe is not the word. Contained is the word. Guarded. Counted. Kept alive until someone decides otherwise.
-  - I should have known. Bhaal’s child is never a person for long. Just a problem waiting for some righteous man to solve.
+  - I should have known. Bhaal's child is never a person for long. Just a problem waiting for some righteous man to solve.
   - Yes, let us go. I have no wish to remain where my survival is being mourned like a tactical error.
   - No more councils. No more bargains. If anyone wants to spend my life, they can try taking it from me first.
   - Caelar promised me "safe and unharmed." Funny. The crusader sounded less eager to see me dead than some in this room.
   - Caelar asked for me. That was madness. What sickens me is how quickly madness became a proposal.
-  - I will go back to camp. But I will not forget how easily one commander’s conscience survived offering up my life.
+  - I will go back to camp. But I will not forget how easily one commander's conscience survived offering up my life.
   - Caelar threatened to take me. One expects threats from enemies. From allies, I had hoped for more than arithmetic.
   - I should be angry at Caelar. I am. But she was not the one who called my death a bargain.
   - I have no fear of dying in battle. But I will be damned before I stand quietly while allies discuss donating me to one.
@@ -1409,7 +1409,7 @@ choices - llm:
   - ⭐ Safe from whom, Nederlok? The woman who swore I would be returned unharmed, or the man who said he would happily sacrifice me?
     - Safe from whom, Nederlok? The woman who promised to return me unharmed, or the man who said he would happily see me sacrificed?
   - Do not call it safety while people in this room are still deciding whether I am a person or a price.
-  - Safe from Caelar, perhaps. Safe from being turned into someone else’s solution? That remains to be seen.
+  - Safe from Caelar, perhaps. Safe from being turned into someone else's solution? That remains to be seen.
   - Then get me away from here before another brave soul discovers how noble it would be to spend my life for me.
   - I will go, but not because I feel safe among people who can say "sacrifice" and mean me.
   - Safe? No. Guarded, perhaps. Contained. Kept from Caelar until someone else decides what I am worth.
@@ -1475,18 +1475,207 @@ llm:
 
 - Sacrifices, yes. But not ours. Caelar has chosen her path.
   - If a sacrifice must be made, then Caelar has already volunteered.
-  - The only thing worth sacrificing is Caelar’s crusade.
+  - The only thing worth sacrificing is Caelar's crusade.
   - The only one leading people to slaughter is Caelar.
 - If victory demands innocent blood, then it is not victory.
   - Sacrifice is too easy a word when others are the ones who bleed.
   - There must be another path. I will not call slaughter wisdom.
   - Wars are won by men who speak of sacrifice, and paid for by those who never agreed to it.
-  - If we answer Caelar’s threats with more death, we become part of the same madness.
-  - I won’t mistake bloodshed for necessity.
-  - The common folk have sacrificed enough. It’s time the powerful sacrificed their certainty.
+  - If we answer Caelar's threats with more death, we become part of the same madness.
+  - I won't mistake bloodshed for necessity.
+  - The common folk have sacrificed enough. It's time the powerful sacrificed their certainty.
   - Then we had better be certain they are ours to make.
   - Victory bought with the lives of innocents is only another defeat.
-  - The common folk have sacrificed enough for other people’s wars.
+  - The common folk have sacrificed enough for other people's wars.
   - Not if we can help it.
-  - I won’t accept that until I must.
+  - I won't accept that until I must.
   - Then let us be careful who is asked to make those sacrifices.
+
+## Dragonspear trolls
+
+### Help us
+
+Context: attack on Dragonspear Castle. PC breaks into castle through the outer wall on the side, discovers penned up trolls.
+
+Troll 1: Help us!
+Troll 2: They stole us from the Claws, burned place down. We want go home!
+Troll 3: Let us out. They been tort—torm—hurting us for days! We not want fight for them!
+
+vanilla: no options
+
+human:
+
+1. I'll try.
+2. ~~Last time I let trolls out of pens, it didn't go so well.~~
+3. Why should I?
+4. No way I'm helping trolls.
+5. I wish I could, but leaving wild trolls running amok isn't a good idea at the moment.
+6. I prefer you _inside_ the pens, stinking trolls.
+7. I don't have the time to deal with this. / If you haven't noticed, I'm busy storming the castle.
+
+llm:
+
+1. I'll try.
+   - Very well. Keep your heads low and your claws to yourselves.
+   - If you truly mean no harm, then I'll not see you butchered in chains.
+   - Aye, I'll try. But keep those claws where I can see them.
+   - All right. Keep quiet, and I'll see about the lock.
+   - No creature deserves the rack. I'll help if I can.
+   - No promises, but I'll try.
+   - I'll see these pens opened, if fortune allows.
+   - Easy, now. I'll see about getting you out.
+   - If there is a way, I'll find it.
+   - ⭐ I'll do what I can, but keep your claws to yourselves.
+   - All right. Let me see what holds this pen shut.
+   - Then let us make enemies of your tormentors together.
+   - I'll not suffer torture where I can end it.
+   - Hush your howling. I'm helping.
+2. Last time I let trolls out of pens, it didn't go so well.
+   - The last trolls I freed were none too grateful. Give me reason to think you are different.
+   - A caged troll begging freedom is a sight I have learned to distrust.
+   - Last time I let your kind loose, I nearly lost a limb for my charity.
+3. Why should I?
+   - And why should I loose a pack of trolls within these walls?
+   - And why should I trust the word of penned trolls?
+   - You ask much for creatures with a taste for manflesh. Give me cause.
+   - And what, pray, do I gain by loosing a pen full of trolls?
+   - A touching tale, but I have enemies enough. Why should I add trolls to the count?
+   - You ask much. What use are you to me if I set you free?
+   - Mercy is well and good, but I prefer bargains. What do you offer?
+   - ⭐ I have a castle to take. Convince me this is worth the risk.
+4. No way I'm helping trolls.
+   - Trolls are monsters, caged or no. You will find no mercy from me.
+   - No. Whatever wrong was done to you, I will not set trolls loose in a battlefield.
+   - I pity your suffering, but I cannot risk the lives of my companions.
+   - You may be victims here, but you are still trolls. I cannot trust you.
+   - I will not free one danger merely to fight another.
+5. ⭐ I wish I could, but leaving wild trolls running amok isn't a good idea at the moment.
+   - ⭐ Were this another hour, perhaps. But I cannot loose wild trolls in the midst of a siege.
+   - I am sorry, but an open battlefield is no place to test your gratitude.
+   - ⭐ I cannot free you while the castle still burns with battle.
+   - Your cause may be just, but your freedom would put too many at risk.
+   - For now, you stay penned. When I know where the danger lies, perhaps that changes.
+   - I'll leave you be for the moment. Loose trolls may serve me poorly in a crowded castle.
+   - This is a poor mercy, I know, but I cannot free you blindly.
+   - I'll not make this choice in haste. Stay here for now.
+   - I'll think on it. For now, the pens remain shut.
+   - I'll leave the gate closed for now. Do not mistake caution for cruelty.
+   - Not yet. I'll not loose trolls in the midst of a siege unless I must.
+   - ⭐⭐ I'll leave you here for now. A free troll may do more harm than good in this chaos.
+   - I mislike leaving you penned, but this is no time to set trolls loose.
+   - I'll think on it. For now, a locked pen is the safer course.
+6. I prefer you _inside_ the pens, stinking trolls.
+   - I prefer you where you are: caged, cowed, and far from my throat.
+   - The pens suit you. Try not to foul them further.
+   - A troll in a cage is the only troll I trust.
+   - Beg all you like. I've no pity for carrion-eaters.
+   - Stay behind bars, beast. The air is rank enough already.
+   - ⭐Beg elsewhere, beast. I like you penned.
+     - ⭐⭐ HUMAN: Beg to someone else, beast. I like you penned.
+   - ⭐ The pen flatters you. Try not to foul it further.
+   - ⭐ You are exactly where trolls belong.
+   - ⭐ I see no problem here. Only trolls where trolls should be.
+7. I don't have the time to deal with this. / If you haven't noticed, I'm busy storming the castle.
+   - I have a castle to take, not a menagerie to empty. Find your own escape.
+   - ⭐ I have no time for this. There is a battle raging, in case you had not noticed.
+   - I am in the midst of taking a castle. Your plight must wait.
+   - A kind act done foolishly may kill more than cruelty ever did. You must remain where you are.
+   - Can you not see I am in the midst of a siege?
+   - Your troubles will have to wait. I have enemies at my back.
+   - Stand aside from my thoughts, troll. I have more pressing foes.
+
+final:
+
+1. I'll do what I can, but keep your claws to yourselves.
+2. I have a castle to take. Convince me this is worth the risk.
+3. I'll leave you here for now. A free troll may do more harm than good in this chaos.
+4. Beg elsewhere, beast. I like you penned.
+5. I have no time for this. There is a battle raging, in case you had not noticed.
+
+### Freed them
+
+vanilla:
+
+"The Siege of Dragonspear
+
+I freed the trolls to wreak vengeance on the crusaders.
+
+The crusaders stole the trolls from their homes and used them for shock troops. Now the trolls are free, and the crusade will pay the price for its slaver ways."
+
+This only works for certain characters.
+
+llm:
+
+```
+I freed the trolls to turn them against their captors.
+
+The crusaders stole the trolls from their homes and forced them to fight. I saw no reason to waste such willing hatred while storming Dragonspear Castle.
+```
+
+```
+I released the trolls so they could fall upon the crusaders.
+
+The creatures had no love for their captors, and their vengeance suited my purposes well enough. In a siege, one uses every weapon at hand.
+```
+
+```
+I let the trolls out of their pens.
+
+They claimed the crusaders had stolen and tortured them. Whether out of pity or calculation, I decided their fury would be better spent on my enemies than left wasting behind wooden stakes.
+```
+
+```
+I freed the trolls and set them loose upon the crusaders.
+
+The trolls promised to fight Gnarg and his allies if I released them. In a siege, one uses whatever weapons the enemy has foolishly left lying about.
+```
+
+```
+⭐ I freed the trolls and turned them against their captors.
+
+They promised to fight Gnarg and his allies if released. It seems only fair that the crusaders should be the first to enjoy the fruits of their own cruelty.
+```
+
+```
+I freed the trolls after they promised to turn on their captors.
+
+Whatever else they may be, the trolls have no love for the crusaders who dragged them here. If their anger can be turned against my enemies, so much the better.
+```
+
+```
+I released the trolls to sow havoc among the crusaders.
+
+The creatures begged for freedom and offered to fight Gnarg and his allies in return. In a siege, even a dangerous bargain may be worth making.
+```
+
+```
+⭐ I struck a bargain with the imprisoned trolls.
+
+They wanted freedom; I wanted more trouble for the crusaders. It is not the noblest alliance I have ever made, but it may prove effective.
+```
+
+```
+I freed the trolls after they offered to fight the crusaders.
+
+The crusaders brought the trolls here in chains, and the creatures are eager to repay them. Loose within Dragonspear, they should prove a dangerous distraction.
+```
+
+```
+I let the trolls out of their pen after they offered their aid.
+
+They were taken from their home and forced to fight for the crusade. Now they are loose, and their captors will have to answer for it.
+```
+
+```
+⭐ I released the trolls after they promised to fight the crusaders.
+
+The crusaders stole the trolls from their home and penned them within Dragonspear Castle. Once freed, the trolls turned their anger on their captors.
+```
+
+Human+LLM:
+
+```
+⭐⭐ I let the trolls loose to turn on the crusaders.
+
+The crusaders had captured the trolls and used them as shock troops. Once freed, the trolls turned their anger on their captors.
+```

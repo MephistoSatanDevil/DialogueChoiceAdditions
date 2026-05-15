@@ -51,6 +51,7 @@ Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000)
 **Siege of Dragonspear**
 
 - DCDEL01
+- DCTHD01
 
 ### AI voiceover from Violet
 

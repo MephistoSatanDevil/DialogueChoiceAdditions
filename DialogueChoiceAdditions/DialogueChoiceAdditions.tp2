@@ -32,6 +32,8 @@ OUTER_SET stringref_i_am_here_to_free_you_i_found_the_key = 64079
 OUTER_SET stringref_i_will_return_once_i_have_the_means = 64081
 OUTER_SET stringref_rot_in_your_cell = 64082
 OUTER_SET stringref_ive_come_here_looking_for_a_wardstone = 64062
+OUTER_SET stringref_please_you_kill_gnarg = 38219
+OUTER_SET stringref_no_dont_leave_alkullok = 38221
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -59,6 +61,8 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_i_will_return_once_i_have_the_means = stringref_i_will_return_once_i_have_the_means + EET_OFFSET
     OUTER_SET stringref_rot_in_your_cell = stringref_rot_in_your_cell + EET_OFFSET
     OUTER_SET stringref_ive_come_here_looking_for_a_wardstone = stringref_ive_come_here_looking_for_a_wardstone + EET_OFFSET
+    OUTER_SET stringref_please_you_kill_gnarg = stringref_please_you_kill_gnarg + EET_OFFSET
+    OUTER_SET stringref_no_dont_leave_alkullok = stringref_no_dont_leave_alkullok + EET_OFFSET
 END
 // Baldur's Gate (base game) content
 ACTION_IF GAME_IS ~eet bgee~ BEGIN
@@ -103,12 +107,19 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
         /* Journal */
         PRINT @90007  /* ~Adding journal entries for Siege of Dragonspear content ...~ */
         ACTION_IF GAME_IS ~eet~ BEGIN
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - leave be
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - leave be killed anyway
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7011  // The Missing Patrol - left caged
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7012  // The Missing Patrol - left be killed anyway
             ADD_JOURNAL EXISTING MANAGED TITLE (#264446) @7017  // The Missing Patrol - kill or free said to leave anyway
-            ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8003  // The Eyeless Priestess - leave be
+            ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8003  // The Eyeless Priestess - left caged
             ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8004  // The Eyeless Priestess - free - good
             ADD_JOURNAL EXISTING MANAGED TITLE (#264982) @8005  // The Eyeless Priestess - free - neutral/evil
+            // The game doesn't make the vanilla troll entry a QUEST entry, only plain journal entry,
+            // so I don't see it a high priority to make our variant entries QUEST entries,
+            // but here's some code for that
+            // IMPROVE add these journal entries; and make the game erase them when appropriate
+            // ADD_JOURNAL EXISTING MANAGED TITLE (#266743) @10005 // The Siege of Dragonspear - trolls - will release
+            // ADD_JOURNAL EXISTING MANAGED TITLE (#266743) @10006 // The Siege of Dragonspear - trolls - can release
+            // ADD_JOURNAL EXISTING MANAGED TITLE (#266743) @10007 // The Siege of Dragonspear - trolls - left penned
         END ELSE BEGIN
             ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7011  // The Missing Patrol leave be
             ADD_JOURNAL EXISTING MANAGED TITLE (#64446) @7012  // The Missing Patrol leave be killed anyway
@@ -116,6 +127,9 @@ ACTION_IF GAME_IS ~eet~ OR GAME_INCLUDES "sod" BEGIN
             ADD_JOURNAL EXISTING MANAGED TITLE (#64982) @8003  // The Eyeless Priestess - leave be
             ADD_JOURNAL EXISTING MANAGED TITLE (#64982) @8004  // The Eyeless Priestess - free - good
             ADD_JOURNAL EXISTING MANAGED TITLE (#64982) @8005  // The Eyeless Priestess - free - neutral/evil
+            // ADD_JOURNAL EXISTING MANAGED TITLE (#66743) @10005 // The Siege of Dragonspear - trolls - will release
+            // ADD_JOURNAL EXISTING MANAGED TITLE (#66743) @10006 // The Siege of Dragonspear - trolls - can release
+            // ADD_JOURNAL EXISTING MANAGED TITLE (#66743) @10007 // The Siege of Dragonspear - trolls - left penned
         END
         /* Script */
         PRINT @90008  /* ~Extending scripts for Siege of Dragonspear content ...~ */
@@ -164,6 +178,52 @@ THEN
     AddJournalEntry(%stringref_the_missing_patrol_my_next_task%,QUEST)
     Continue()
 END~
+            END
+        // Prevent Troll from saying "No! Don't leave Alkullok. No leave behind..." if the player didn't leave them
+        // IMPROVE Also add a block that triggers the line if the player moves away (cannot add it here, because
+        // this block only triggers when the timer first starts)
+        // The creature script for BDTOLIKS.CRE is BDTHRUDD.bcs;
+        // BDTOLIKS is the one who can have the locals variable bd_dsc_trolls_plot
+        COPY_EXISTING ~BDTHRUDD.bcs~ ~override~
+            DECOMPILE_AND_PATCH BEGIN
+                REPLACE_TEXTUALLY EXACT_MATCH
+~IF
+  Global("bd_dsc_trolls_plot","bd4000",1)
+  Name("bdtoliks",Myself)
+  Global("bd_trolls_ot_timer","locals",0)~
+~IF
+  Global("bd_dsc_trolls_plot","bd4000",1)  // Dragonspear Castle  Exterior
+  Name("bdtoliks",Myself)  // Troll
+  Global("bd_trolls_ot_timer","locals",0)
+  Global("dca_bd_trolls_declined","locals",1)~
+            END
+        // When freeing the Dragonspear trolls,
+        // make the Trolls door script add journal entry appropriate to player's attitude towards them,
+        // instead of using the same one for everyone
+        COPY_EXISTING ~BDDSPENS.bcs~ ~override~
+            DECOMPILE_AND_PATCH BEGIN
+                REPLACE_TEXTUALLY EXACT_MATCH
+~IF
+  Global("chapter","global",11)
+  GlobalLT("bd_dsc_trolls_plot","bd4000",2)
+  Opened([ANYONE])~
+~IF
+  Global("chapter","global",11)
+  GlobalLT("bd_dsc_trolls_plot","bd4000",2)  // Dragonspear Castle  Exterior
+  Opened([ANYONE])
+  Global("dca_bd_trolls_journal_neutral","bd4000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("bd_dsc_trolls_plot","bd4000",2)  // Dragonspear Castle  Exterior
+    AddJournalEntry(@10014,QUEST)  // The Siege of Dragonspear I let the trolls loose to turn on the crusaders. The crusaders had captured the trolls and used them as shock troops. Once freed, the trolls turned their anger on their captors.
+    DisplayStringHead("bdthrudd",238220)  // Kill the crusaders! Gobble 'em up!
+END
+
+IF
+  Global("chapter","global",11)
+  GlobalLT("bd_dsc_trolls_plot","bd4000",2)
+  Opened([ANYONE])
+  Global("dca_bd_trolls_journal_neutral","global",0)~
             END
         // When the last chance to save or kill Keherrem has passed,
         // mark the "The Missing Patrol" as completed if the player explicitly decided to leave him alive
@@ -214,6 +274,7 @@ END~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDSHAPUR.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDSLUG.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDTHERLI.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_dragonspear_trolls.d~
     END
     /* Sound */
     PRINT @90006  /* ~Installing voiceover files for Siege of Dragonspear content ...~ */

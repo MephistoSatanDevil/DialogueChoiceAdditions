@@ -120,3 +120,51 @@ I freed Madele from her imprisonment.~
 @9001 = ~How did you end up here?~
 @9002 = ~I have to go now. Farewell.~
 @9003 = ~I see. Well, I had best get a move on. Farewell.~
+
+// dca_dragonspear_trolls.d
+@10000 = ~I'll do what I can, but keep your claws to yourselves.~
+@10001 = ~I have a castle to take. Convince me this is worth the risk.~
+@10002 = ~I'll leave you here for now. Free trolls may do more harm than good in this chaos.~
+@10003 = ~Beg to someone else, beast. I like you penned.~
+@10004 = ~I have no time for this. There is a battle raging, in case you hadn't noticed.~
+// From vanilla (59804):
+// "The Siege of Dragonspear
+// 
+// I left the trolls penned up, though I can always return and release them to create havoc.
+// 
+// I didn't want to leave the troll penned up like that, but perhaps a wild troll running amok isn't a good idea at the moment."
+@10005 = ~The Siege of Dragonspear
+
+I told the trolls I would free them if I could.
+
+The creatures begged for release from their pen, saying they had been taken, tormented, and forced to fight for the crusade. I should try to help them.~
+// From vanilla, as above
+@10006 = ~The Siege of Dragonspear
+
+The captive trolls offered to fight the crusaders if I release them.
+
+They say they were captured, hurt, and forced to fight for the crusade. If I can loose them safely, their anger may prove useful against Dragonspear's defenders.~
+// From vanilla, as above
+@10007 = ~The Siege of Dragonspear
+
+I left the trolls penned up, though I can always return and release them to create havoc.~
+// From vanilla "Please. You kill Gnarg. Let us out and we help you fight him friends."
+@10008 = ~You kill Gnarg. Let us out and we help you fight him friends.~ [DCTHD01]
+@10009 = ~I'll do what I can.~
+@10010 = ~I have a castle to take. How is this worth the risk?~
+@10011 = ~I'll leave them where they are for now. Free trolls may do more harm than good in this chaos.~
+@10012 = ~I see no problem here. Only trolls where trolls should be.~
+@10013 = ~I have a castle to take. If anyone can tell me how this would be worth the risk, I am all ears.~
+// From vanilla (259805):
+// "The Siege of Dragonspear
+// 
+// The Siege of Dragonspear
+// 
+// I freed the trolls to wreak vengeance on the crusaders.
+// 
+// The crusaders stole the trolls from their homes and used them for shock troops. Now the trolls are free, and the crusade will pay the price for its slaver ways."
+@10014 = ~The Siege of Dragonspear
+
+I let the trolls loose to turn on the crusaders.
+
+The crusaders had captured the trolls and used them as shock troops. Once freed, the trolls turned their anger on their captors.~
