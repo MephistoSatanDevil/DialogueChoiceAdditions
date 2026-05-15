@@ -4,7 +4,7 @@
 
 ~What is this? I come to rescue my elemental companions and find them already freed.~ */
 
-ALTER_TRANS ~BDPWATER~
+ALTER_TRANS BDPWATER
     BEGIN 4 END // State 4
     BEGIN 0 END // first answer
     /* ~A wizard tried to bind them to his will. I put an end to his evil.~ */
@@ -17,7 +17,7 @@ ALTER_TRANS ~BDPWATER~
         "REPLY" ~@6000~ /* ~A wizard tried to bind them to his will. He will trouble you no more.~ */
     END
 
-ALTER_TRANS ~BDPWATER~
+ALTER_TRANS BDPWATER
     BEGIN 4 END // State 4
     BEGIN 1 END // second answer
     /* ~A wizard tried to bind them to his will. I put an end to his evil.~ [JAHEIRAJ.DLG] */
@@ -28,11 +28,11 @@ ALTER_TRANS ~BDPWATER~
 /* ---- */
 
 // region Make it possible to decline gift
-APPEND ~BDPWATER~
+APPEND BDPWATER
     // This will be identical to vanilla State 7
     IF ~~ THEN BEGIN FarewellNew
         SAY #%stringref_farewell_know_that_you_have_a_friend%
-        COPY_TRANS ~BDPWATER~ 7
+        COPY_TRANS BDPWATER 7
     END
 END
 
@@ -40,14 +40,14 @@ END
 
 // Remove the "give stone" actions in State 7
 // Will be used for when the player declines the stone
-REPLACE_TRANS_ACTION ~BDPWATER~
+REPLACE_TRANS_ACTION BDPWATER
     BEGIN 7 END  // State 7
     BEGIN 0 1 END  // first and second answer
     ~GiveItem("bdmisc05",LastTalkedToBy)~ ~~
 
 /* ~Your deed merits reward. This may look like an ordinary stone, but its powers are great. With it you can remove any taint or impurity from water, no matter how befouled.~ */
 
-ALTER_TRANS ~BDPWATER~
+ALTER_TRANS BDPWATER
     BEGIN 6 END // State 6
     BEGIN 0 1 2 END // all three answers
     // It would have made sense to clone State 7 and use REPLACE_TRANS_ACTION
@@ -61,7 +61,7 @@ ALTER_TRANS ~BDPWATER~
         "EPILOGUE" ~GOTO FarewellNew~
     END
 
-EXTEND_TOP ~BDPWATER~ 6
+EXTEND_TOP BDPWATER 6
     // Good character
     // Useful if the player acted in self defense, not out of heroism
     IF ~~ THEN REPLY @6001 /* ~Keep it. I only did what the moment required.~ */

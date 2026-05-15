@@ -3,22 +3,22 @@
 ----
 
 ~*gasp* I thought we'd never get back up! Sure is good to see the surface again.~ */
-EXTEND_BOTTOM ~%bdbellow%~ 0
+EXTEND_BOTTOM BDBELLOW 0
     IF ~~ THEN REPLY @4000 /* ~A touching reunion with the surface, no doubt. Farewell.~ */
         DO ~SetGlobal("NotTalkedToPlayerProperly","LOCALS",1)~ GOTO IfYouGottaMoseyOff
 END
 
 /* ---- */
 
-APPEND ~%bdbellow%~
+APPEND BDBELLOW
     IF ~~ THEN BEGIN IfYouGottaMoseyOff
         // Shortened from State 5
         SAY @4001 /* ~If you gotta mosey off, I understand.~ [DCBLW01] */
-        COPY_TRANS ~%bdbellow%~ 5
+        COPY_TRANS BDBELLOW 5
     END
 END
 
-APPEND ~%bdbellow%~
+APPEND BDBELLOW
     IF ~AreaCheck("BD5100") Global("NotTalkedToPlayerProperly","LOCALS",1)~ THEN BEGIN SureIsGoodToSeeTheSurfaceAgain
         // Shortened from State 0
         SAY @4002 /* ~Sure is good to see the surface again.~ [DCBLW02] */
@@ -32,4 +32,4 @@ END
 
 /* ~What kin I do for ya?~ */
 
-ADD_STATE_TRIGGER ~%bdbellow%~ 7 ~!Global("NotTalkedToPlayerProperly","LOCALS",1)~
+ADD_STATE_TRIGGER BDBELLOW 7 ~!Global("NotTalkedToPlayerProperly","LOCALS",1)~

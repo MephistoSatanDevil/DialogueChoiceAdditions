@@ -5,7 +5,7 @@
 // This solves the issue that you couldn't tell him the truth about your identity at this point,
 // nor at all if you accepted his job offer, I think
 // This is the least bad solution I can think of that doesn't significantly alter NPC dialogue
-APPEND ~SCAR~
+APPEND SCAR
     IF ~NumTimesTalkedToGT(0) Global("ScarMission","GLOBAL",0)~ THEN BEGIN GreetingsIAmScar
         // Shortened from State 19
         SAY @9000 /* ~Greetings. I am Scar, second-in-command of the Flaming Fist.~ [DCSCA01] */
@@ -18,7 +18,7 @@ APPEND ~SCAR~
     END
 END
 
-APPEND ~SCAR~
+APPEND SCAR
     IF ~~ THEN BEGIN IfYouEverHaveAnyTrouble
         // Shortened from State 45
         SAY @9006 /* ~If you ever have any trouble, you can find me right here.~ [DCSCA02] */
@@ -30,19 +30,19 @@ END
 
 // The old second conversation with Scar for when you didn't tell reveal your identity
 // Make it only trigger through dialogue choices
-REPLACE_STATE_TRIGGER ~SCAR~ 2 ~~ // From `NumTimesTalkedToGT(0) Global("ScarMission","GLOBAL",0)`
+REPLACE_STATE_TRIGGER SCAR 2 ~~ // From `NumTimesTalkedToGT(0) Global("ScarMission","GLOBAL",0)`
 
 /* ~Greetings, I am Scar, second-in-command of the Flaming Fist. My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne.~ */
 
 // Make this state never trigger; will be replaced with a new one
-REPLACE_STATE_TRIGGER ~SCAR~ 19 ~~ // From `Global("ScarMission","GLOBAL",8)`
+REPLACE_STATE_TRIGGER SCAR 19 ~~ // From `Global("ScarMission","GLOBAL",8)`
 
 // Replacement for State 19, so he won't introduce himself a third time
-APPEND ~SCAR~
+APPEND SCAR
     // If declined to work for Scar
     IF ~Global("ScarMission","GLOBAL",8)~ THEN BEGIN DeclinedToWorkForScar
         // Shortened from State 19
         SAY @9007 /* ~My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne.~ [DCSCA03] */
-        COPY_TRANS ~SCAR~ 19
+        COPY_TRANS SCAR 19
     END
 END

@@ -6,13 +6,6 @@ LANGUAGE ~English~ ~en_US~ ~DialogueChoiceAdditions/installer/translation/en_US/
 
 BEGIN @0  // Dialogue Choice Additions: Core
 LABEL ~DialogueChoiceAdditions-Core~
-/* Creature names */
-OUTER_SPRINT bdnederl ~BDNEDERL~
-OUTER_SPRINT bddelanc ~BDDELANC~
-OUTER_SPRINT bdmurs ~BDMURS~
-OUTER_SPRINT bdarbing ~BDARBING~
-OUTER_SPRINT bddyingm ~BDDYINGM~
-OUTER_SPRINT bdbellow ~BDBELLOW~
 /* StringRefs */
 OUTER_SET stringref_fitting_last_words = 10844
 OUTER_SET stringref_no_words = 37478

@@ -1,2 +1,2 @@
-ADD_TRANS_TRIGGER ~%bdnederl%~ 27 ~False()~ DO 4
-ADD_TRANS_TRIGGER ~%bdnederl%~ 27 ~False()~ DO 5
+ADD_TRANS_TRIGGER BDNEDERL 27 ~False()~ DO 4
+ADD_TRANS_TRIGGER BDNEDERL 27 ~False()~ DO 5
