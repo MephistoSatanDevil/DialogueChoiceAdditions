@@ -1816,3 +1816,54 @@ Final:
 3. Caelar's madness will leave the Sword Coast in ruins. Stopping her is the only sensible thing to do.
 4. I fight for my own causes and my own purposes. No one else's.
 5. You are right. I am a child of Bhaal, and I embrace it. I came here for murder. Only a fool would think I would join your side.
+
+## Face me
+
+Ashatiel: I will bring you to the light, and prove that ours is the side of honor and virtue. Face me, one on one. If you defeat me, my soldiers and I will surrender to you. Do you accept?
+
+- No. I want as many to die as possible.
+- If it will end the battle earlier, then so be it.
+  - This might be the more effective way. Bring it on.
+- This might prove fun. I accept.
+
+llm:
+
+- No. One death is a poor harvest. Let the field have its fill.
+  - One death is a poor harvest. Let the field have its fill.
+  - No. Keep your honor. I want slaughter, not terms.
+  - No. I will not spare your soldiers the battle they came to fight.
+  - No. I want the screaming to carry beyond the walls.
+  - No. Your offer would end this too quickly.
+  - No. A single corpse will not satisfy Bhaal’s blood.
+  - No. Let the battle continue. I would see how many souls Dragonspear can swallow.
+  - No. I came here for murder, Ashatiel, and you offer me only one death.
+  - No. I want no surrender. I want a massacre.
+- I accept. If defeating you ends this stand, then draw your weapon.
+  - Then let sense prevail where sermons have failed. I accept.
+  - I will face you. Let your soldiers witness the price of following Caelar.
+  - Agreed. Better your pride broken than the whole castle burned around us.
+  - Very well. If one battle can replace a hundred, I will take it.
+  - Your terms are favorable. I accept.
+  - A clean offer, whatever your motives. I accept.
+  - Your soldiers surrender if you fall? Then draw your weapon.
+  - That is the first sensible offer I have heard from your side. I accept.
+    - That is the first sound offer your side has made. I accept.
+    - For once, your side speaks sense. I accept.
+    - A sensible bargain, at last. I accept.
+    - Your side has found reason at last. I accept.
+    - At last, terms that serve more than pride. I accept.
+    - For the first time today, your side offers something useful. I accept.
+  - Your pride has given me an opening. I accept.
+- This may prove amusing. I accept.
+  - This may prove amusing. I accept.
+  - Very well. I accept your little trial of virtue.
+  - I accept. Show me this light of yours before I snuff it out.
+  - You have made murder ceremonial. I approve.
+
+## Exact terms
+
+- I do not accept these terms. No deal.
+
+LLM:
+
+- No bargain, then. If we fight, we fight as war demands.

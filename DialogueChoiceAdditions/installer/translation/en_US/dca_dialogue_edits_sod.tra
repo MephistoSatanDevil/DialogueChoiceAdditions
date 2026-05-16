@@ -172,4 +172,10 @@ The crusaders had captured the trolls and used them as shock troops. Once freed,
 // dca_ASHATI.d
 @11000 = ~If your cause is righteous, then call off your soldiers. My side will stand down if yours do the same.~
 @11001 = ~You are right. I am a child of Bhaal, and I embrace it. I came here for murder. Only a fool would think I would join your side.~
-
+@11002 = ~A sensible offer. Call me intrigued.~
+@11003 = ~This may prove amusing. I accept.~
+@11004 = ~No. One death is a poor harvest. Let the field have its fill.~
+// From vanilla "Champions of light! You see now the cowardice, the duplicity of those who challenge the Lady! Slay the
+// unbeliever! Slay them all, in Caelar's name!" (61340)
+@11005 = ~Champions of light! You see now the duplicity of those who challenge the Lady! Slay the unbeliever! Slay them all, in Caelar's name!~ [DCASH01]
+@11006 = ~No bargain, then. If we fight, we fight as war demands.~
