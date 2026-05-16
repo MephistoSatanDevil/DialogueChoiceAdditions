@@ -1679,3 +1679,140 @@ Human+LLM:
 
 The crusaders had captured the trolls and used them as shock troops. Once freed, the trolls turned their anger on their captors.
 ```
+
+## Ashatiel
+
+### You will never fight with us
+
+Context: Battle of Dragonspear Castle. The coalition (and or including the player) has breached the wall but cannot break through the waves of soldiers. Player and Ashatiel finds each other. Adras Ashatiel is a female avariel (winged elf race) Fighter / Mage / Cleric. She serves as the right hand to Caelar Argent. Ashatiel calls a halt to the battle. Her side wants to open gates to hells to free tormented souls.
+
+Ashatiel: STAND DOWN OR BY THE LADY, YOU'LL ANSWER TO ME!
+Ashatiel: Know that I am Adras Ashatiel, right hand to the Shining Lady. I know you, Bhaalspawn.
+Player: [...]
+Ashatiel: Some call you a hero, but I know what happened on Boareskyr Bridge. You will never fight with us, though our cause be righteous.
+Player:
+
+1. I DO fight on the side of right. You and Caelar cannot see that.
+2. Caelar's madness will leave the Sword Coast in ruins. Stopping her is the only sensible thing to do.
+3. I fight for my own causes and my own purposes. No one else's.
+
+- diplomacy
+- convince her she is wrong
+- embrace bhaal
+- join her
+- attack
+- reject Boareskyr Bridge claim
+- conspire
+
+- Stop this madness. Can't you see what harm you're creating?
+  - Call an end to this madness. Can't you see what harm you're creating?
+  - Call an end to this madness. Can't you see what harm your side is creating?
+  - Call an end to this madness. You are not on the side of virtue.
+  - Help me put an end to this madness. You are not on the side of virtue.
+  - Call an end to this madness. I only serve this side because of the destruction you're creating.
+  - Call an end to this madness. The side I fight for only wants to put an end the harm and destruction you're creating.
+  - Call an end to this madness. The side I fight for only wants to put an end the harm and destruction.
+  - Call an end to this madness. I only want to put an end to the harm and destruction your side is creating.
+  - Call an end to this madness.  
+- Whatever you believe about me, it's not true.
+- You are right. I am a child of Bhaal, and I will never join such a pathetic cause.
+  - You are right. I am on the side of Bhaal. Only a fool would think I would join your side.
+  - You are right. I am a child of Bhaal. Only a fool would think I would join your side.
+  - You are right. I am a child of Bhaal, and I've braced it. Only a fool would think I would join your side.
+  - You are right. I am a child of Bhaal, and I embrace it. Only a fool would think I would join your side.
+  - You are right. I am a child of Bhaal, and I embrace it. I came here for murder. Only a fool would think I would join your side.
+  - You are right. I am a child of Bhaal, and I embrace it. The only side I serve is murder.
+  - You are right. I am a child of Bhaal, and I embrace it. The only cause I serve is murder.
+  - You are right. I am a child of Bhaal, and I embrace it. I did not come here for a sermons about virtue. The only cause I know is murder.
+- I will enjoy killing you.
+- Your time is at an end. (revenge-seeking or purely evil)
+- I did not choose what happened at Boareskyr Bridge.
+
+llm:
+
+- Then prove your cause is righteous and end this now. Your crusade has brought enough death to these walls. We came to stop it from bringing more.
+  - Call an end to this madness. Whatever your cause began as, it now brings only ruin. We are here to stop that ruin, not add to it.
+  - If your cause is righteous, then do not answer blood with more blood. Stand down, Ashatiel. We came to end this, not revel in it.
+  - Then prove your righteousness. Call off your soldiers, Ashatiel. This battle will not free the damned; it will only send more souls to join them.
+  - If your cause is righteous, end this slaughter. The coalition seeks only to stop Caelar from opening a road to the Hells.
+  - Righteous causes do not need fields of corpses to prove them. Stand down, Ashatiel, before this battle devours us all.
+  - You speak of righteousness while Dragonspear drowns in blood. Call an end to this, and no more need die for Caelar’s dream.
+  - If honor guides you, prove it by ending this madness. We came to stop a catastrophe, not to butcher your people.
+  - Your cause may have begun in mercy, but it has led only to ruin. Stand down before Caelar’s crusade damns more than it saves.
+  - Look around you, Ashatiel. This is not deliverance. It is slaughter wearing a holy name.
+  - Whatever Caelar promised you, this battle will not redeem the lost. It will only make more of them.
+  - If your cause is righteous, prove it by standing down. Yours has brought this castle to slaughter; ours seeks only to end it.
+  - If your cause is righteous, prove it. Call off your soldiers. We came to stop Caelar from opening the Hells, not to slaughter those who follow her.
+  - If your cause is righteous, then end this slaughter. We came to stop Caelar’s plan, not to butcher her followers.
+  - If your cause is righteous, call your soldiers back. Opening the Hells will not save the lost; it will only doom the living.
+  - If your cause is righteous, show me. Lay down arms, and no more need die for Caelar’s dream.
+  - If your cause is righteous, prove it. Call off your soldiers, and let this battle end before more lives are wasted.
+  - If your cause is righteous, then let the honorable side show mercy first. Call off your soldiers, Ashatiel.
+  - If your cause is righteous, stop this battle. Let us see which side has the courage to spare lives, not spend them.
+  - If your cause is righteous, then show me the honor in it. Stand down, and let this field see which side truly seeks justice.
+  - If your cause is righteous, let it be judged by mercy. The worthier side will be the one that ends this bloodshed.
+  - If your cause is righteous, then prove your side the nobler one. Call off your soldiers before more lives are thrown away.
+  - If your cause is righteous, Ashatiel, then show restraint. Let honor belong to the side that first lowers its blade.
+  - If your cause is righteous, this is the moment to prove it. End the fighting, and show that your side values life more than victory.
+  - If your cause is righteous, prove it. Call off your soldiers. Your side has brought this battle to bloodshed; mine seeks only to end it.
+  - If your cause is righteous, let your side show mercy. Mine will answer in kind.
+  - If your cause is righteous, then prove your side the nobler one. Call off your soldiers, and mine will stand down.
+  - If your cause is righteous, show it now. Your side need not spend more lives, and mine need not take them.
+  - If your cause is righteous, Ashatiel, then let your side be first to show restraint. Mine did not come here for slaughter.
+  - If your cause is righteous, call off your soldiers. Your side still has a choice, and mine offers one.
+  - If your cause is righteous, then let your side prove it without more blood. Mine seeks an end to this battle, not a heap of corpses.
+  - If your cause is righteous, prove it. Call off your soldiers. Your side has brought this battle to bloodshed; mine seeks only to end it.
+  - If your cause is righteous, then call off your soldiers. My side came to halt this madness; yours would rather drown in it than yield.
+  - If your cause is righteous, then call off your soldiers. My side may have breached your walls, but yours made this battle inevitable.
+  - If your cause is righteous, then call off your soldiers. My side seeks an end to this madness; yours has left us no gentler road.
+  - If your cause is righteous, then call off your soldiers. My side came to end this madness; yours gave us no other path.
+  - If your cause is righteous, then call off your soldiers. My side would rather this ended without more blood; yours has made that hope thin indeed.
+  - If your cause is righteous, then call off your soldiers. My side may hold the breach, but yours made the bloodshed necessary.
+  - If your cause is righteous, then call off your soldiers. My side seeks only to stop this madness; yours has carried it too far to ignore.
+  - If your cause is righteous, then call off your soldiers. My side wants only an end to this madness; yours has brought it to the point of slaughter.
+  - If your cause is righteous, then call off your soldiers. My side wants only an end to this madness; yours has made war necessary where reason should have sufficed.
+  - If your cause is righteous, then call off your soldiers. My side wants only an end to this madness; yours can prove its honor by standing down.
+  - If your cause is righteous, then call off your soldiers. My side wants only an end to this madness; yours can prove its honor by standing down.
+  - If your cause is righteous, then call off your soldiers. My side wants an end to this madness and destruction; yours can still choose the same.
+  - If your cause is righteous, then call off your soldiers. My side wants this battle ended; yours can prove its honor by ending it.
+  - ⭐⭐ If your cause is righteous, then call off your soldiers. My side will stand down if yours has the wisdom to do the same.
+    - ⭐⭐⭐ HUMAN: If your cause is righteous, then call off your soldiers. My side will stand down if yours do the same.
+    - If your cause is righteous, prove it. Call off your soldiers. Mine will stand down if yours do the same.
+    - ⭐⭐ HUMAN: If your cause is righteous, then call off your soldiers. I will have my side stand down if yours do the same.
+  - ⭐ If your cause is righteous, then call off your soldiers. My side wants no more bloodshed; yours can yet spare us all from it.
+  - You know I fell at Boareskyr Bridge. You know what was left around me. But a mark of Bhaal is not reason enough for more soldiers to die. Call yours off, and the coalition will do the same.
+  - If your side is righteous, prove it. I woke beneath Bhaal’s mark at Boareskyr Bridge, but I did not choose what happened there. Call off your soldiers, and my side will do the same.
+  - Whatever you think happened at Boareskyr Bridge, soldiers are dying now. If your side is honorable, act honorably now.
+- Then you know I am no common sellsword. Let me stand with the Shining Lady.
+  - I have come not to fight you, but to offer my blade.
+  - I am weary of standing against you. Let me serve the Shining Lady.
+  - If your cause is as righteous as you claim, then I would be part of it.
+  - Then let my name serve me here. I would speak with the Shining Lady and offer her my aid.
+  - If you are Caelar’s right hand, then take my words to her: I would join her crusade.
+  - Perhaps I have chosen the wrong side of this wall. I would hear Caelar’s purpose for myself.
+  - Then you know I am not your enemy by necessity. I would hear the Shining Lady’s cause, and perhaps stand with her.
+  - Then you know enough to hear me out. I have not come only to shed blood; I would speak of joining your crusade.
+  - If you know me, then know this: I would rather stand with Caelar than die beneath these walls for those who fear her.
+  - Then you know I am no common soldier. Take me to Caelar; I would offer her my blade.
+- Then you know me well enough. I am Bhaalspawn, and I make no apology for it. Keep your righteous cause; I came here to kill.
+  - You speak of righteousness to Bhaal’s own blood? Save your breath, Ashatiel. I did not come to join your crusade. I came to end it in slaughter.
+  - Aye, I am Bhaalspawn, and I came here for murder. Do not prattle to me of righteous sides, Ashatiel. Yours will bleed like any other.
+  - Then you know me well enough. I am Bhaalspawn, and I came to spill blood. Your side may dress itself in virtue; I prefer honesty.
+  - Only a fool would think I came to join your side. I am Bhaalspawn, and whatever virtue yours boasts, I mean to drown it in blood.
+  - You speak of your side’s righteousness to the child of Bhaal. I did not come seeking virtue, Ashatiel. I came seeking slaughter.
+  - Then you understand me. I am Bhaal’s blood, and I came here to kill. Let your side keep its honor; I will keep the corpses.
+  - Aye, I am Bhaalspawn. Your side claims righteousness, mine brings death. Let us see which survives the day.
+  - You are right. I am a child of Bhaal, and I embrace it. Your side speaks of honor and virtue; mine knows murder for what it is.
+  - You know me well enough, then. I am Bhaalspawn, and I came to Dragonspear for murder, not sermons about virtue.
+  - Only a fool would think I came to join your side. I am Bhaal’s child, and murder is the inheritance I claim.
+  - You speak of your side’s righteousness to Bhaal’s own blood. I did not come seeking virtue, Ashatiel. I came seeking murder.
+  - You are right. Boareskyr Bridge showed the truth: Bhaal’s mark is mine. I did not come to join your shining side. I came to drown it in blood.
+- Boareskyr Bridge should have warned your side what powers are circling this war. Instead Caelar would open the Hells and call it righteousness.
+
+Final:
+
+1. If your cause is righteous, then call off your soldiers. My side will stand down if yours has the wisdom to do the same.
+2. I DO fight on the side of right. You and Caelar cannot see that.
+3. Caelar's madness will leave the Sword Coast in ruins. Stopping her is the only sensible thing to do.
+4. I fight for my own causes and my own purposes. No one else's.
+5. You are right. I am a child of Bhaal, and I embrace it. I came here for murder. Only a fool would think I would join your side.

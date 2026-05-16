@@ -168,3 +168,8 @@ I left the trolls penned up, though I can always return and release them to crea
 I let the trolls loose to turn on the crusaders.
 
 The crusaders had captured the trolls and used them as shock troops. Once freed, the trolls turned their anger on their captors.~
+
+// dca_ASHATI.d
+@11000 = ~If your cause is righteous, then call off your soldiers. My side will stand down if yours do the same.~
+@11001 = ~You are right. I am a child of Bhaal, and I embrace it. I came here for murder. Only a fool would think I would join your side.~
+
