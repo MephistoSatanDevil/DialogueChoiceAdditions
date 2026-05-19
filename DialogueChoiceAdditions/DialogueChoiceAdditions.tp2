@@ -6,7 +6,7 @@ LANGUAGE ~English~ ~en_US~ ~DialogueChoiceAdditions/installer/translation/en_US/
 
 BEGIN @0  // Dialogue Choice Additions: Core
 LABEL ~DialogueChoiceAdditions-Core~
-/* StringRefs */
+/* StringRefs - BG & SoD*/
 OUTER_SET stringref_fitting_last_words = 10844
 OUTER_SET stringref_no_words = 37478
 OUTER_SET stringref_where_does_the_maze_lead = 11727
@@ -77,6 +77,8 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_indeed_and_caelar_was_a_child = stringref_indeed_and_caelar_was_a_child + EET_OFFSET
     OUTER_SET stringref_no_fruit = stringref_no_fruit + EET_OFFSET
     OUTER_SET stringref_a_childish_sentiment = stringref_a_childish_sentiment + EET_OFFSET
+/* StringRefs - SoA */
+OUTER_SET stringref_then_let_us_be_off = 2566
 END
 // Baldur's Gate (base game) content
 ACTION_IF GAME_IS ~eet bgee~ BEGIN
@@ -295,6 +297,13 @@ IF
     /* Sound */
     PRINT @90006  /* ~Installing voiceover files for Siege of Dragonspear content ...~ */
     COPY ~%MOD_FOLDER%/core/siege_of_dragonspear/res/audio/voiceover/%LANGUAGE%~ ~lang/%LANGUAGE%/sounds~
+END
+ACTION_IF GAME_IS ~eet bg2ee~ BEGIN
+    WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_soa.tra~ BEGIN
+        /* Dialogue */
+        PRINT @90014  /* ~Compiling dialogue files for Shadows of Amn content ...~ */
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/shadows_of_amn/src/dialogue/dca_minsc_irenicus_dungeon.d~
+    END
 END
 
 BEGIN @1  // VVE Compatibility Patch

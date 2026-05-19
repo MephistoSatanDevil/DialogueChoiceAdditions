@@ -2134,3 +2134,51 @@ llm:
   - ⭐ And somehow, you were freed. A flaw in an otherwise elegant punishment.
   - ⭐⭐ Human: And you were freed? A flaw in an otherwise elegant punishment.
 - ⭐⭐ But the cage did not hold you forever.
+
+## Minsc freed
+
+### Now we can resume adventure together
+
+Context: start of bg2, Minsc is out of his cage.
+
+Minsc: Now we can resume our adventures together! There are friends to avenge and villains to smack about the face and neck! Right, Boo?
+
+1. Join with me, but you must serve me better than you did Dynaheir.
+2. Together we shall make our enemies answer for our fallen.
+3. Um... yeah. I think perhaps we should... split up.
+
+- I would appreciate your company.
+  - Yes, please tag along.
+  - You're welcome to join.
+  - I'd be happy to have you with me.
+  - I shall need your help. Come with me.
+  - I'm glad to be back together.
+  - I'm glad we are together again.
+  - I'm glad to be united.
+  - I'm glad to see you.
+- You could prove useful.
+
+LLM:
+
+- ⭐ I am glad to have you at my side again, Minsc. Let us find the others and leave this place.
+  - There will be time for smiting villains. For now, stay close — we are not safe yet.
+  - Your strength is welcome, my friend. Let us put it to use finding a way out.
+  - Your strength is welcome, and so is your friendship. Let us find our way out.
+  - There will be time for smiting villains. For now, stay close — we are not safe yet.
+  - There will be time for vengeance. For now, I am glad you are free.
+  - Stay with me—we will need your strength before this is done.
+  - Good to have you free, Minsc. Now let us find the others and get out of here.
+  - Well done, Minsc. Now let us find the others and escape.
+- My head is still fogged, but your voice is familiar. Stay close, Minsc.
+  - There is much I do not remember, but I know I will need you and Boo before this is done.
+  - I do not know what has been done to me, but I know I would rather face it with you beside me.
+  - If we were comrades, then let us be comrades still. Help me find a way out.
+  - I cannot recall our adventures, but I would rather face this place with you than alone.
+  - I do not remember you as I should, but I know an ally when I see one. Come with me.
+  - You speak as a friend. I will trust you as one until my memory returns.
+  - My memories fail me, Minsc, but your loyalty does not. Stay close.
+  - Your strength is welcome, Minsc. Your friendship… I hope I will remember in time.
+  - I remember enough to know you are a friend, Minsc. Come—we leave this place together.
+  - Aye, Minsc. I remember enough. We are allies, and allies do not leave one another in cages.
+  - ⭐ Your strength is welcome, Minsc. Your friendship more so. Come—we have lingered here long enough.
+  - I remember you and Boo, at least. That is comfort enough in this place. Come.
