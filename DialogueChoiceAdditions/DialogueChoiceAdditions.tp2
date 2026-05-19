@@ -34,6 +34,13 @@ OUTER_SET stringref_rot_in_your_cell = 64082
 OUTER_SET stringref_ive_come_here_looking_for_a_wardstone = 64062
 OUTER_SET stringref_please_you_kill_gnarg = 38219
 OUTER_SET stringref_no_dont_leave_alkullok = 38221
+OUTER_SET stringref_tell_him_caelar = 39194
+OUTER_SET stringref_perhaps_it_was_too_much_to_expect = 39254
+OUTER_SET stringref_what_is_simple_to_the_wise = 39255
+OUTER_SET stringref_and_childs_play_for_the = 39282
+OUTER_SET stringref_indeed_and_caelar_was_a_child = 39259
+OUTER_SET stringref_no_fruit = 39257
+OUTER_SET stringref_a_childish_sentiment = 39258
 ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET EET_OFFSET = 200000
     OUTER_SET stringref_fitting_last_words = stringref_fitting_last_words + EET_OFFSET
@@ -63,6 +70,13 @@ ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET stringref_ive_come_here_looking_for_a_wardstone = stringref_ive_come_here_looking_for_a_wardstone + EET_OFFSET
     OUTER_SET stringref_please_you_kill_gnarg = stringref_please_you_kill_gnarg + EET_OFFSET
     OUTER_SET stringref_no_dont_leave_alkullok = stringref_no_dont_leave_alkullok + EET_OFFSET
+    OUTER_SET stringref_tell_him_caelar = stringref_tell_him_caelar + EET_OFFSET
+    OUTER_SET stringref_perhaps_it_was_too_much_to_expect = stringref_perhaps_it_was_too_much_to_expect + EET_OFFSET
+    OUTER_SET stringref_what_is_simple_to_the_wise = stringref_what_is_simple_to_the_wise + EET_OFFSET
+    OUTER_SET stringref_and_childs_play_for_the = stringref_and_childs_play_for_the + EET_OFFSET
+    OUTER_SET stringref_indeed_and_caelar_was_a_child = stringref_indeed_and_caelar_was_a_child + EET_OFFSET
+    OUTER_SET stringref_no_fruit = stringref_no_fruit + EET_OFFSET
+    OUTER_SET stringref_a_childish_sentiment = stringref_a_childish_sentiment + EET_OFFSET
 END
 // Baldur's Gate (base game) content
 ACTION_IF GAME_IS ~eet bgee~ BEGIN
@@ -262,6 +276,7 @@ IF
             COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/jasteys_tweaks_compatibility_patch/siege_of_dragonspear/src/dialogue/dca_jt_BDDELANC.d~
         END
         PRINT @90012  /* ~Compiling dialogue files for vanilla Siege of Dragonspear content ...~ */
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_aun.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDARBING.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDASHATI.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/siege_of_dragonspear/src/dialogue/dca_BDBELLOW.d~

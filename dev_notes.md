@@ -1867,3 +1867,265 @@ llm:
 LLM:
 
 - No bargain, then. If we fight, we fight as war demands.
+
+## Aun Argent
+
+### The cost
+
+Context: The devil Belhifet is slayed by the player (Gorion's Ward / Hero of Baldur's Gate). Caelar Argent's destructive crusade to free tormented souls in hell—her real reason has been revealed to be to save one person—her uncle Aun Argent—with little hope of saving others, and others are not saved. Aun Argent's cage opens.
+
+Caelar: I can scarcely believe it. Everything I did, every sacrifice I made, all to reach this moment... You are free at last, Uncle.
+Aun Argent: I know not what you did to make this happen, Caelar. Whatever it was, the cost was too great.
+
+1. I have no family of my own, sir, but if I did, there is little I wouldn't do to save them.
+2. You have no idea how right you are.
+3. Tell him, Caelar. Tell him the price the Sword Coast bore that he might be freed from Belhifet's clutches.
+
+- not add insult to injury
+- acknowledge cost without adding insult to injury
+- get out asap / not listen
+- if there was a decent chance to free others, maybe it would have been worth it
+- if she was truly acting selfishly, then immoral
+- more should have died
+- Belhifet is slayed though, isn't that good?
+- you should be thankful
+- I would have done the same
+- deceit is the problem
+- deceive
+- revenge
+- annoyed by the moralizing
+
+- What is done is done.
+  - No reason to cry over spilled milk.
+  - No use in lingering on what cannot be changed.
+  - The important thing is that she learns something.
+  - What is done is done. Caelar shall answer for her crimes.
+  - ⭐⭐ What is done is done. Caelar will answer for her crimes.
+  - The cost will not be forgotten.
+- I am inclined to agree.
+- If this was all to save one man, then truly, yes. The price was too high.
+  - If you knew the Dragonspear dead could never be saved, then yes.
+  - She fooled hundreds...
+  - If your ambition was never truly to save the Dragonspear dead, then yes, this is despicable.
+- The number dead is nothing compared to the great accomplishments of Bhaal.
+  - You are a weak man, Aun.
+  - You are a pathetic man, Aun.
+  - I don't see what Caelar sees in you.
+  - What she did is nothing compared to what I would do to achieve my goals.
+  - This is pathetic.
+- Belhifet is dead. That's something.
+- What say you, Caelar?
+- Who are you to judge?
+  - Oh, spare me the sermons.
+- The only cost worth mentioning is what she did to me.
+  - Her only mistake so far is crossing me.
+- This can wait.
+
+llm:
+
+- What is done is done. Caelar will answer for her choices in time.
+  - Your words are true enough. Caelar’s choices will not pass unjudged.
+  - What is done is done. Caelar will have to answer for the ruin her crusade has wrought.
+  - The Sword Coast paid dearly. Caelar’s deeds will be judged when we return.
+  - What she did cannot simply be set aside. Caelar will face lawful judgment.
+  - That judgment is not mine alone to pass. Caelar will answer before the law.
+  - The price has been paid, and the law will have its say.
+  - Caelar’s cause has ended. What remains is for the law to decide.
+  - What is done is done. Caelar shall answer for her crimes when we return.
+  - What is done is done. Caelar shall answer for her crimes in due course.
+  - The cost was great indeed.
+  - You speak truly. Many paid for this day.
+  - It was. And those who paid it are beyond our reach now.
+  - You are right. This victory carries a heavy shadow.
+  - Aye. Too many paid for this moment, and too dearly.
+  - You speak truly, Aun. This rescue came at a bitter price.
+  - The price was high, and no word of mine will lessen it.
+  - Too great, perhaps. But the deed is done.
+  - The Sword Coast bled for this moment. That much cannot be denied.
+  - Whatever else is said, the cost was real.
+  - Love drove her here. Pride and desperation carried the rest.
+- You were not wrong to want him saved, Caelar. But too many died for this.
+  - Human: You were not wrong to want him saved, Caelar. But too many suffered for this.
+- I know what it is to be driven by a past you did not choose. But that does not excuse what you chose.
+- This was not your burden to bear, sir. But yes—the cost was more than anyone had a right to pay.
+  - You are not to blame for what was done in your name. But many suffered for it.
+    - ⭐⭐ Human: You are not to blame for what was done in your name. But many suffered for it.
+    - ⭐ Human: You are not to blame for what was done in your name, Aun. But many suffered for it.
+- This is between the two of you. I have done what I came to do.
+  - This is between the two of you. I will not answer for Caelar.
+  - Ask Caelar. I have no wish to speak for her.
+  - Let her tell you. The truth should come from her.
+  - That answer is Caelar’s to give, not mine.
+  - Then let Caelar tell you what that cost was.
+  - Caelar can speak to that better than I can.
+  - I will leave you two to reckon with that.
+- Belhifet is dead. The gate is closed. Whatever the cost, the Coast survives.
+- Remember this, Aun: noble words can march people into slaughter as easily as wicked ones.
+- Let the gods weigh her deeds. I have seen enough blood to know my own judgment is not clean.
+- Forgive the intrusion, Aun, but the cost was borne by more than Caelar.
+- The cost is nothing to me. Caelar’s mistake was making me pay it.
+  - ⭐ Spare me the reckoning. Her only mistake was standing in my way.
+  - ⭐ Human: The cost is nothing to me. Her only mistake was standing in my way.
+  - Too great? Perhaps. But her true error was making an enemy of me.
+  - Let the dead weigh upon her. I care only that she crossed me.
+  - I care little for the cost. She chose her path, and it crossed mine.
+  - ⭐ Human: I care little for the cost. Her only mistake was standing in my way.
+  - ⭐ Human: I care little for the cost. What matters is that she tried to kill me.
+  - ⭐ Human: I care little for the cost. Spare me.
+  - ⭐ The Sword Coast may count its dead. I count only the insult.
+    - The Sword Coast may weigh its losses. I weigh only what was done to me.
+    - The Sword Coast may have its grief. I have my grievance.
+  - I did not come here to weigh Caelar’s conscience.
+  - Spare me the reckoning. What is done is done.
+  - Spare me the sorrow. The deed is done.
+  - Human: Spare me the reckoning. The deed is done.
+  - Her crusade, her cost, her grief. Her mistake was making it my affair.
+  - The only price that matters is the one she pays for crossing me.
+  - Her cause was folly, but folly is common. Crossing me was the fatal error.
+  - The cost is counted by those who paid it. I did not.
+  - Too great? Perhaps. But you are free, and Belhifet lies dead. I call that sufficient.
+  - Too great for whom? I survived it well enough.
+  - I care little for the cost. Belhifet is dead, and I am alive.
+  - Let the dead count the cost. I have no patience for it.
+  - The price was high. I am not moved by it.
+  - What is a little ruin, weighed against victory?
+  - Count yourself fortunate, old man. Many paid dearly so you might breathe.
+    - Count yourself fortunate, Aun. Many paid dearly so you might breathe.
+    - Count yourself fortunate. Many paid dearly so you might breathe.
+    - Count yourself fortunate, Argent. Many paid dearly so you might breathe.
+    - Count yourself fortunate, fool. Many paid dearly so you might breathe.
+    - Count yourself fortunate. Your life was purchased with better blood than yours.
+    - Count yourself fortunate. Many died for you, and I doubt you were worth the cost.
+    - Human: Count yourself fortunate, you fool. Many died for you, and I doubt you were worth the cost.
+    - ⭐ Human: Count yourself fortunate, you fool.
+    - ⭐ Human: Thank her, you fool.
+    - ⭐ Human: Thank us, you fool.
+    - Human: You should count yourself fortunate, you fool.
+    - Count yourself fortunate, Argent. Better souls than you paid dearly for that breath.
+    - Count yourself fortunate, fool. Many died so you might breathe.
+    - Count yourself fortunate. Your freedom was bought with a mountain of corpses.
+    - Count yourself fortunate. Many were butchered so you might stand here sniveling.
+    - Count yourself fortunate, Aun. Others were fed to the slaughter so you might live.
+    - Thank us, fool. Your cage is open; spare us your conscience.
+    - Thank us, fool. The dead have paid your ransom.
+    - Thank us, fool. Your freedom was purchased with corpses.
+    - Thank us, fool. You breathe because others do not.
+    - ⭐⭐ Human: Count yourself fortunate, fool. You breathe because others do not.
+    - ⭐⭐ Human: You should count yourself fortunate, fool. You breathe because others do not.
+    - ⭐⭐ Human: You should count yourself fortunate, fool. Your life was purchased with corpses.
+    - ⭐⭐ Human: You should be more thankful. Caelar purchased your life with a mountain of corpses.
+    - ⭐⭐ Human: You should be more thankful. Caelar purchased your life with a field of corpses.
+    - ⭐⭐ Human: You should be more thankful. Caelar purchased your life with heaps of corpses.
+    - ⭐⭐ Thank her, Argent. She paid for your freedom with lives by the thousands.
+    - ⭐⭐ Human: Thank her, Argent. She paid for your freedom with lives by the hundreds.
+    - ⭐⭐ Human: Thank her, Argent. She paid for your freedom with fields of corpses.
+    - You should be grateful. Caelar buried half the Coast in your name.
+    - Do not sneer at the cost, Argent. It is the only reason you stand free.
+    - You should be more thankful. Your freedom has been paid for in full — blood, souls, and ruin.
+    - You should be proud. It took a crusade, a war, and a field of corpses to buy you back.
+    - A little gratitude. Caelar did not ruin the Coast for nothing.
+    - You were purchased with blood, Argent. At least have the decency to seem valuable.
+    - Your life was bought with a mountain of corpses. Try not to insult the transaction.
+    - Spare me your judgment, old man. Your cage is open; the Sword Coast has paid. Be grateful—or crawl back inside.
+    - Spare me your reckoning. The dead paid the price, and the living will endure it.
+    - Spare me the tears. Your freedom was bought in blood, and I find the bargain acceptable.
+    - Spare me the reckoning. The cost was paid by others, and that is the only kind I find tolerable.
+    - The cost was paid by those too weak to stop it. Be grateful you were worth the trouble.
+    - The price was paid. Whether it was too great is not yours to decide.
+    - Whatever was spent, it purchased your life. Do not cheapen it with complaint.
+    - If freedom offends you, step back into the cage.
+    - The cost was paid by the living. You may spare us the sermon.
+    - The crusade is broken, the devil is dead, and your cage is open. That is all the judgment this moment requires.
+    - Do not presume this is only between you and her. Her crusade made it mine.
+    - You call the cost too great? I crossed the bodies it bought. Spare me the lesson.
+    - I did not come this far to watch Caelar be scolded like a wayward child. Her crimes are larger than your disappointment.
+    - Spare me the reckoning. Your suffering has already served its purpose.
+    - ⭐⭐ Human: Spare me the family reckoning.
+    - Your torment served its end, Argent. Try not to cheapen it with whining.
+    - How touching. The martyr disapproves of the slaughter committed in his name.
+  - The cost matters only to those weak enough to regret it.
+  - The dead are past caring, Aun. I suggest you do the same.
+
+final:
+
+1. I have no family of my own, sir, but if I did, there is little I wouldn't do to save them.
+2. Tell him, Caelar. Tell him the price the Sword Coast bore that he might be freed from Belhifet's clutches.
+3. What is done is done. Caelar will answer for her crimes.
+4. You are not to blame for what was done in your name. But many suffered for it.
+5. You should be more thankful. Caelar purchased your life with a mountain of corpses.
+
+## How a girl not ten years old found herself caged
+
+Caelar: I was brought up in the Order of the Aster. My aasimar heritage and the Argent name assured me a place of honor as a paladin of the Morninglord. Or so I thought at the time. I had such confidence then. Such certainty of purpose. I knew I would rise to greatness, knew it in my bones.
+Caelar: All that barred my ascent were my superiors in the Order. They sought to teach me humility; I see that now. But I could not bring myself to bow to their authority. To any authority but Lathander's, perhaps not even his.
+Caelar: I was told to watch over the library. To guard the volumes within, for they held knowledge critical to the order's success in the battle against darkness. I coveted that knowledge. In my arrogance, I read aloud from the pages, not understanding the forces I was invoking...
+Caelar: That was how a girl not yet ten years old found herself in this pit, in that cage.
+
+1. Yet you escaped its bars. You must have.
+2. We all make mistakes.
+3. Then you have experience in being caged. Good. It will serve you well when we return to the Material Plane.
+
+- You were but a child... (EDIT: I thought she was sent to Avernu as punishment, but the tomes transported her there, I think)
+- You deserved it.
+- And you escaped? Pity.
+- And somehow you got out.
+
+llm:
+
+- You were not yet ten. No child should pay so dearly for arrogance.
+  - You were a child, Caelar. Proud, perhaps—but still a child.
+  - Nine years old, and they left such knowledge within your reach? That guilt is not yours alone.
+  - You were barely more than a child. The Order failed you before Hell ever claimed you.
+  - A child’s pride should earn correction, not damnation.
+  - You were too young to understand the weight of what you held.
+  - You were not old enough to know what you were reaching for.
+  - That was no sin worthy of Hell. It was a child’s mistake.
+  - Then the fault lies with those who placed forbidden power in a child’s hands.
+  - You speak as though you were already the woman who led this crusade. You were a frightened girl in a cage.
+  - That was not justice. That was a child abandoned to Hell.
+  - Whatever you became after, that girl deserved mercy.
+- You were a child, Caelar. The fault lies with those who put forbidden power within your reach.
+  - You were a child, Caelar. The Order failed you long before the Hells claimed you.
+  - You were not at fault. A child should never have been left alone with such knowledge.
+  - Then the Order’s shame is greater than yours. They set a child to guard what adults feared to touch.
+  - You were a child. The fault lies with the fools who placed forbidden knowledge within your reach.
+  - You were a child. The Order should have guarded you as carefully as it guarded those books.
+  - Your pride was a child’s pride. Their negligence was an adult’s sin.
+  - A child should never have been left to guard what seasoned paladins feared to use.
+  - Whatever your arrogance, you were still a child. They should have known better.
+  - You disobeyed, yes. But only a fool leaves a child alone with words that can open Hell.
+  - Your mistake was childish. Theirs was unforgivable.
+  - If those books were so dangerous, then guarding them was no task for a child.
+  - ⭐ No child should have been set to guard such knowledge. Whatever followed, that fault was theirs.
+- ⭐ A fitting lesson. Pity it failed to take.
+  - A fitting lesson. Shame it failed to teach you humility.
+  - Hell received you young, then. It should have kept you longer.
+  - And still you learned nothing. That is the true tragedy.
+  - You call it tragedy. I call it consequence.
+  - You were warned. You disobeyed. You fell. That is not tragedy, Caelar. That is order.
+  - Perhaps if the cage had held you longer, the Sword Coast would have been spared.
+  - A cruel lesson, but not an undeserved one.
+  - You were warned, you disobeyed, and you paid. That is not tragedy. That is order.
+  - The cage suited the crime better than you care to admit.
+  - You opened the door yourself, Caelar. Do not weep because something answered.
+  - An ugly fate. But not an inexplicable one.
+  - A pity Belhifet did not keep you long enough to teach restraint.
+  - You read the words, invoked the power, and suffered the price. I fail to hear the injustice.
+  - You trespassed where you were forbidden and found exactly what waited there.
+  - A harsh punishment, yes. But arrogance is rarely corrected gently.
+  - You were not punished for malice, Caelar. You were caged because you proved dangerous.
+  - You reached for power beyond you, and power answered. That is not injustice. That is the shape of the world.
+  - You were young. You were ignorant. You were still dangerous.
+  - You made yourself the obvious price. Do not sneer because they paid it.
+  - You were a lesson to the rest of them. That may be cruel, but it is not strange.
+  - The Order looked upon your pride and found an offering already prepared.
+  - You made a fine warning, Caelar. Perhaps that was the first useful thing your arrogance achieved.
+  - You proved dangerous, proud, and disposable. Few institutions resist such a gift.
+- And yet you escaped. A regrettable oversight.
+  - And yet you escaped. An error worth correcting.
+  - And yet you escaped. How unfortunate for the rest of us.
+  - And yet you escaped. Some cages are opened too soon.
+  - And yet you escaped. The Hells are careless jailers.
+  - And yet you escaped. Belhifet’s first mistake.
+  - ⭐⭐ And yet you escaped. A flaw in an otherwise elegant punishment.
+- ⭐⭐ But the cage did not hold you forever.

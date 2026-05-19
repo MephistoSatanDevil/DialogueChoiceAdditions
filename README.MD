@@ -170,6 +170,7 @@ New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/Dialogu
 
 - Arbinge
 - Ashatiel
+- Aun (and Caelar)
 - Bellowgulp Bluefingers
 - De Lancie
 - Dying Myconid
