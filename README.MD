@@ -7,8 +7,7 @@ Additional dialogue choices (also known as dialogue options, responses, or repli
 The project's goals are as follows:
 
 - Cover as many things as the player might want to do in any given situation (e.g. end the conversation)
-- Broad roleplay coverage
-- Broad moral/ethical coverage
+- Broad character coverage
 - Vanilla-friendly / style matches the rest of the game
 - Story cohesion
 - NPC followups to player choices follow naturally
