@@ -45,10 +45,12 @@ ALTER_TRANS BDCAELAR
         "REPLY" ~@12006~ /* ~But the cage did not hold you forever.~ */
 END
 
+// Last option short-circuits the dialogue, a kind of "exit" response, which fits best at the bottom,
+// so we add the new responses above the last one
 EXTEND_BOTTOM BDCAELAR 74 #1
     IF ~~ THEN REPLY @12004 /* ~No child should have been set to guard such knowledge. Whatever followed, that fault was theirs.~ */ EXTERN BDAUN PerhapsItWasTooMuchToExpectCaelarLives
-    // Unhinged; perhaps angry at Caelar and jumping to blame her, or evil, or some (arguably evil) crazy ethics
-    IF ~~ THEN REPLY @12005 /* ~A fitting lesson. Pity it failed to take.~ */ EXTERN BDAUN 13
+    // Evil
+    IF ~~ THEN REPLY @12005 /* ~And you were freed? A flaw in an otherwise elegant punishment.~ */ GOTO 75
 END
 
 /* ---- */

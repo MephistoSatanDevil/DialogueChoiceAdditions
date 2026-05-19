@@ -4,8 +4,6 @@ This document comprises rough development notes and brainstorm data; not polishe
 
 ## Candidates for expansion
 
-- [ ] Keherrem
-- [ ] Madele
 - [ ] End dialogues early in Candlekeep return
 - [ ] Iron Throne NPCs
 - [ ] Character rejoin dialogue
@@ -2127,5 +2125,12 @@ llm:
   - And yet you escaped. Some cages are opened too soon.
   - And yet you escaped. The Hells are careless jailers.
   - And yet you escaped. Belhifet’s first mistake.
-  - ⭐⭐ And yet you escaped. A flaw in an otherwise elegant punishment.
+  - ⭐ And yet you escaped. A flaw in an otherwise elegant punishment.
+  - ⭐ Human: And yet you managed to get out. A flaw in an otherwise elegant punishment.
+  - ⭐ Human: And yet you managed to get out somehow. A flaw in an otherwise elegant punishment.
+  - ⭐ Human: And yet you got out. A flaw in an otherwise elegant punishment.
+  - ⭐ Human: And yet you somehow got out. A flaw in an otherwise elegant punishment.
+  - ⭐ Yet somehow, you were freed. A flaw in an otherwise elegant punishment.
+  - ⭐ And somehow, you were freed. A flaw in an otherwise elegant punishment.
+  - ⭐⭐ Human: And you were freed? A flaw in an otherwise elegant punishment.
 - ⭐⭐ But the cage did not hold you forever.
