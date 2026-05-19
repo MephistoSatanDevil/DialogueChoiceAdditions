@@ -300,9 +300,19 @@ IF
 END
 ACTION_IF GAME_IS ~eet bg2ee~ BEGIN
     WITH_TRA ~%MOD_FOLDER%/installer/translation/%LANGUAGE%/dca_dialogue_edits_soa.tra~ BEGIN
+        /* Strings */
+        PRINT @90015  /* ~Replacing strings for Shadows of Amn content ...~ */
+        // Jailkeep Golem (IGOLEM2)
+        // You will still be able to choose "You are a mindless golem. I shall find no answers from you." in State 0 and State 7.
+        // It other states, it seems unnecessarily rude and not true
+        STRING_SET 10821 /* ~You are a mindless golem. I shall find no answers from you.~ */ @1000 /* ~I have no more time for this. Farewell.~ */
+        STRING_SET 10822 /* ~You are a mindless golem. I shall find no answers from you.~ */ @1000 /* ~I have no more time for this. Farewell.~ */
+        STRING_SET 10823 /* ~You are a mindless golem. I shall find no answers from you.~ */ @1000 /* ~I have no more time for this. Farewell.~ */
+        STRING_SET 10824 /* ~You are a mindless golem. I shall find no answers from you.~ */ @1000 /* ~I have no more time for this. Farewell.~ */
         /* Dialogue */
         PRINT @90014  /* ~Compiling dialogue files for Shadows of Amn content ...~ */
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/shadows_of_amn/src/dialogue/dca_minsc_irenicus_dungeon.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/shadows_of_amn/src/dialogue/dca_jailkeep_golem.d~
     END
 END
 

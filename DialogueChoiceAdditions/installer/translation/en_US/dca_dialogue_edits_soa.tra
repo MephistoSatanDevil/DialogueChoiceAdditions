@@ -1,4 +1,4 @@
-//dca_minsc.d
+// dca_minsc.d
 @0 = ~I am glad to have you at my side again, Minsc.~
 // From vanilla "If anything, I shall be even more single-minded in my focus! Minsc is Minsc, and it shall always be so. Come, Boo, we are among friends again!" (2525)
 // Audio file reference in case anyone wants to add voicover
@@ -6,3 +6,8 @@
 // From vanilla "Then let us be off, and woe be to those that dare to stand in our way." (2566)
 @2 = ~Let us be off, and woe be to those that dare to stand in our way.~
 @3 = ~Let's stick together. For now, at least.~
+
+// Jailkeep Golem
+@1000 = ~I have no more time for this. Farewell.~
+@1001 = ~I would rather get out of here.~
+@1002 = ~I have no time for this. Farewell.~

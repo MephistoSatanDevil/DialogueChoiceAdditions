@@ -2182,3 +2182,46 @@ LLM:
   - Aye, Minsc. I remember enough. We are allies, and allies do not leave one another in cages.
   - ⭐ Your strength is welcome, Minsc. Your friendship more so. Come—we have lingered here long enough.
   - I remember you and Boo, at least. That is comfort enough in this place. Come.
+
+## Jailkeep Golem
+
+### You must not escape
+
+Context: Irrenicus's Dungeon
+
+Jailkeep Golem: Prisoners... you must not escape... the master does not will it.
+Imoen: Wow, a golem. Powerful magic stuff. Odd that it's not hostile. I suppose its maker didn't expect us to escape, so it never got orders for restraining us.
+Imoen: They only do exactly what they are directed to; they don't really think. If it hasn't been told to keep quiet, we might get some information out of it.
+Jailkeep Golem: Prisoners... you must not escape... the master does not will it.
+
+1. Who is this master that you speak of?
+2. What your master wills matters not to me, golem. Where are we, and why have we been brought here?
+3. The master wants me to be free. He released me.
+4. You are a mindless golem. I shall find no answers from you.
+
+## Other states
+
+- I shall find no answers from you. Goodbye.
+  - It seems I shall find no answers from you.
+  - It seems I shall find no answers from you. Goodbye.
+  - It appears I shall find no answers from you.
+  - It appears I shall find no answers from you. Goodbye.
+  - It appears I shall find no answers from you. Farewell.
+  - I have no more time for this. Farewell.
+  - I will not spend more time on this. Farewell.
+
+LLM:
+
+- Enough. I will find my answers elsewhere.
+  - This is pointless. I will seek answers beyond this chamber.
+  - Enough of this. I have a dungeon to escape.
+  - You repeat orders, not answers. I am done.
+  - Very well. Stand there and obey. I have better uses for my time.
+  - Enough. We should keep moving before your master notices.
+  - No more questions. We should leave before this thing receives new orders.
+  - A golem will only know what it was made to know. We should not linger.
+  - There is little more to gain here. We should search for our own answers.
+  - We have learned all we can for now. Move on.
+  - It seems I will find no answers from you. Farewell.
+  - I shall seek my answers elsewhere. Farewell.
+  - There is little more to learn here. Farewell.
