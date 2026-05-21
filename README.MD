@@ -178,9 +178,9 @@ New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/Dialog
 
 ### Shadows of Amn
 
-- "Her" room conversation with Imoen at the start dungeon
+- "Her" room conversation with Imoen at the Shadows of Amn start dungeon
 - Jailkeep Golem (first one)
-- Minsc (first conversation)
+- Minsc (first conversation in the Shadows of Amn)
 
 ## Tools used
 
