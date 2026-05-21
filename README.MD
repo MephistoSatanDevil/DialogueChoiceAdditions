@@ -133,16 +133,6 @@ If that doesn't work:
 
 Adjust the instructions for your operating system. Ask an AI assistant (copy paste the instructions) or a friend for help if you need it.
 
-## Attribution
-
-A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang).
-
-[WeiDU](https://weidu.org/) is made by Westley Weimer.
-
-[WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager) is made by [Argent77](https://github.com/Argent77)
-
-Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000), and Throne of Bhaal (2001) are ©BioWare. Dungeons & Dragons material is ©Wizards of the Coast.
-
 ## Changes
 
 The mod currently makes changes to the following dialogues:
@@ -205,3 +195,13 @@ New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/Dialog
 ## External links
 
 - The Gibberlings Three forum thread: [Dialogue Choice Additions](https://www.gibberlings3.net/forums/topic/41248-dialogue-choice-additions/)
+
+## Attribution
+
+A majority of the (optional) voiceover has been adapted from [Voices Voices Extravaganza](https://www.gibberlings3.net/forums/topic/38809-bg1-voices-voices-extravaganza-ai-dialog-voiceovers/) by Colossus Chang (colossuschang).
+
+[WeiDU](https://weidu.org/) is made by Westley Weimer.
+
+[WeiDU Mod Packager](https://github.com/InfinityTools/WeiduModPackager) is made by [Argent77](https://github.com/Argent77)
+
+Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000), and Throne of Bhaal (2001) are ©BioWare. Dungeons & Dragons material is ©Wizards of the Coast.
