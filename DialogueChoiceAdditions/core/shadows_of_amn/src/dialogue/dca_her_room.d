@@ -20,18 +20,16 @@ END
 ADD_TRANS_TRIGGER IMOEN2J 1533 ~NumInPartyGT(2)~ DO 0
 /* ~He cannot hurt you now. You are among friends.~ */
 
-// Hide this dialogue option if the alarm trap went off
-// (because Imoen's talking won't make it any more likely that attention will be attracted)
-// You cannot detect nor disarm the alarm trap nor trigger the dialogue without cheating in the vanilla game, but whatever
-// The variable name is correctly misspelled
-ADD_TRANS_TRIGGER IMOEN2J 1533 ~!Global("Ellsime","AR0602",1)~ DO 1
-/* ~Calm down, you'll attract attention to us.~ */
-
 EXTEND_BOTTOM IMOEN2J 1533 #1
-    
     IF ~NumInPartyLT(3)~ THEN REPLY @2003 /* ~He cannot hurt you anymore. We are free, and I am here with you.~ */ GOTO 1534
+    // Revenge
     IF ~~ THEN REPLY @2004 /* ~He will pay. For every cold thing, I swear he will pay.~ */ GOTO 1535
-    IF ~Global("Ellsime","AR0602",1)~ THEN REPLY @2005 /* ~Pull yourself together. We need to focus on getting out of here, alright?~ */ GOTO 1537
+    // Obligatory rude response;
+    // alternative to vanilla "Calm down, you'll attract attention to us.", but less stupid given that the alarm trap
+    // triggered when entering this room (and likely Imoen is talking right over it)
+    // We don't disable the "Calm down" option though, because it leads to unique dialogue that only makes sense
+    // if the player says something like "you'll attract attention to us"
+    IF ~~ THEN REPLY @2005 /* ~Pull yourself together. We need to focus on getting out of here, alright?~ */ GOTO 1536
 END
 
 EXTEND_BOTTOM IMOEN2J 1533
