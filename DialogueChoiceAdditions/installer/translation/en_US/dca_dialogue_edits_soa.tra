@@ -11,3 +11,14 @@
 @1000 = ~I have no more time for this. Farewell.~
 @1001 = ~I would rather get out of here.~
 @1002 = ~I have no time for this. Farewell.~
+
+// dca_her_room.d
+@2000 = ~This must be the room the dryads mentioned.~
+// From vanilla "No, it can't be. Not the person I know. This... this bed, that table... I know of them. He would... he would speak of them while... while he..." (38619)
+@2001 = ~This... this bed, that table... I know of them. He would... he would speak of them while... while he...~ [DCIMO01]
+@2002 = ~What do you make of it?~
+// From vanilla "He cannot hurt you now. You are among friends." (38622)
+@2003 = ~He cannot hurt you anymore. We are free, and I am here with you.~
+@2004 = ~He will pay. For every cold thing, I swear he will pay.~
+@2005 = ~Pull yourself together. We need to focus on getting out of here, alright?~
+@2006 = ~I don't want to think about it, Imoen. Could you stop?~

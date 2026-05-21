@@ -313,6 +313,7 @@ ACTION_IF GAME_IS ~eet bg2ee~ BEGIN
         /* Dialogue */
         PRINT @90014  /* ~Compiling dialogue files for Shadows of Amn content ...~ */
         // COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/shadows_of_amn/src/dialogue/dca_jailkeep_golem.d~
+        COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/shadows_of_amn/src/dialogue/dca_her_room.d~
         COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/core/shadows_of_amn/src/dialogue/dca_minsc_irenicus_dungeon.d~
     END
 END
