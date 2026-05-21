@@ -143,7 +143,7 @@ The mod currently makes changes to the following dialogues:
 - Flaming Fist Mercenary at Wyrm's Crossing (main conversation)
 - Jhasso (first and second conversation)
 - Merchant that approaches you in Seven Suns
-- Merchants in Seven Suns (the sneery ones)
+- Merchants in Seven Suns (the sneery ones; all three conversations)
 - One of the courtesans in the Undercellar
 - Ragefast (first conversation)
 - Rahvin
