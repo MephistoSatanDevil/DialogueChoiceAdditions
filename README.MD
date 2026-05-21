@@ -145,45 +145,52 @@ Baldur's Gate I (1998), Tales of the Sword Coast (1999), Baldur's Gate II (2000)
 
 ## Changes
 
-The mod currently makes changes to dialogues with the following NPCs:
+The mod currently makes changes to the following dialogues:
 
-**Baldur's Gate**
+### Baldur's Gate
 
-- Courtesan in Undercellar
 - Diarmid
-- Flaming Fist Mercenary at Wyrm's Crossing
-- Jhasso
+- Flaming Fist Mercenary at Wyrm's Crossing (main conversation)
+- Jhasso (first and second conversation)
 - Merchant that approaches you in Seven Suns
 - Merchants in Seven Suns (the sneery ones)
-- Ragefast
+- One of the courtesans in the Undercellar
+- Ragefast (first conversation)
 - Rahvin
-- Rieltar
-- Scar
-- Silence
+- Rieltar (first conversation)
+- Scar (early conversations)
+- Silence (two conversations)
 - Tel-anon
 - Voleta
 
 New strings: [dca_dialogue_edits_bg.tra](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/DialogueChoiceAdditions/installer/translation/en_US/dca_dialogue_edits_bg.tra)
 
-**Siege of Dragonspear**
+### Siege of Dragonspear
 
-- Arbinge
-- Ashatiel
-- Aun (and Caelar)
-- Bellowgulp Bluefingers
-- De Lancie
+- Ashatiel (first conversation on Dragonspear Castle grounds)
+- Aun and Caelar (first conversation)
+- Bellowgulp Bluefingers (two conversations)
+- Crusader Sergeant by Bridgefort (one dialogue state)
+- De Lancie, Marshal Nederlok, and General Stonehand (first conversation)
+- De Lancie, Marshal Nederlok, and General Stonehand (after parley)
+- De Lancie (second conversation)
 - Dying Myconid
-- Keherrem
-- Madele
-- Murs
-- Nederlok
-- Nereid
-- Slug
-- Shapur
-- Therli
+- Keherrem (two conversations)
+- Ogres by Underground River Entrance (Arbinge and Murs; first conversation)
+- Madele (both conversations)
+- Marshal Nederlok (first conversation)
+- Nereid (one conversations)
+- Slug (two conversations)
+- Shapur and Therli (one conversation)
 - Trolls on Dragonspear Castle grounds
 
 New strings: [dca_dialogue_edits_sod.tra](https://github.com/virginviolet/DialogueChoiceAdditions/blob/main/DialogueChoiceAdditions/installer/translation/en_US/dca_dialogue_edits_sod.tra)
+
+### Shadows of Amn
+
+- "Her" room conversation with Imoen at the start dungeon
+- Jailkeep Golem (first one)
+- Minsc (first conversation)
 
 ## Tools used
 

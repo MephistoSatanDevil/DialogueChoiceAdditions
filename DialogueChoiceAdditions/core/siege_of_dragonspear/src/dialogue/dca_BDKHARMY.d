@@ -89,7 +89,7 @@ END
 /* ~Free us, please!~ */
 
 // Allow conversation to trigger if the player explicitly decided to leave Keherrem alive in his cage
-REPLACE_STATE_TRIGGER BDKHARMY 10 ~OR(2) Global("bd_sdd201_missing_keherram","GLOBAL",1) Global("bd_sdd201_missing_keherram","GLOBAL",100)~  // From `Global("bd_sdd201_missing_keherram","GLOBAL",1)`
+REPLACE_TRIGGER_TEXT BDKHARMY ~Global("bd_sdd201_missing_keherram","GLOBAL",1)~ ~OR(2) Global("bd_sdd201_missing_keherram","GLOBAL",100) \0~  // Prepend
 
 EXTEND_BOTTOM BDKHARMY 10 #1
     IF ~~ THEN REPLY @7004 /* ~I will not take the lives of helpless prisoners. But neither will I open the door for crusaders. The cages stay shut.~ */ GOTO LetKharmyBe

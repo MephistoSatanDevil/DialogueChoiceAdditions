@@ -1,8 +1,6 @@
-/* Torsin de Lancie
+/* Torsin de Lancie */
 
-----
-
-~And it is appreciated. But Baldur's Gate and especially Waterdeep have provided the majority of troops here. I'll not risk them needlessly.~ */
+/* ~And it is appreciated. But Baldur's Gate and especially Waterdeep have provided the majority of troops here. I'll not risk them needlessly.~ */
 
 EXTEND_TOP BDDELANC 1 #1
     // The vanilla inquisitive option feels too heroic or self-centered
@@ -14,6 +12,16 @@ END
 EXTEND_BOTTOM BDDELANC 4
     // Hurt or obedient option
     IF ~~ THEN REPLY @0 /* ~Fine. I'll be off.~ */ GOTO 8
+END
+
+/* ~Judge me if you must, <CHARNAME>, but for the Sword Coast's sake, do it after the Shining Lady's been dealt with.~ */
+
+ADD_TRANS_TRIGGER BDDELANC 10 ~False()~ DO 0 // Hide the first option
+/* ~...Very well. What do you require of me?~ */
+
+EXTEND_TOP BDDELANC 10
+    // This just flows better with the follow-up lines; easier to comprehend
+    IF ~~ THEN REPLY @1 /* ~...Very well. What else have you learned?~ */ EXTERN BDNEDERL 28
 END
 
 /* ~We know Dragonspear is being supplied via the caverns you'll be visiting shortly, if all goes as planned. If you put a few drops of this in the enemy food supplies and water, we would have an edge when we finally confront the Shining Lady.~ */
@@ -55,16 +63,6 @@ END
 
 EXTEND_TOP BDDELANC Compromise #4
     %compromise_dialogue_changes%
-END
-
-/* ~Judge me if you must, <CHARNAME>, but for the Sword Coast's sake, do it after the Shining Lady's been dealt with.~ */
-
-ADD_TRANS_TRIGGER BDDELANC 10 ~False()~ DO 0 // Hide the first option
-/* ~...Very well. What do you require of me?~ */
-
-EXTEND_TOP BDDELANC 10
-    // This just flows better with the follow-up lines; easier to comprehend
-    IF ~~ THEN REPLY @1 /* ~...Very well. What else have you learned?~ */ EXTERN BDNEDERL 28
 END
 
 /* ~It pains me to say it, but Nederlok is right. This time. Though I'd happily sacrifice the Bhaalspawn's life to end this war, we don't know what sending them off with Caelar means.~ */
