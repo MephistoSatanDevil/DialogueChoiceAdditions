@@ -30,7 +30,7 @@ ADD_TRANS_TRIGGER DOPPSM 1 ~OR(2) Global("TalkedToScar","GLOBAL",1) Global("Chap
 /* ~Fine, we'll find someone else to answer our questions.~ */
 
 /* ~Unfortunately, I cannot grant any of your desires, so could you kindly leave?~ */
-REPLACE_STATE_TRIGGER DOPPSM 1 ~NumTimesTalkedToGT(0)~ // From nothing
+ADD_STATE_TRIGGER DOPPSM 1 ~NumTimesTalkedToGT(0)~ // From nothing
 
 EXTEND_BOTTOM DOPPSM 1
     IF ~Global("Chapter","GLOBAL",7)~ THEN REPLY @6001 /* ~Not until we get to see the owner.~ */ GOTO 7

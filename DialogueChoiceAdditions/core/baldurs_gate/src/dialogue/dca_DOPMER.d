@@ -80,8 +80,8 @@ ALTER_TRANS DOPMER
 
 /* ~Do you seek the truth so earnestly that you would lose everything?~ */
 
-// Trigger state if talked to again after State 7;
-REPLACE_STATE_TRIGGER DOPMER 10 ~Global("Phase","LOCALS",2) !Global("Doppleganger","GLOBAL",1)~ // From `NumTimesTalkedTo(1)`
+// Trigger state if talked to again after State 7
+REPLACE_TRIGGER_TEXT DOPMER ~NumTimesTalkedTo(2)~ ~Global("Phase","LOCALS",2) !Global("Doppleganger","GLOBAL",1)~
 
 /* Fallback */
 

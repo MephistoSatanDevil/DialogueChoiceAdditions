@@ -60,10 +60,8 @@
 @7006 = ~Another time, perhaps.~
 
 // dca_DOPMER.d
-// From the creature soundset; "[COMMON MAN 2] Leave us alone, will you? Nothin' for you here."
-@8000 = ~[MERCHANT] Leave us alone, will you? Nothin' for you here.~ [MANCO02]
-// From vanilla "Still you pester us! Do you have no shame?! Explain yourself!"
-@8001 = ~[MERCHANT] Still you pester us! Do you have no shame?!~ [DCDPM01]
+// From vanilla "Still you pester us! Do you have no shame?! Explain yourself!" (16602)
+@8000 = ~Still you pester us! Do you have no shame?!~ [DCDPM01]
 
 // dca_SCAR.d
 // From vanilla "Greetings, I am Scar, second-in-command of the Flaming Fist. My commander, Grand Duke Eltan, has expressed an interest in meeting with you. It has to do with your previous involvement with the Iron Throne."
