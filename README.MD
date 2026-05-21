@@ -1,6 +1,6 @@
 # Dialogue Choice Additions
 
-**Dialogue Choice Additions** (DCA) is a vanilla-faithful mod for *Baldur's Gate* (*Enhanced Edition* or *[Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/)*) that gives player characters more ways to respond in various conversations throughout the game.
+**Dialogue Choice Additions** (DCA) is a vanilla-faithful mod for *Baldur's Gate* and *Baldur's Gate II* (enhanced editions or *[Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/)*) that gives player characters more ways to respond in various conversations throughout the game.
 
 Additional dialogue choices (also known as dialogue options, responses, or replies) are added to specific dialogues where the original game left plausible responses uncovered. Additionally, some [dialogue trees](https://en.wikipedia.org/wiki/Dialogue_tree) are improved in gentle ways, such as [Voleta](https://baldursgate.fandom.com/wiki/Voleta_Stiletto) not repeating her "Blast you all thrice over" line each time you talk to her. DCA does not change or add new NPC dialogue (for exceptions, see [Voices Voices Extravaganza](#voices-voices-extravaganza)).
 
@@ -70,7 +70,7 @@ If the NPC dialogue is voiced in vanilla, "new" dialogue is only added if it can
 
 ### Enhanced Edition Trilogy
 
-*Dialogue Choice Additions* has currently only been tested with [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET) and to a lesser extent vanilla *Baldur's Gate: Enhanced Edition* (with Enhanced Edition Fixpack). Whether it works on old *Baldur's Gate*, or *Baldur's Gate Trilogy* (BGT), I do not know. DCA currently only makes changes to "Baldur's Gate" and "Siege of Dragonspear" content. You do not need to have *Siege of Dragonspear* installed (unless you're using EET), although the mod has not been tested without it.
+*Dialogue Choice Additions* has currently only been tested with [Baldur's Gate: Enhanced Edition Trilogy](https://www.gibberlings3.net/mods/other/eet/) (EET) and to a lesser extent vanilla *Baldur's Gate: Enhanced Edition* (with Enhanced Edition Fixpack). Whether it works on old *Baldur's Gate* and *Baldur's Gate II*, or *Baldur's Gate Trilogy* (BGT), I do not know. DCA currently only makes changes to "Baldur's Gate", "Siege of Dragonspear", and "Shadows of Amn" content (not "Tales of the Sword Coast" nor "Trone of Bhaal"). You do not need to have *Siege of Dragonspear* installed (unless you're using EET), although the mod has not been tested without it.
 
 It should be installed before EET_end.
 
@@ -89,7 +89,7 @@ The mod is compatible with the "More Dialogue Choices & Prevent Dead Ends" compo
 
 ### Other mods
 
-Mods that alter dialogues with the same NPCs might not be compatible. Leave a notice (on [GitHub](https://github.com/virginviolet/DialogueChoiceAdditions/) or [The Gibberlings Three](https://www.gibberlings3.net/forums/topic/41248-dialogue-choice-additions/issues)) if you know any that hasn't been mentioned.
+Mods that alter the same dialogues might not be compatible. Leave a notice (on [GitHub](https://github.com/virginviolet/DialogueChoiceAdditions/) or [The Gibberlings Three](https://www.gibberlings3.net/forums/topic/41248-dialogue-choice-additions/issues)) if you know any that hasn't been mentioned.
 
 ## Installation
 
