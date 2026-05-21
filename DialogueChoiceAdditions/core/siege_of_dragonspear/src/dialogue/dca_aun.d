@@ -8,7 +8,7 @@ ADD_TRANS_TRIGGER BDAUN 10 ~False()~ DO 2
 ADD_TRANS_TRIGGER BDAUN 10 ~False()~ DO 3
 /* ~You have no idea how right you are.~ */
 
-// Hide the sixth response if Viconia isn't avaialable,
+// Hide the sixth response if Viconia isn't available,
 // because we will add response with the same reply text for if Viconia is available (this prevents duplicate replies)
 ADD_TRANS_TRIGGER BDAUN 10 ~!IsValidForPartyDialogue("VICONIA")~ DO 5
 /* ~Tell him, Caelar. Tell him the price the Sword Coast bore that he might be freed from Belhifet's clutches.~ [BDCAELAR.DLG] */
