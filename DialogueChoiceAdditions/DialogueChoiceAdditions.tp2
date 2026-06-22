@@ -3,7 +3,7 @@ BACKUP ~weidu_external/backup/DialogueChoiceAdditions~
 AUTHOR ~VioletSister~
 VERSION ~1.0.1~
 LANGUAGE ~English~ ~en_US~ ~DialogueChoiceAdditions/installer/translation/en_US/setup.tra~
-
+LANGUAGE ~Simplified Chinese~ ~zh_CN~ ~DialogueChoiceAdditions/installer/translation/zh_CN/setup.tra~
 BEGIN @0  // Dialogue Choice Additions: Core
 LABEL ~DialogueChoiceAdditions-Core~
 /* StringRefs - BG & SoD*/
